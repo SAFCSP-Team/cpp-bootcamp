@@ -18,7 +18,7 @@ declarations
 }
 ```
 
-for example take the student as a class and break it down, let's ask our selfes what information can the student have? he can have ID, name, age, GPA, major.. this should be the class `attributes` (class members)
+for example take the student as a class and break it down, let's ask ourselves what information can the student have? he can have ID, name, age, GPA, major.. this should be the class `attributes` (class members)
 
 `int ID`
 `String name;`
