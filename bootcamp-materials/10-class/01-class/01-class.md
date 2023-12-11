@@ -1,13 +1,6 @@
 # Class
 
-
 ##  Concept
-
-
-
-## Example
-
-
 
 ### Object-Oriented Programming
 Object-Oriented Programming, or OOP, provides a clear structure for the storage and access management of variables and functions. A single class can logically group code into domain-specific areas. Object-oriented programs keep the code neat, and code execution can be faster as a result.
@@ -32,16 +25,8 @@ declarations
 }
 ```
 
-
-
-
 ### OOP and Classes:
 The object-oriented is based on a complex data type known as the “class.” A class may have several associated methods and attributes. These are collectively referred to as the “class members.” Attributes are a class’s properties, while methods refer to functions associated with the class. 
 
-### Class strtucture:
+## Example
 
-```c++
-Class class_name {
-declarations
-}
-```
