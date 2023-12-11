@@ -10,7 +10,7 @@ The object-oriented is based on a complex data type known as the “class.”
 ### Class
 it's a user-defined source of information. Class is a collection of data and information of specific areas. Class consists of `attributes` (class members) and `methods` (functions).
 
-Class strtucture:
+_Class strtucture_:
 
 ```c++
 Class class_name {
@@ -37,7 +37,7 @@ class Student
         string name;
         int age;
         double GPA; 
-        char major;
+        string major;
 };
 ```
 
