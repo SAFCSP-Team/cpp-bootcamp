@@ -1,4 +1,5 @@
 # Class
+User defined source of information
 
 ##  Concept
 
@@ -6,7 +7,7 @@
 The object-oriented is based on a complex data type known as the “class.”
 
 
-### Classes
+### Class
 it's a user-defined source of information. Class is a collection of data and information of specific areas. Class consists of `attributes` (class members) and `methods` (functions).
 
 Class strtucture:
@@ -29,6 +30,7 @@ for example take the student as a class and break it down, let's ask our selfes 
 
 ## Example
 
+```c++
 class Student
 {
         int ID;
@@ -37,5 +39,5 @@ class Student
         double GPA; 
         char major;
 };
-
+```
 
