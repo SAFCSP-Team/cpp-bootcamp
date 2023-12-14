@@ -1,7 +1,7 @@
 # C++ Bootcamp
 
 ## Introduction 
-`C++` bootcamp consist of the complete path of C++ language
+`C++` bootcamp consist of sequence of topics that covers `C++` as a programming language.
 
 
 ## Objectives
