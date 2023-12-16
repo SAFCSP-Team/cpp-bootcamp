@@ -15,6 +15,10 @@ For example, a program summing two numbers will follow this pattern of instructi
 
 The above is a list of instructions of a summing program. These instructions get executed one line after another until the program complete.
 
+> We can manipulate the flow that instructions follow by skipping or repeating some instructions.
+
+### Statements and Instructions
+
 Although we have our instructions that we need to build a summing program, we can not just give it to a computer and expected it to be executed. Computers are not that inelegant to understand simple english, that is why we as programers exists; To translate these instructions into `statements` using programming languages such as `Java` and `C++` so computers can handle, understand,  and execute. 
 
 
