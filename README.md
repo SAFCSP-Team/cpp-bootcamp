@@ -13,7 +13,7 @@ By the end of this bootcamp you will be able to
 
 ## Table of Content 
 
-1. Introduction 
+1. [Introduction](./bootcamp/01-introduction-to-c++)
 2. Control flow: conditions and comparison
 3. Control flow: loops
 4. Functions
