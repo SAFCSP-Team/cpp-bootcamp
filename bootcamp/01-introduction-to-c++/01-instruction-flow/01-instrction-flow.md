@@ -21,6 +21,7 @@ The above is a list of instructions for a summing program. These instructions ge
 
 Although we have our instructions that we need to build a summing program, we can not just give it to a computer and expect it to be executed. Computers are not that inelegant to understand simple English, which is why we as programmers exist to translate these instructions into `statements` using programming languages such as `Java` and `C++` so computers can handle, understand,  and execute. 
 
+> An instruction written in a programming language is called a statement.
 
 ### C++ Instruction Flow
 
@@ -30,7 +31,7 @@ In `C++`, same as in other languages, instructions are executed sequentially one
 
 Program statements are written in a specific syntax for computers to handle and understand, and they are executed sequentially unless we manipulate the flow.
 
-Therefore, in this bootcamp we will cover C++ syntax to write complete and correct statements that translate our instructions, and control flow statements that will help us control the execution of a program.
+Therefore, in this bootcamp we will cover C++ syntax to write complete and correct statements, and control flow statements that will help us control the execution flow of a program.
 
 
 ## Example
