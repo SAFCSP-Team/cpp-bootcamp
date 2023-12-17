@@ -1,5 +1,5 @@
 # Instruction Flow
-All programs are consistent, they follow the same pattern. Each program is a set of instructions that executes in a specific manner. And here in this section we will cover how instructions are listed and executed in programs to help us understand instruction flow in `C++` language.
+All programs are consistent, they follow the same pattern. Each program is a set of instructions that executes in a specific manner. And here in this section we will cover how instructions are listed and executed in programs to help us understand instruction flow in `C++`` language.
 
 
 ## Concept 
@@ -7,31 +7,15 @@ A program is usually described as a set of instructions, these instructions are 
 
 For example, a program summing two numbers will follow this pattern of instruction. 
 
-```
-1. initialize the first number `num1`.
-2. initialize the second number `num2`.
-3. sum `num1` and `num2`.
-```
+1. Initialize the first number `num1`.
+2. Initialize the second number `num2`.
+3. Sum `num1` and `num2`.
 
-The above is a list of instructions for a summing program. These instructions get executed one line after another until the program is complete.
+The above is the list of instructions that a summing program needs, and they get executed one line after another.
 
-> We can manipulate the flow that instructions follow by skipping or repeating some instructions.
+We can manipulate the flow that instructions follow by using what's called **control flow** statements that programming language provides to us, such as for loop and if condition statements. 
 
-### Statements and Instructions
-
-Although we have our instructions that we need to build a summing program, we can not just give it to a computer and expect it to be executed. Computers are not that inelegant to understand simple English, which is why we as programmers exist to translate these instructions into `statements` using programming languages such as `Java` and `C++` so computers can handle, understand,  and execute. 
-
-> An instruction written in a programming language is called a statement.
-
-### C++ Instruction Flow
-
-In `C++`, same as in other languages, instructions are executed sequentially one after another unless there is a control flow statement that will jump some instructions or repeat others.
-
-### Conclusion 
-
-Program statements are written in a specific syntax for computers to handle and understand, and they are executed sequentially unless we manipulate the flow.
-
-Therefore, in this bootcamp we will cover C++ syntax to write complete and correct statements, and control flow statements that will help us control the execution flow of a program.
+In `C++`, instructions are executed sequentially one after another unless there is a control flow statement that will jump some instructions or repeat others.
 
 
 ## Example
@@ -56,9 +40,30 @@ Hello world
 ```
 As you can see, two instructions have been given for the program. 
 
-```
-- Print `Hello`.
-- Print `world`.
-```
+1. Print `Hello`.
+2. Print `world`.
 
 And because the program executes the instructions sequentially, `Hello` was printed first.
+
+Here is another example of converting our summing program instructions into a program in `C++`. 
+
+**code**
+
+```c++
+#include <iostream>
+
+
+int main() {
+  int num1 = 3;
+  int num2 = 2;
+  std::cout << num1 + num2; // print the sum result
+}
+
+```
+
+**output**
+
+```
+5
+```
+
