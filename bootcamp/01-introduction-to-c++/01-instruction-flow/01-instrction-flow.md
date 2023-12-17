@@ -30,7 +30,7 @@ In `C++`, same as in other languages, instructions are executed sequentially one
 
 Program statements are written in a specific syntax for computers to handle and understand, and they are executed sequentially unless we manipulate the flow.
 
-Therefore, in this bootcamp we will cover C++ syntax to write complete and correct statements and control flow statements that will help us control the execution of a program.
+Therefore, in this bootcamp we will cover C++ syntax to write complete and correct statements that translate our instructions, and control flow statements that will help us control the execution of a program.
 
 
 ## Example
@@ -54,7 +54,10 @@ int main() {
 Hello world 
 ```
 As you can see, two instructions have been given for the program. 
+
+```
 - Print `Hello`.
-- Print `world`. 
+- Print `world`.
+```
 
 And because the program executes the instructions sequentially, `Hello` was printed first.
