@@ -13,29 +13,29 @@ For example, a program summing two numbers will follow this pattern of instructi
 3. sum `num1` and `num2`.
 ```
 
-The above is a list of instructions of a summing program. These instructions get executed one line after another until the program complete.
+The above is a list of instructions for a summing program. These instructions get executed one line after another until the program is complete.
 
 > We can manipulate the flow that instructions follow by skipping or repeating some instructions.
 
 ### Statements and Instructions
 
-Although we have our instructions that we need to build a summing program, we can not just give it to a computer and expected it to be executed. Computers are not that inelegant to understand simple english, that is why we as programers exists; To translate these instructions into `statements` using programming languages such as `Java` and `C++` so computers can handle, understand,  and execute. 
+Although we have our instructions that we need to build a summing program, we can not just give it to a computer and expect it to be executed. Computers are not that inelegant to understand simple English, which is why we as programmers exist to translate these instructions into `statements` using programming languages such as `Java` and `C++` so computers can handle, understand,  and execute. 
 
 
 ### C++ Instruction Flow
 
-In `C++`, same as other languages, instructions are executed sequentially one after another unless there is a control flow statement that will jump some instructions or repeat others.
+In `C++`, same as in other languages, instructions are executed sequentially one after another unless there is a control flow statement that will jump some instructions or repeat others.
 
 ### Conclusion 
 
-Program's statements are written in a specific syntax for computers to handle and understands, and they are executed sequentially unless we manipulate the flow.
+Program statements are written in a specific syntax for computers to handle and understand, and they are executed sequentially unless we manipulate the flow.
 
-Therefore, in this bootcamp we will cover C++ syntax to write complete and correct statements, and control flow statements that will helps us control the execution of a program.
+Therefore, in this bootcamp we will cover C++ syntax to write complete and correct statements and control flow statements that will help us control the execution of a program.
 
 
 ## Example
 
-In the following example we will analyze the output of a simple `Hello world` printer program.
+In the following example, we will analyze the output of a simple `Hello world` printer program.
 
 **code** 
 ```cpp
@@ -53,7 +53,7 @@ int main() {
 ```
 Hello world 
 ```
-As you can see, tow instructions have been given for the program. 
+As you can see, two instructions have been given for the program. 
 - Print `Hello`.
 - Print `world`. 
 
