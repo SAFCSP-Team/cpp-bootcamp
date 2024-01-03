@@ -4,9 +4,12 @@ In **C++**, does not have a built-in string type. Instead, it relies on the stan
 ## Concept 
 **C++** strings are sequences of characters stored in a char array.
 
-Strings are used to store text. They are also used to store data, such as numbers and other types of information. Strings in **C++** can be defined either using the std::string class or the C-style character arrays.
+Strings are used to store text. They are also used to store data, such as numbers and other types of information. 
 
-Char arrays are also used to store strings in **C++**.
+Strings in **C++** can be defined either using:
+
+* **The std::string class**.
+* **The C-style character arrays**.
 
 ## Example
 
