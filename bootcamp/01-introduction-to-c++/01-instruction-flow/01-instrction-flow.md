@@ -1,5 +1,5 @@
 # Instruction Flow
-All programs are consistent, they follow the same pattern. Each program is a set of instructions that executes in a specific manner. And here in this section we will cover how instructions are listed and executed in programs to help us understand instruction flow in `C++`` language.
+All programs are consistent, they follow the same pattern. Each program is a set of instructions that executes in a specific manner. And here in this section we will cover how instructions are listed and executed in programs to help us understand instruction flow in `C++` language.
 
 
 ## Concept 

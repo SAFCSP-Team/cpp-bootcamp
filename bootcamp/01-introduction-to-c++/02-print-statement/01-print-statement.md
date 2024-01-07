@@ -17,8 +17,8 @@ int main() {
 ```
 Let us take the code one line after another to understand `C++` structure and the print statement.
 - `#include <iostream>` this line of code is used to tell the program that we want to use `iostream` library, which helps us read and write text from and to the console.
-- `main` is a function that every `C++` program must have,it is considered the entry point of running a program.
-- `int` is the return type of `main` function, if `main` returns 0 then the program terminated successfully, else if return is non-zero then an error occurred.
+- `main` is a function that every `C++` program must have, it is considered the entry point of running a program.
+- `int` is the return type of `main` function, if `main` returns 0 then the program terminated successfully. Else, if the return value is non-zero then an error occurred.
 - `std::cout` is calling `cout` object from `std` namespace which is a logical collection of elements(ex. objects and methods).
 - `std::cout << "hello from c++";` is calling cout and sending it a text to be printed. `cout` represents the output stream which our text will be sent to, and by default it is the screen console. Therefore, this line of code means sending a text to be printed on the screen console.
 - `<<` is called **stream insertion operator** which means insert a text into the stream.
