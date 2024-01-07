@@ -60,6 +60,7 @@ int main() {
 }
 
 ```
+> You can remove the usage of **std::** if you import the namespace std in your file.
 
 **output**
 
