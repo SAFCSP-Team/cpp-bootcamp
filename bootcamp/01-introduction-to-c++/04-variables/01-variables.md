@@ -20,30 +20,51 @@ Instead, we must use type `string` to store a text.
 ```cpp
 string text = "text"; //correct
 ```
-### Identifiers / Variable Naming
+### Identifiers / Variable Names
 An identifier is the name of your variable, and to create a variable you have to follow certain conditions.
 1. Variable names can contain letters, digits and underscores
 2. Variable names must start with a letter or an underscore.
 3. Since C++ is case sensitive, variable names are also case sensitive, which means `num` is not the same as `Num`.
-Names cannot contain whitespaces or special characters like !, #, %, etc.
-A variable name can not be a reserved word such as `class` or `namespace`.
+4. Names cannot contain whitespace or special characters like %, #, !, ?, etc.
+5. A variable name can not be a reserved word such as `class` or `namespace`.
 
 ### Data Types
-Below, you will see each type in C++ and the values it accepts. 
-| Data Type | Value |
-|-----------|-------|
-| int | stores integer values, which are whole numbers |
-| float, double | stores floating point numbers |
-| char | stores a single character |
-| string | stores a text |
-| boolean | stores either `true` or `false` |
-### Variable Naming 
-to name a variable in `c++` we need to follow a specific rules as follows.
-1.
-2.
-3.
+Here are the most used data types in C++ and the values they accepts. 
+| Data Type | Value | Example|
+|-----------|-------| -------|
+| int | stores integer values, which are whole numbers | `int i = 2;`|
+| float, double | stores floating point numbers | `float f = 2.4;`, `double d = 74.51428;` |
+| char | stores a single character | `char c = 'a';` |
+| string | stores a text | `string s = "hello";` |
+| boolean | stores either `true` or `false` | `bool b = true;`|
 
 
 ## Example
+
+```cpp 
+#include <iostream>
+using namespace std;
+
+int main() {
+  string greeting;
+  greeting = "Hello Team!";
+  cout << greeting;
+  
+  return 0;
+}
+
+```
+
+```cpp 
+#include <iostream>
+using namespace std;
+
+int main() {
+  int num = 3;
+  cout << num*2;
+  
+  return 0;
+}
+```
 
 ## Projects
