@@ -3,6 +3,7 @@ In our daily life, we sometimes write a note of what we need to do as a reminder
 
 ## Concept
 Single line comment is a note provided by the program developer that can fit in a single line.
+> Comments are ignored by the compiler when running a program.
 
 ## Example
 To write a single line comment in C++ we use `//` character.
