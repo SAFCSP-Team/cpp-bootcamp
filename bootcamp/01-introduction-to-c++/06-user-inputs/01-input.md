@@ -25,6 +25,7 @@ insert a number: 5
 your number is: 5
 ```
 As you can see from above example, by using `cin` we asked for an `int` value from the user. 
+> The >> symbol is called extraction operator
 
 ### Input Type Check
 One thing to note, is that when an unexpected value is entered it will lead to an unexpected behavior. Let us look at our example above, if we sent a string rather than integer we will get the following output.
