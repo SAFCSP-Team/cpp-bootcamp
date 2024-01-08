@@ -119,3 +119,8 @@ Team
 
 
 ## Projects
+- Develop a program that print the following. 
+```
+Hello User,
+Nice to meet you!
+```

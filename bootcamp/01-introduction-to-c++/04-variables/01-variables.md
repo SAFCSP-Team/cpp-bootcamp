@@ -68,3 +68,5 @@ int main() {
 ```
 
 ## Projects
+
+- Develop a program that display addition, subtraction, multiplication, and division operations on two integer numbers.

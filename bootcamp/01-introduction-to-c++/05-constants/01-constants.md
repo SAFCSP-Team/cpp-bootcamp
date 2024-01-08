@@ -42,3 +42,4 @@ int main() {
 ```
 
 ## Projects
+- Develop a program that convert an hour to minutes by declaring a constant called `minutePerHour`;
