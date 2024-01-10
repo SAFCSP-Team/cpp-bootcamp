@@ -50,8 +50,7 @@ It defines the **actions or operations** that need to be performed during each i
 ## Types of loops:
 
 ##### For loop:
-Is commonly used when you know the **number of iterations in advance** or when iterating over a range. 
-
+ 
 ```c++
 for (initialization; condition; increment/decrement) {
     // Code block to be executed repeatedly
@@ -59,18 +58,15 @@ for (initialization; condition; increment/decrement) {
 ```
 
 ##### While loop:
-Is used when the **number of iterations is not known beforehand** and **depends on a certain condition**.
 
 ```c++
 while (condition) {
     // Code block to be executed repeatedly
     // increment/decrement statement
-    // Condition must eventually become false to exit the loop
 }
 ```
 
 ##### Do-while loop:
-Is similar to the `while` loop, but it guarantees that the **code block is executed at least once**. The code block is executed first, and then the condition is checked. If the condition is true, the loop continues; otherwise, it exits.
 ```c++
 do {
     // Code block to be executed repeatedly
