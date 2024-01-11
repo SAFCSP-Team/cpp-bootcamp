@@ -84,3 +84,7 @@ I'm Char Array
 ```
 
 
+## Projects
+1. Create a string variable using the `std::string` class and print it.
+2. Append a string to the string variable.
+3. Create a char array variable and print it.
