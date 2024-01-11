@@ -9,7 +9,7 @@ The I/O system of C++ contains a set of classes which define the file handling m
 
 
 ## Example
-
+In this example we will reuqest input from the user and store it in a file called `nameList.txt` and then we will read the file and print the output.
 
 ### **code**
 
