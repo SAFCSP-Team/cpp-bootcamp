@@ -18,7 +18,7 @@ We have to write cout statement manually 5 times. Now imagine you have to write 
 ## Concept
 `Loops` are **control structures** that allow you to **execute a block of code repeatedly** until a certain condition is met.
 
-#### The key components of the loop in C++ :
+### The key components of the loop in C++ :
 1. Initialization:
 
 Before entering the loop, you need to **initialize a counter variable** to a specific value. This is typically done before the loop starts.
@@ -33,19 +33,49 @@ Before entering the loop, you need to **initialize a counter variable** to a spe
 After each iteration of the loop, **the counter variable is incremented or decremented** to ensure progress towards the termination of the loop. 
 
 You can use both `prefix` and `postfix` increment/decrement operators within a loop. The choice between them **depends on whether you want to update the variable before or after its usage** in the loop. 
-```
-1. Prefix Increment/Decrement :
-         The value of the variable is incremented or decremented **before it is used** in the expression.
+> 1. Prefix Increment/Decrement: The value of the variable is incremented or decremented **before it is used** in the expression.
+> 2. Postfix Increment/Decrement: The value of the variable is incremented or decremented **after it is used** in the expression.
 
-2. Postfix Increment/Decrement :
-         The value of the variable is incremented or decremented **after it is used** in the expression.
-```
 4. Loop Body:
 
 It defines the **actions or operations** that need to be performed during each iteration.
 
+### Break and continue:
+Both the `break` and `continue` statements are useful for controlling the flow of a loop based on certain conditions. 
 
+1. `break` statement: When encountered within a loop, the `break` statement causes an immediate exit from the loop. It is typically used to terminate the loop prematurely based on a certain condition.
+```c++
+#include <iostream>
+int main() {
+    for (int i = 1; i <= 5; ++i) {
+        if (i == 3) {
+            break; // Exit the loop when i becomes 3
+        }
+        std::cout << i << " ";
+    }
+    return 0;
+}
+```
+```
+1 2 
+```
 
+2. `continue` statement: It is used to skip the rest of the current iteration and proceed to the next iteration of the loop. 
+ ```c++
+#include <iostream>
+int main() {
+    for (int i = 1; i <= 5; ++i) {
+        if (i == 3) {
+            continue; // Skip the rest of the iteration when i is 3
+        }
+        std::cout << i << " ";
+    }
+    return 0;
+}
+```
+```
+1 2 4 5 
+```
 
 ## Types of loops:
 
