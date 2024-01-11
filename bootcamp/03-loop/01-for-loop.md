@@ -9,13 +9,13 @@ for (initialization; condition; Update(increment/decrement)) {
 }
 ```
 
-- Initialization: It is a statement that is executed before the loop starts. It is a loop control variable.
+- Initialization: It is a statement that is executed before the loop starts. It is a **loop control variable**.
 
-- Condition: It is a boolean expression that is evaluated before each iteration. If the condition is true, the loop body is executed. If the condition is false, the loop is terminated, and the program continues with the next statement after the loop.
+- Condition: It is a **boolean expression** that is **evaluated before each iteration**. If the c**ondition is true, the loop body is executed**. If the condition is false, the loop is terminated, and the program continues with the next statement after the loop.
 
-- Update: It is a statement that is executed at the end of each iteration. to modify the loop control variable.
+- Update: It is a statement that is **executed at the end of each iteration**. to **modify the loop control variable**.
 
-- Loop body: The loop body consists of the code or statements that are executed in each iteration of the loop. It defines the actions or operations to be performed repeatedly.
+- Loop body: The loop body consists of the code or **statements that are executed in each iteration** of the loop. It defines the actions or operations to be performed repeatedly.
 
 Here's an example that demonstrates the usage of a `for` loop in C++:
 
@@ -48,27 +48,27 @@ The `for` loop executes five times, printing the iteration number from 0 to 4. O
 
 ## Example 
 
-Example 1: Printing numbers from 1 to 10 (Postfix increment)
+Example 1: Printing numbers from 1 to 10 without number 3 (Postfix increment).
 
 ```c++
 #include <iostream>
-
 int main() {
     for (int i = 1; i <= 10; i++) {
-        std::cout << i << " ";
+         if (i == 3) {
+            continue; // Exit the loop when i becomes 3
+         }
+         std::cout << i << " ";
     }
-
     return 0;
 }
 ```
 ```
-1 2 3 4 5 6 7 8 9 10
+1 2 4 5 6 7 8 9 10
 ```
 
-Example 2: Iterating through an array (Prefix increment)
+Example 2: Iterating through an array (Prefix increment).
 ```c++
 #include <iostream>
-
 int main() {
     int numbers[] = {1, 2, 3, 4, 5};
     for (int i = 0; i < 5; ++i) {
@@ -77,7 +77,10 @@ int main() {
      return 0;
 }
 ```
-Example 3: Computing the factorial of a number (prefix decrement)
+```
+1 2 3 4 5
+```
+Example 3: Computing the factorial of a number (prefix decrement).
 ```c++
 #include <iostream>
 
@@ -97,5 +100,19 @@ int main() {
 Factorial of 5 is: 120
 ```
 
+Example 4: Printing numbers in reverse order (postfix decrement).
+```c++
+
+#include <iostream>
+int main() {
+    for (int i = 5; i > 0; i--) {
+        std::cout << i << " ";
+    }
+    return 0;
+}
+```
+```
+5 4 3 2 1
+```
 
 ## Project 
