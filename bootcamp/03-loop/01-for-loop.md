@@ -4,18 +4,10 @@
 Is commonly used when you know the **number of iterations in advance** or when iterating over a range. It consists of three parts: **initialization, condition, and increment/decrement**. 
 
 ```c++
-for (initialization; condition; Update(increment/decrement)) {
+for (initialization; condition; increment/decrement) {
     // Loop body
 }
 ```
-
-- Initialization: It is a statement that is executed before the loop starts. It is a **loop control variable**.
-
-- Condition: It is a **boolean expression** that is **evaluated before each iteration**. If the c**ondition is true, the loop body is executed**. If the condition is false, the loop is terminated, and the program continues with the next statement after the loop.
-
-- Update: It is a statement that is **executed at the end of each iteration**. to **modify the loop control variable**.
-
-- Loop body: The loop body consists of the code or **statements that are executed in each iteration** of the loop. It defines the actions or operations to be performed repeatedly.
 
 Here's an example that demonstrates the usage of a `for` loop in C++:
 
