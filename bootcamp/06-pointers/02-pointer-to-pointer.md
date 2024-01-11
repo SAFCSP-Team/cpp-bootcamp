@@ -4,7 +4,7 @@ Earlier we learned about pointers, and we now know that pointers are a special k
 ## Concept
 Pointer to a pointer is a type of pointers that is used to reference to another pointer, it is like forming a chain of pointers referencing each others.
 
-And to create a pointer to a pointer we will use `**` characters as the following.
+And to create a pointer to a pointer we will use an extra `*` character as the following.
 
 ```cpp
 #include <iostream>
