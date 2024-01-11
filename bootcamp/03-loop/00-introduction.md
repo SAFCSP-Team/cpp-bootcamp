@@ -90,6 +90,7 @@ for (initialization; condition; increment/decrement) {
 ##### While loop:
 
 ```c++
+initialization;
 while (condition) {
     // Code block to be executed repeatedly
     // increment/decrement statement
@@ -98,6 +99,7 @@ while (condition) {
 
 ##### Do-while loop:
 ```c++
+initialization;
 do {
     // Code block to be executed repeatedly
     // increment/decrement statement
