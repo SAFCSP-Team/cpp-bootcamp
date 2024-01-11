@@ -63,6 +63,8 @@ output,
 
 In the code above we declared a pointer called `pointer` to hold the address of variable `num`, And the `int` type of the pointer tells the pointer what data type is stored in that memory address.
 
+![image representing the pointer to num](./images/memory-addresses-pointers-to-num.jpg)
+
 > The type of pointer must match the type of value it references.
 
 > You can declare a pointer in different ways, such as, `int* pointer`, `int * pointer`, and ` int *pointer`.
@@ -125,9 +127,9 @@ output,
 10
 10
 ```
-In the function above, even though we passed the `num` as a parameter value, it did not change. The reason is because that `num` was not actually passed to the function, a copy of `num` did.
+In the function above, even though we passed the `num` as a parameter value, it did not change. The reason is because that `num` was not actually passed to the function, a copy of `num` did. This method of passing a variable to a function as a copy is called **pass-by-value**.
 
-Therefore, if we encountered this type of cases we can use pointers. Since pointers stores addresses then we can pass the address of `num` and then update the value that the address points to as the following.
+Therefore, if we encountered this type of cases we can use pointers. Since pointers stores an addresses, then we can pass the address of `num` and update the value that the address points to as the following.
 
 ```cpp 
 #include <iostream>
@@ -156,7 +158,7 @@ output,
 10
 7
 ```
-
+This method of passing the address of the variable is called **pass-by-reference**.
 ## Examples
 
 ```cpp
@@ -185,4 +187,4 @@ num2 address: 0x7ffed50c6558
 
 - Create a pointer to reference a variable address and then print the value of that variable using the pointer.
 
-- Develop a function that accepts an integer and doubles it, then print the value from the main method.
+- Develop a function `doubleNum`, that accepts an integer and doubles it, then print the value from the main method.
