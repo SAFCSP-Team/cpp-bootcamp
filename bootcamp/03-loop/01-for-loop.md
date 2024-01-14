@@ -38,7 +38,7 @@ In this example:
 
 The `for` loop executes five times, printing the iteration number from 0 to 4. Once the condition becomes false (`i < 5` is no longer true), the loop terminates.
 
-## Example 
+## Examples  
 
 Example 1: Printing numbers from 1 to 10 without number 3 (Postfix increment).
 
