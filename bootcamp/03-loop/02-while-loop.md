@@ -34,7 +34,7 @@ In this example:
 - Loop body: **std::cout << i << " ";** prints the value of `i` followed by a space.
 - Update: **i++;** increments the value of `i` by 1 in each iteration of the loop.
 
-## Example 
+## Examples 
 Example 1: Using postfix increment and break statement:
 ```c++
 #include <iostream>
