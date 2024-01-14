@@ -1,0 +1,74 @@
+# Binary File Handling
+Binary file is a file that contains a sequence of bytes. For example, a binary file may contain characters, integers, and floats. 
+
+Binary file is not human readable, the exteions is decide how to seperate the bytes into meaningful data. In this lesson we will use the **.bin** extension to store binary data.
+
+
+> The extension of a binary file is **.bin**
+
+## Concept 
+In **C++** we can read and write to a binary file using the **<fstream>** library, the same as text file. But we need to open the file in binary mode by adding **ios::binary** flag to the open mode.
+
+To read binary data from a file, we’ll need to perform the following steps:
+* Create a stream object. 
+* Connect it to a file on disk. 
+* Read the file’s contents into our stream object. 
+* Close the file
+
+
+## Example
+In this example we will write a binary file that contating a string as value and read it.
+
+
+##### Write a binary file.
+```cpp
+
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main() {
+
+  fstream wFile("names.bin",
+                ios::out |
+                    ios::binary); // open a file on write mode in binary format
+
+  if (wFile.is_open()) {
+    // when adding a string we must pass the size of the string
+    wFile.write("Hello", 5);
+  }
+
+  wFile.close();
+ 
+  return 0;
+}
+
+```
+
+##### Read a binary file.
+```cpp
+fstream aFile("names.bin", ios::app | ios::binary);
+
+  if(aFile.is_open()) {
+    aFile.write(" World", 6);
+
+  }
+```
+
+##### Read a binary file.
+```cpp
+
+fstream rFile("names.bin", ios::in | ios::binary);
+  if(rFile.is_open()) {
+    char buffer[100];
+    rFile.read(buffer, 100);
+
+    cout << buffer << endl;
+
+  }
+
+  rFile.close();
+
+```
+
