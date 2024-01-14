@@ -35,7 +35,7 @@ In this example:
 > Note that the `do-while` loop guarantees at least one execution of the loop body, regardless of the initial condition. 
 <br> **The code prints 0 before the check condition.**
 
-## Example 
+## Examples  
 
 Example 1: Postfix decrement with break statement:
 
