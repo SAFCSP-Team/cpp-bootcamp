@@ -4,11 +4,12 @@ Imagine you're working on a retail store software application that needs to hand
 
 
 ## Concept
+
 In C++, `templates` , also known as generics, provide a way to create `function` and `class` that can work with different data types without having to write separate implementations for each type. 
 
 Templates enable you to write code that is reusable and generic, allowing you to create algorithms and data structures that are independent of specific data types.
 
-Here is a simple template function that swaps two values:
+* Here is a simple template function that swaps two values:
 
 ```cpp
 template <typename T>
@@ -20,11 +21,10 @@ void Values(T& a, T& b) {
 ```
 
 * `T` is the type parameter representing the generic type. 
-* The `typename` keyword is used to indicate that T is a type parameter. 
-* The swapValues function takes two references (a and b) of type T and swaps their values using a temporary variable.
+* The `typename` keyword is used to indicate that T is a type parameter. 
+* The `swapValues` function takes two references (a and b) of type T and swaps their values using a temporary variable.
 
-
-    To use the swapValues function, you can call it with arguments of any compatible type:
+ * To use the `swapValues` function, you can call it with arguments of any compatible type:
 
 ```cpp
 int main() {
@@ -42,14 +42,13 @@ int main() {
 
 ```
 
-
 ## Examples
 
 Templates can also be used with classes, allowing you to create generic data structures. Here's a simple example of a template class for a stack:
 
 Step 1: Define the template class Stack:
 
-* We define the template class Stack with a single type parameter T. The class has three private member variables: elements (an array of type T), top (representing the index of the top element), and capacity (the maximum number of elements the stack can hold).
+* We define the template class `Stack` with a single type parameter T. The class has three private member variables: elements (an array of type T), top (representing the index of the top element), and capacity (the maximum number of elements the stack can hold).
 
 * The class provides a constructor that takes the size of the stack and initializes the capacity and top variables. It also dynamically allocates memory for the elements array using new.
 
