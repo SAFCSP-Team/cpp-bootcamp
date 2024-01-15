@@ -36,6 +36,7 @@ Let's break down the different parts:
   - It serves as the starting point of program execution and can call other functions.
   
 Here's an examples that demonstrates the usage of a function:
+#### Example 1:
 ```c++
 #include <iostream>
 void print() {
@@ -51,14 +52,37 @@ int main() {
 In this example:
 
  Function declaration:
-  - returnType: void, which means it doesn't return any value.
-  - functionName:  print().
-  - parameterType: The function does not have parameters.
-  - parameterName: The function does not have parameters.
+   - returnType: void, which means it doesn't return any value. 
+   - functionName:  print().
+   - parameterType: The function does not have parameters. 
+   - parameterName: The function does not have parameters. 
+
+Function body: 
+   - print **Hello World** statement.
+
+#### Example 2:
+```c++
+int addNumbers(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result = addNumbers(3, 5);
+    std::cout << "The result is: " << result << std::endl;
+    return 0;
+}
+
+```
+In this example:
+
+ Function declaration:
+  - returnType: int, which means the function returns an integer value.
+  - functionName:  addNumbers().
+  - parameterType: two integer values.
+  - parameterName:  a, b.
 
 Function body:
- - print **Hello World** statement.
-
+ - abb two numbers and return value.
   
 
 In C++, the order in which functions are defined, whether before or after the `main` function, does not affect the program's functionality. But when a function is defined after the main function, you must provide a function declaration (prototype) before the main function to inform the compiler about the function's existence.
@@ -105,21 +129,39 @@ The scope of a variable determines where it can be accessed and used within a pr
 
 
 ## Example
-- `addNumbers` function takes two int parameters and returns an int to the main function. 
+
+- `factorial` The function takes an integer as a parameter and returns an integer value to the main function. 
+
 ```c++
-int addNumbers(int a, int b);
+#include <iostream>
+
+// Function declaration
+int factorial(int n);
 
 int main() {
-    int result = addNumbers(3, 5);
-    std::cout << "The result is: " << result << std::endl;
+    int number;
+    std::cout << "Enter a positive integer: ";
+    std::cin >> number;
+
+    int result = factorial(number);
+    std::cout << "The factorial of " << number << " is: " << result << std::endl;
+
     return 0;
 }
 
-int addNumbers(int a, int b) {
-    return a + b;
+// Function definition
+int factorial(int n) {
+    int result = 1;
+
+    for (int i = 1; i <= n; ++i) {
+        result *= i;
+    }
+
+    return result;
 }
 ```
-- `multiplyValues` function multiply two int Values and  the result.
+
+- `multiplyValues` function that multiplies two global integer values and then prints the result.
 ```C++
 #include <iostream>
 
