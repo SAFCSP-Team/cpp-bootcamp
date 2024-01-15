@@ -7,7 +7,8 @@
 Here's the basic syntax for defining and using functions:
 
 ```c++
-returnType functionName( Optional : parameterType parameterName ) {
+returnType functionName(parameterType parameterName)
+{
 
     //  Function body: code to be executed
 }
@@ -33,6 +34,32 @@ Let's break down the different parts:
 - Main function:
   - `int main()` is a special function that must be present in every C++ program.
   - It serves as the starting point of program execution and can call other functions.
+  
+Here's an examples that demonstrates the usage of a function:
+```c++
+#include <iostream>
+void print() {
+    std::cout << "Hello world!" << std::endl;
+}
+
+int main() {
+    print(); // Function call
+    return 0;
+}
+
+```
+In this example:
+
+ Function declaration:
+  - returnType: void, which means it doesn't return any value.
+  - functionName:  print().
+  - parameterType: The function does not have parameters.
+  - parameterName: The function does not have parameters.
+
+Function body:
+ - print **Hello World** statement.
+
+  
 
 In C++, the order in which functions are defined, whether before or after the `main` function, does not affect the program's functionality. But when a function is defined after the main function, you must provide a function declaration (prototype) before the main function to inform the compiler about the function's existence.
 
