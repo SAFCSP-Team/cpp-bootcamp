@@ -74,7 +74,7 @@ public:             // Constructor
     }
 ```
 
-* The push method adds an item of type T to the stack. It first checks if the stack is full (indicated by top == capacity - 1) and handles the overflow condition if necessary. Otherwise, it increments top and assigns the item to elements[top].
+* The `push` method adds an item of type T to the stack. It first checks if the stack is full (indicated by top == capacity - 1) and handles the overflow condition if necessary. Otherwise, it increments top and assigns the item to elements[top].
 
 ```cpp
     void push(T item) {
@@ -85,7 +85,7 @@ public:             // Constructor
         elements[++top] = item;
     }
 ```
-* The pop method removes and returns the top element from the stack. It checks if the stack is empty (indicated by top == -1) and handles the underflow condition if necessary. Otherwise, it returns the element at elements[top] and decrements top.
+* The `pop` method removes and returns the top element from the stack. It checks if the stack is empty (indicated by top == -1) and handles the underflow condition if necessary. Otherwise, it returns the element at elements[top] and decrements top.
 
 ```cpp
     T pop() {
@@ -100,8 +100,9 @@ public:             // Constructor
 ```
 Step 2: Use the Stack class with specific types in the main function:
 
-* Create an intStack object of type Stack<int> with a capacity of 10. We then push the integers 5 and 10 onto the stack using the push method. Next, we pop an element from the stack using the pop method and store it in the variable poppedInt.
-*  Create a doubleStack object of type Stack<double> with a capacity of 5. We push the doubles 3.14 and 2.71 onto the stack and pop an element, storing it in the variable poppedDouble.
+* Create an intStack object of type `Stack<int> `with a capacity of 10. We then push the integers 5 and 10 onto the stack using the push method. Next, we pop an element from the stack using 
+  the pop method and store it in the variable poppedInt.
+*  Create a doubleStack object of type `Stack<double>` with a capacity of 5. We push the doubles 3.14 and 2.71 onto the stack and pop an element, storing it in the variable poppedDouble.
 
 > Note that the compiler generates separate classes for each instantiation of the Stack template, ensuring type safety and efficient code generation.
 
