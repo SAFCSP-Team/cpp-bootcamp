@@ -87,6 +87,15 @@ Function body:
 
 In C++, the order in which functions are defined, whether before or after the `main` function, does not affect the program's functionality. But when a function is defined after the main function, you must provide a function declaration (prototype) before the main function to inform the compiler about the function's existence.
 
+```c++
+// Function declaration and definition
+
+int main() {
+    // Function call
+    return 0;
+}
+
+```
 ```C++
 // Function declaration (prototype)
 
@@ -96,15 +105,6 @@ int main() {
 }
 
 // Function definition (implementation)
-
-```
-```c++
-// Function declaration and definition
-
-int main() {
-    // Function call
-    return 0;
-}
 
 ```
 The functions define their own scope, and variables declared within a function have local scope only accessible within the function where they are declared. 
@@ -130,37 +130,6 @@ The scope of a variable determines where it can be accessed and used within a pr
 
 ## Example
 
-- `factorial` The function takes an integer as a parameter and returns an integer value to the main function. 
-
-```c++
-#include <iostream>
-
-// Function declaration
-int factorial(int n);
-
-int main() {
-    int number;
-    std::cout << "Enter a positive integer: ";
-    std::cin >> number;
-
-    int result = factorial(number);
-    std::cout << "The factorial of " << number << " is: " << result << std::endl;
-
-    return 0;
-}
-
-// Function definition
-int factorial(int n) {
-    int result = 1;
-
-    for (int i = 1; i <= n; ++i) {
-        result *= i;
-    }
-
-    return result;
-}
-```
-
 - `multiplyValues` function that multiplies two global integer values and then prints the result.
 ```C++
 #include <iostream>
@@ -177,6 +146,35 @@ void multiplyValues() {
 int main() {
     multiplyValues();
     return 0;
+}
+```
+
+- `factorial` The function takes an integer as a parameter and returns an integer value to the main function. 
+
+```c++
+#include <iostream>
+
+int factorial(int n);
+
+int main() {
+    int number;
+    std::cout << "Enter a positive integer: ";
+    std::cin >> number;
+
+    int result = factorial(number);
+    std::cout << "The factorial of " << number << " is: " << result << std::endl;
+
+    return 0;
+}
+
+int factorial(int n) {
+    int result = 1;
+
+    for (int i = 1; i <= n; ++i) {
+        result *= i;
+    }
+
+    return result;
 }
 ```
 
