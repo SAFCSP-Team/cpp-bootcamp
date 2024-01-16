@@ -84,7 +84,7 @@ public:             // Constructor
 
 ```
 
-####  Use the Stack class with specific types in the main function:
+####  The Stack class with specific types in the main function:
 
 * Create an intStack object of type `Stack<int>` with a capacity of 10.
 ```cpp
