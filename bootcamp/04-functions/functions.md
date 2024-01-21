@@ -154,6 +154,8 @@ int main() {
     return 0;
 }
 ```
+As you can see, each function is called based on the argument types that match the function's parameter. Notice that the return types of all these 4 functions are not the same. Overloaded functions may or may not have different return types but they must have different arguments. 
+
 ### Scope
 The functions define their own scope, and variables declared within a function have local scope only accessible within the function where they are declared. 
 
