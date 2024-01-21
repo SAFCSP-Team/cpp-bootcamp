@@ -107,12 +107,58 @@ int main() {
 // Function definition (implementation)
 
 ```
+### Function overloading
+This means that you can have multiple functions with the same name, but each function has unique parameter types and/or numbers. 
+
+> The return type of the function does not determine function overloading.
+
+If you have two functions with the same name and the same parameter types and numbers but with different return type, the compiler will throw an error, as it cannot distinguish between them.
+```C++
+void test(int a) {
+    std::cout << "the test number: " << a << std::endl;
+}
+int test(int a) {
+   return a;
+}
+```
+Overloading is solely based on the parameters of the functions. The compiler determines which function to call based on the number, types, and order of the arguments passed to the function.
+```C++
+#include <iostream>
+
+// Function with one integer parameter
+void printNumber(int num) {
+    std::cout << "Integer number: " << num << std::endl;
+}
+
+// Function with one double parameter
+void printNumber(double num) {
+    std::cout << "Double number: " << num << std::endl;
+}
+
+// Function with two integer parameters
+void printNumber(int num1, int num2) {
+    std::cout << "Sum of two numbers: " << num1 + num2 << std::endl;
+}
+
+// Function with two double parameters
+int printNumber(double num1, double num2) {
+    return num1 * num2;
+}
+
+int main() {
+    printNumber(10);            // Calls the function printNumber(int)
+    printNumber(3.14);          // Calls the function printNumber(double)
+    printNumber(4, 5);          // Calls the function printNumber(int, int)
+    std::cout << " * of two numbers: " << printNumber(4.0, 5.0) << std::endl; // Calls the function printNumber(double, double)
+
+    return 0;
+}
+```
+### Scope
 The functions define their own scope, and variables declared within a function have local scope only accessible within the function where they are declared. 
 
 The scope of a variable determines where it can be accessed and used within a program, and there are two main types of variable scope `local` and `global`.
-
-
-### types of variable scope.
+#### Types of variable scope.
 
 1. Local Variables:
    - Local variables are declared within a specific block, such as a function or a code block enclosed in curly braces `{}`.
