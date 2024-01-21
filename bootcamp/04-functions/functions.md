@@ -107,6 +107,26 @@ int main() {
 // Function definition (implementation)
 
 ```
+The functions define their own scope, and variables declared within a function have local scope only accessible within the function where they are declared. 
+
+The scope of a variable determines where it can be accessed and used within a program, and there are two main types of variable scope `local` and `global`.
+### Types of variable scope.
+
+1. Local Variables:
+   - Local variables are declared within a specific block, such as a function or a code block enclosed in curly braces `{}`.
+   - They are only accessible within the block they are declared in.
+   - Once the execution of the block is complete, local variables are destroyed, and their memory is freed.
+
+ > Local variables can have the same name as variables in other blocks without causing conflicts because each block has its own scope.
+
+2. Global Variables:
+   - Global variables are declared outside of any specific block, typically at the beginning of a program.
+   - They are accessible and modified from any program part, including all functions and code blocks.
+
+> It's important to note that local variables take precedence over global variables if they share the same name within a particular scope.
+
+<br>
+
 ### Function overloading
 This means that you can have multiple functions with the same name, but each function has unique parameter types and/or numbers. 
 
@@ -155,26 +175,6 @@ int main() {
 }
 ```
 As you can see, each function is called based on the argument types that match the function's parameter. Notice that the return types of all these 4 functions are not the same. Overloaded functions may or may not have different return types but they must have different arguments. 
-
-### Scope
-The functions define their own scope, and variables declared within a function have local scope only accessible within the function where they are declared. 
-
-The scope of a variable determines where it can be accessed and used within a program, and there are two main types of variable scope `local` and `global`.
-#### Types of variable scope.
-
-1. Local Variables:
-   - Local variables are declared within a specific block, such as a function or a code block enclosed in curly braces `{}`.
-   - They are only accessible within the block they are declared in.
-   - Once the execution of the block is complete, local variables are destroyed, and their memory is freed.
-
- > Local variables can have the same name as variables in other blocks without causing conflicts because each block has its own scope.
-
-2. Global Variables:
-   - Global variables are declared outside of any specific block, typically at the beginning of a program.
-   - They are accessible and modified from any program part, including all functions and code blocks.
-
-> It's important to note that local variables take precedence over global variables if they share the same name within a particular scope.
-
 
 ## Example
 
