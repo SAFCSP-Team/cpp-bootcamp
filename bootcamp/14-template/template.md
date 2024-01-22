@@ -1,4 +1,4 @@
-# Introduction to Template
+# Template
 
 Imagine you're working on a retail store software application that needs to handle and process different types of products, such as electronics, clothing, and groceries. To achieve a generic and reusable solution, you can utilize templates or generics in your implementation.
 
@@ -113,6 +113,38 @@ int main() {
 
 ## Examples
 
+*  We define a template function `maximum()` that takes two parameters of the same type `T` and returns the maximum of the two values.
+ ```cpp
+#include <iostream>
 
+/* Template function to find the maximum of two values */
+template<typename T>
+T maximum(T a, T b) {
+    return (a > b) ? a : b;
+}
+```
 
+* The `main()` function, we demonstrate the use of the template function. We first call `maximum()` with two int values (num1 and num2) and then print the result. Next, we call maximum() with two double values (num3 and num4) and print the result.
+
+```cpp
+int main() {
+    int num1 = 10;
+    int num2 = 20;
+    std::cout << "Maximum of " << num1 << " and " << num2 << " is: " << maximum(num1, num2) << std::endl;
+
+    double num3 = 3.14;
+    double num4 = 2.71;
+    std::cout << "Maximum of " << num3 << " and " << num4 << " is: " << maximum(num3, num4) << std::endl;
+
+    return 0;
+}
+
+```
+
+The output is 
+
+```
+Maximum of 10 and 20 is: 20
+Maximum of 3.14 and 2.71 is: 3.14
+```
 ## Projects
