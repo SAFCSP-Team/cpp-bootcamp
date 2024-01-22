@@ -147,4 +147,48 @@ The output is
 Maximum of 10 and 20 is: 20
 Maximum of 3.14 and 2.71 is: 3.14
 ```
+
+* We define a template class `Pair` that represents a generic pair of two values. The class has two private data members: first of type T1 and second of type T2.
+
+```cpp
+#include <iostream>
+
+/* Template class for a generic Pair */
+template<typename T1, typename T2>
+class Pair {
+private:
+    T1 first;
+    T2 second;
+
+public:
+    Pair(T1 f, T2 s) : first(f), second(s) {}
+
+    T1 getFirst() const {
+        return first;
+    }
+
+    T2 getSecond() const {
+        return second;
+    }
+
+    void display() const {
+        std::cout << "(" << first << ", " << second << ")";
+    }
+};
+```
+* In the `main()` function, we demonstrate the use of the template class. We create two instances of the `Pair` class: p1 with an int and double pair, and p2 with a string and char pair. We then use the getter methods to retrieve the values and print them using std::cout.
+
+```cpp
+
+int main() {
+    Pair<int, double> p1(10, 3.14);
+    std::cout << "First: " << p1.getFirst() << ", Second: " << p1.getSecond() << std::endl;
+
+    Pair<std::string, char> p2("Hello", 'A');
+    std::cout << "First: " << p2.getFirst() << ", Second: " << p2.getSecond() << std::endl;
+
+    return 0;
+}
+```
+  
 ## Projects
