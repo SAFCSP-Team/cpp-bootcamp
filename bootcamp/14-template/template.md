@@ -14,7 +14,7 @@ Templates enable you to write code that is reusable and generic, allowing you to
 
 ```cpp
 template <typename T>
-void Values(T& a, T& b) {
+void swapValues(T& a, T& b) {
     T temp = a;
     a = b;
     b = temp;
