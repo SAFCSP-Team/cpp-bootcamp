@@ -10,37 +10,37 @@ In C++, `templates` , also known as generics, provide a way to create `function`
 Templates enable you to write code that is reusable and generic, allowing you to create algorithms and data structures that are independent of specific data types.
 
 ### Function template
-* Here is a simple template function that swaps two values:
+
+* Here is a simple template function adds two numbers:
 
 ```cpp
 template <typename T>
-void swapValues(T& a, T& b) {
-    T temp = a;
-    a = b;
-    b = temp;
+T add(T num1, T num2) {
+   return (num1 + num2);
 }
 ```
 
 * `T` is the type parameter representing the generic type. 
 * The `typename` keyword is used to indicate that T is a type parameter. 
-* The `swapValues` function takes two references (a and b) of type T and swaps their values using a temporary variable.
-
- * To use the `swapValues` function, you can call it with arguments of any compatible type:
+* The `add` function takes two variables (a and b) of type T.
+* To use the `add` function, you can call it with arguments of any compatible type:
 
 ```cpp
+
 int main() {
-    int x = 5, y = 10;
-    swapValues(x, y);  // Swaps the values of x and y
 
-    std::string a = "Hello", b = "World";
-    swapValues(a, b);  // Swaps the values of a and b
+    int result1;
+    double result2;
+    /* calling with int parameters */
+    result1 = add<int>(2, 3);
+    cout << result1 << endl;
 
-    std::cout << "x: " << x << ", y: " << y << std::endl;
-    std::cout << "a: " << a << ", b: " << b << std::endl;
+    /* calling with double parameters */
+    result2 = add<double>(2.2, 3.3);
+    cout << result2 << endl;
 
     return 0;
-}
-
+} 
 ```
 
 ### Class template
