@@ -48,9 +48,6 @@ Templates can also be used with classes, allowing you to create generic data str
 
 * Here is a simple template to define the template class `Number` with a single type parameter T :
 
-The class has three private member variables: elements (an array of type T), top (representing the index of the top element), and capacity (the maximum number of elements the stack can hold).
-
-
 ```cpp
 /* Class template */
 template <class T>
