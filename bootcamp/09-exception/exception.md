@@ -33,7 +33,8 @@ In C++ exceptions are handled using three keywords: try, catch, and throw.
 
 ## Example
 
-### Handling exception without using throw
+
+- Try-catch block without throw or specifiy the error type.
 
 ```cpp
 
@@ -49,8 +50,41 @@ catch(...) {
     }
 
 ```
+> catch(...) will catch any error that might occur in the try block.
 
-### Handling multiple exception
+- Custome error handling using throw.
+
+```cpp
+
+try {
+    string name = "Abdulmalik";
+
+    if(name.length() > 5) {
+
+    throw "Name is too long";
+
+    }
+
+    cout << name << endl;
+    
+}
+catch(const char* e) {
+    
+    cout << "Error: " << e << endl;
+    
+}
+
+```
+**OUTPUT**
+
+```
+ERROR!
+Error: Name is too long
+```
+
+
+
+- Handling multiple exception
 
 ```cpp
 
@@ -77,6 +111,7 @@ catch(...) {
 
 ```
 
+> bad_alloc is the one will invoked if there is no memory to allocate.
 
 
 Practices
