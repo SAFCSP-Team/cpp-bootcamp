@@ -57,12 +57,15 @@ int main () {
 }
 ```
 ## Examples
+
+
+* Animal class is the base class it's have all attributes for Animal
 ```cpp
 
 #include <iostream>
 using namespace std;
 
-// base class
+/* base class */
 class Animal {
 
    public:
@@ -74,8 +77,11 @@ class Animal {
         cout << "I can sleep!" << endl;
     }
 };
+```
+* `Dog class` is derived from the Animal class. Since Dog is derived from Animal, members of Animal are accessible to Dog.
 
-// derived class
+```cpp
+/* derived class */
 class Dog : public Animal {
  
    public:
