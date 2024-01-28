@@ -35,16 +35,7 @@ int main(){
 ```
 
 ## Projects
-- Write a single line comment to explain what does each line in the main method do. 
 
-```cpp
-#include <iostream>
-using namespace std;
-
-int main(){
-    cout << "Hello ";
-    cout << endl;
-    cout << "World";
-    return 0;
-}
-```
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [Single-line Comments](https://github.com/SAFCSP-Team/single-line-comments) | - | 

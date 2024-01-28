@@ -42,4 +42,9 @@ int main() {
 ```
 
 ## Projects
+
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [Constants in C++](https://github.com/SAFCSP-Team/constants-in-cpp) | - | 
+
 - Develop a program that convert an hour to minutes by declaring a constant called `minutePerHour`;

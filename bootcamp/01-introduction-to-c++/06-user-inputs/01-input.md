@@ -86,4 +86,7 @@ Hello turkey
 ```
 
 ## Projects
-- Create a program that takes 2 integer from the user and print the sum of these numbers.
+
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [User Inputs in C++](https://github.com/SAFCSP-Team/user-inputs-in-cpp) | - | 

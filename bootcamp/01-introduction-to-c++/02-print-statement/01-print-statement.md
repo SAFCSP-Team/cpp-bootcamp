@@ -119,8 +119,7 @@ Team
 
 
 ## Projects
-- Develop a program that print the following. 
-```
-Hello User,
-Nice to meet you!
-```
+
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [Print Statatement](https://github.com/SAFCSP-Team/print-project/) | - | 

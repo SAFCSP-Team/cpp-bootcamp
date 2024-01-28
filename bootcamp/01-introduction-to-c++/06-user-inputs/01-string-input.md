@@ -88,4 +88,7 @@ Hello Alex childs
 ```
 
 ## Projects
-- Develop an echo program that takes a line of string from the user and print the same string to the console.
+
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [String Inputs in C++](https://github.com/SAFCSP-Team/string-inputs-in-cpp) | - | 

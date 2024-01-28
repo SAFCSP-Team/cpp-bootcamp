@@ -35,16 +35,7 @@ int main(){
 ```
 
 ## Projects
-- Write a multiline comment to explain what does the following program do in general. 
 
-```cpp
-#include <iostream>
-using namespace std;
-
-int main(){
-    cout << "Hello ";
-    cout << endl;
-    cout << "World";
-    return 0;
-}
-```
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [Multi-line Comments in C++](https://github.com/SAFCSP-Team/multi-line-comments) | - | 
