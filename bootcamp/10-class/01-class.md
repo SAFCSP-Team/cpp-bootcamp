@@ -115,7 +115,6 @@ class Student
     double gpa;
     string major;
 
-public:
     // Member functions
     void printInfo()
     {
