@@ -9,12 +9,56 @@ Functions and properties can have different access modifiers, which control thei
 1. Public:  
 The class functions and properties are accessible with no issues.
 They can be accessed by objects of the class or by functions outside the class.
-   
-2. Private:    
+
+```c++
+class Student
+{
+public:
+int id;
+};
+
+int main()
+{
+Student student1;
+student1.id = 01;
+cout << student1.id << endl;
+return 0;
+};
+```
+  
+Output
+```c++
+01
+```
+
+<br/>
+<br/>
+
+3. Private:    
 The class functions and properties are only accessible within the class itself.
 They cannot be accessed directly by objects of the class or by functions outside the class.
+   
+```c++
+class Student
+{
+private:
+int id;
+};
 
-
+int main()
+{
+Student student1;
+student1.id = 01;
+cout << student1.id << endl;
+return 0;
+};
+```
+  
+Output
+```c++
+Error: member "Student::id" (declared at line 10) is inaccessible
+```
+<br/>
 By default, if no access modifier is provided, class properties are considered private. 
 
 
