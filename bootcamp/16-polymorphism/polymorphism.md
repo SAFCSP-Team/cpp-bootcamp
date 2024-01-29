@@ -68,6 +68,8 @@ This example showcases how polymorphism allows us to write code that can work wi
 
 ## Examples
 
+Create the `Animal` base class and the derived classes `Dog`, `Cat`, and `Bird`. Each derived class overrides the `makeSound() `function with its specific implementation.
+
 ```cpp
 #include <iostream>
 
@@ -99,7 +101,7 @@ public:
     }
 };
 ```
-
+In the main method create pointers of type Animal* that can point to objects of derived classes. We initialize animal1 to point to a Dog object, animal2 to point to a Cat object, and animal3 to point to a Bird object and call the `makeSound()` function on each object.
 ```cpp
 int main() {
     Animal* animal1 = new Dog();
