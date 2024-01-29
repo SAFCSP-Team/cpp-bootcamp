@@ -15,7 +15,7 @@ The class functions and properties are only accessible within the class itself.
 They cannot be accessed directly by objects of the class or by functions outside the class.
 
 
-By default, if no access specifier is provided, class members are considered private. Here's an example that demonstrates the use of access modifiers:
+By default, if no access modifiers is provided, class properties are considered private. Here's an example that demonstrates the use of access modifiers:
   
   
 ## Example
