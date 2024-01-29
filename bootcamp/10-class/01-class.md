@@ -87,8 +87,16 @@ student1.id = 01;
 ```c++
 cout << student1.id << endl;
 ```
+<br/>    
 
+- Call object methods
   
+```c++
+student1.printInfo();  
+```
+  
+  
+
 ## Example
 Student class:  
 
