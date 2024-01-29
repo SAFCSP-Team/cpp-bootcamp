@@ -24,7 +24,7 @@ public:
 
 * Derived Classes with Overridden Functions:
 
-> Class Circle and Square, which inherit publicly from the `Shape` base class. Both derived classes override the `draw()` function with their own specific implementations.
+ Class Circle and Square, which inherit publicly from the `Shape` base class. Both derived classes override the `draw()` function with their own specific implementations.
  
 ```cpp
 class Circle : public Shape {
@@ -44,6 +44,10 @@ public:
 
 * Polymorphic Usage:
 
+ Create two pointers of type Shape* that can point to objects of derived classes. We initialize shape1 to point to a Circle object and shape2 to point to a Square object.
+
+ When we call the `draw()` function on shape1 and shape2, the appropriate overridden function based on the actual object type is called. This is known as dynamic or runtime binding, where the function to be called is determined at runtime based on the actual object type.
+
 
 ```cpp
 
@@ -51,8 +55,8 @@ int main() {
     Shape* shape1 = new Circle();
     Shape* shape2 = new Square();
 
-    shape1->draw();  // Calls the draw() function of Circle
-    shape2->draw();  // Calls the draw() function of Square
+    shape1->draw();  /* Calls the draw() function of Circle */
+    shape2->draw();  /* Calls the draw() function of Square */
 
     delete shape1;
     delete shape2;
@@ -60,10 +64,67 @@ int main() {
     return 0;
 }
 ```
+This example showcases how polymorphism allows us to write code that can work with different derived class objects through a common base class interface. It provides flexibility, code reusability, and the ability to handle varying types of objects in a unified way.
 
 ## Examples
 
+```cpp
+#include <iostream>
 
+class Animal {
+public:
+    virtual void makeSound() {
+        std::cout << "Animal makes a generic sound." << std::endl;
+    }
+};
+
+class Dog : public Animal {
+public:
+    void makeSound() override {
+        std::cout << "Dog barks." << std::endl;
+    }
+};
+
+class Cat : public Animal {
+public:
+    void makeSound() override {
+        std::cout << "Cat meows." << std::endl;
+    }
+};
+
+class Bird : public Animal {
+public:
+    void makeSound() override {
+        std::cout << "Bird chirps." << std::endl;
+    }
+};
+```
+
+```cpp
+int main() {
+    Animal* animal1 = new Dog();
+    Animal* animal2 = new Cat();
+    Animal* animal3 = new Bird();
+
+    animal1->makeSound(); 
+    animal2->makeSound();  
+    animal3->makeSound();  
+
+    delete animal1;
+    delete animal2;
+    delete animal3;
+
+    return 0;
+}
+```
+
+The output is
+
+```
+Dog barks.
+Cat meows.
+Bird chirps.
+```
   
 ## Projects
 
