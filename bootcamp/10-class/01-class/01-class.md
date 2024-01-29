@@ -17,8 +17,6 @@ class ClassName {
     - properties (data members)
     - methods (functions)
 };
-
-}
 ```
   
 1. Properties (data members)   
