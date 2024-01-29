@@ -18,20 +18,63 @@ class ClassName {
     - methods (functions)
 };
 ```
-  
+<br/> 
+<br/> 
+ 
 1. Properties (data members)   
 `Properties` are the **information/data** that a specific area/class could have/has.  
   
 Let's take the student as a class and break it down, let's ask ourselves what information a student class has.     
-It can have id, name, age, gpa, major.. this information should be the class `properties` (data members).
-   
-    
+It can have id, name, age, gpa, major.. this information should be the class `properties` (data members).    
+  
+```c++
+
+class Student
+{
+// Properties (data members)
+    public:
+    int id;
+    string name;
+    int age;
+    double gpa;
+    string major;
+}
+```
+<br/> 
+<br/> 
+  
 2. Methods (functions)   
 `Methods` are the **behaviors or actions** that can be performed on a student's class.    
-  
+   
 Let's take the student class we used above, what could the student class do?     
-We can write a `method` that prints the student properties.
+We can write a `method` that prints the student properties.   
   
+```c++
+// Methods (functions)
+void printInfo() {
+        cout << "ID: " << id << endl;
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+        cout << "gpa: " << gpa << endl;
+        cout << "major: " << major << endl;
+    }
+
+```
+<br/> 
+<br/> 
+  
+### Object
+Objects are instances of a class. Objects allow us to work with the data and functions defined in the class. Each object has its own set of `properties` and can independently call the `methods`.  
+  
+Create an object of Student class:
+```c++
+int main(){
+Student student1; // create Student object with the name "student1"
+Student student2; // create another Student object with the name "student2"
+};
+```
+<br/> 
+<br/> 
   
 ## Example
 Student class:  
