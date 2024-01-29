@@ -38,9 +38,9 @@ Student class:
 
 ```c++
 
-// Properties (data members)
 class Student
 {
+// Properties (data members)
     int id;
     string name;
     int age;
