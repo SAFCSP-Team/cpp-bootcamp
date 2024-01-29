@@ -34,9 +34,11 @@ We can write a  method that prints the student properties.
   
   
 ## Example
-Student class:
+Student class:  
 
 ```c++
+
+// Properties (data members)
 class Student
 {
     int id;
@@ -44,6 +46,16 @@ class Student
     int age;
     double gpa;
     string major;
+
+// Methods (functions)
+void printInfo()
+    {
+        cout << "ID: " << id << endl;
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+        cout << "gpa: " << gpa << endl;
+        cout << "major: " << major << endl;
+    }
 };
 ```
 
