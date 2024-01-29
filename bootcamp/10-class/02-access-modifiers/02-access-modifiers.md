@@ -1,36 +1,21 @@
-# Class
-User-defined source of information
+# Access modifiers
+The visibility and accessibility of class functions and properties
 
 ##  Concept
+Functions and properties can have different access modifiers, which control their visibility and accessibility from other parts of the program. 
 
-### OOP and Classes:
-The object-oriented-programming **(OOP)** is based on a complex data type known as the **“class”**
+### Access modifiers types  
 
-
-### Class
-it's a user-defined source of information. Class is a collection of data and information on specific areas. The class consists of `properties` (data members) and `methods` (functions).
-
-_Class strtucture_:
-
-```c++
-class ClassName {
-    - properties (data members)
-    - methods (functions)
-};
-```
-  
-1. Properties (data members)   
-`Properties` are the **information/data** that a specific area/class could have/has.  
-  
-Let's take the student as a class and break it down, let's ask ourselves what information a student class has.     
-It can have id, name, age, gpa, major.. this information should be the class `properties` (data members).
+1. Public:  
+The class functions and properties are accessible with no issues.
+They can be accessed by objects of the class or by functions outside the class.
    
-    
-2. Methods (functions)   
-`Methods` are the **behaviors or actions** that can be performed on a student's class.    
-  
-Let's take the student class we used above, what could the student class do?     
-We can write a `method` that prints the student properties.
+2. Private:    
+The class functions and properties are only accessible within the class itself.
+They cannot be accessed directly by objects of the class or by functions outside the class.
+
+
+By default, if no access specifier is provided, class members are considered private. Here's an example that demonstrates the use of access modifiers:
   
   
 ## Example
