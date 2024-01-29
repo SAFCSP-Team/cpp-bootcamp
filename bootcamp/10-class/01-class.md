@@ -8,7 +8,7 @@ The object-oriented-programming **(OOP)** is based on a complex data type known 
 
 
 ### Class
-it's a user-defined source of information. Class is a collection of data and information on specific areas. The class consists of `properties` (data members) and `methods` (functions).
+It's a user-defined source of information. Class is a collection of data and information on specific areas. The class consists of `properties` (data members) and `methods` (functions).
 
 _Class strtucture_:
 
@@ -66,15 +66,28 @@ void printInfo() {
 ### Object
 Objects are instances of a class. Objects allow us to work with the data and functions defined in the class. Each object has its own set of `properties` and can independently call the `methods`.  
   
-Create an object of Student class:
+- Create an object of Student class:  
 ```c++
 int main(){
 Student student1; // create Student object with the name "student1"
 Student student2; // create another Student object with the name "student2"
 };
 ```
-<br/> 
-<br/> 
+<br/>     
+
+- Access object properties
+
+```c++
+student1.id = 01;
+```
+<br/>    
+
+- Print object properties
+  
+```c++
+cout << student1.id << endl;
+```
+
   
 ## Example
 Student class:  
