@@ -8,36 +8,44 @@ The object-oriented is based on a complex data type known as the “class.”
 
 
 ### Class
-it's a user-defined source of information. Class is a collection of data and information on specific areas. The class consists of `attributes` (class members) and `methods` (functions).
+it's a user-defined source of information. Class is a collection of data and information on specific areas. The class consists of `properties` (data members) and `methods` (functions).
 
 _Class strtucture_:
 
 ```c++
-Class class_name {
-declarations
+class ClassName {
+    - properties (data members)
+    - methods (functions)
+};
+
 }
 ```
-
-For example, take the student as a class and break it down, let's ask ourselves what information can student have? he can have ID, name, age, GPA, major.. these should be the class `attributes` (class members)
-
-`int ID`
-`String name;`
-`int age;`
-`double GPA;`
-`String major;`
-
-
-
+  
+1. Properties (data members)   
+`Properties` are the information/data that a specific area/class could **(have/has)**.  
+  
+Let's take the student as a class and break it down, let's ask ourselves what information a student class **has**?.     
+It can have id, name, age, gpa, major.. this information should be the class `properties` (data members).
+   
+    
+2. Methods (functions)   
+`Methods` are the operations the area/class could **(do)**.  
+  
+Let's take the student class we used above, what could the student class **do**?     
+We can write a  method that prints the student properties.
+  
+  
 ## Example
+Student class:
 
 ```c++
 class Student
 {
-        int ID;
-        string name;
-        int age;
-        double GPA; 
-        string major;
+    int id;
+    string name;
+    int age;
+    double gpa;
+    string major;
 };
 ```
 
