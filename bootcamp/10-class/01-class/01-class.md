@@ -4,7 +4,7 @@ User-defined source of information
 ##  Concept
 
 ### OOP and Classes:
-The object-oriented is based on a complex data type known as the “class.”
+The object-oriented-programming **(OOP)** is based on a complex data type known as the **“class”**
 
 
 ### Class
