@@ -20,17 +20,17 @@ class ClassName {
 ```
   
 1. Properties (data members)   
-`Properties` are the information/data that a specific area/class could **(have/has)**.  
+`Properties` are the **information/data** that a specific area/class could have/has.  
   
-Let's take the student as a class and break it down, let's ask ourselves what information a student class **has**?.     
+Let's take the student as a class and break it down, let's ask ourselves what information a student class has.     
 It can have id, name, age, gpa, major.. this information should be the class `properties` (data members).
    
     
 2. Methods (functions)   
-`Methods` are the operations the area/class could **(do)**.  
+`Methods` are the **behaviors or actions** that can be performed on a student's class.    
   
-Let's take the student class we used above, what could the student class **do**?     
-We can write a  method that prints the student properties.
+Let's take the student class we used above, what could the student class do?     
+We can write a `method` that prints the student properties.
   
   
 ## Example
