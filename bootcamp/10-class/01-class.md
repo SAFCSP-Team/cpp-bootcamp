@@ -93,18 +93,23 @@ cout << student1.id << endl;
 Student class:  
 
 ```c++
+#include <iostream>
+
+using namespace std;
 
 class Student
 {
-// Properties (data members)
+    // Data members
+    public:
     int id;
     string name;
     int age;
     double gpa;
     string major;
 
-// Methods (functions)
-void printInfo()
+public:
+    // Member functions
+    void printInfo()
     {
         cout << "ID: " << id << endl;
         cout << "Name: " << name << endl;
@@ -113,4 +118,25 @@ void printInfo()
         cout << "major: " << major << endl;
     }
 };
+
+```
+
+Use student class in `main`:  
+
+
+```c++
+int main()
+{
+    Student student1;
+
+    student1.id = 01;
+    student1.name = "Ahmed";
+    student1.age = 17;
+    student1.gpa = 4.6;
+    student1.major = "Computer Science";
+
+    student1.printInfo();
+
+    return 0;
+}
 ```
