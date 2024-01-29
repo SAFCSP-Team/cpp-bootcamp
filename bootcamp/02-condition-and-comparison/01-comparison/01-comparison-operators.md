@@ -94,4 +94,7 @@ int main() {
 
 
 ## Projects
-- Develop a program that takes two integers from the user and check if the first integer is less than or equal to the second integer.
+
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [Comparison in C++](https://github.com/SAFCSP-Team/comparison-in-cpp) | - | 

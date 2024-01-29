@@ -119,5 +119,6 @@ Great, you can have your driving license now!
 
 ## Projects
 
-- Develop a program that takes an integer input from the user, and if the input is type is not valid, display `invalid input type`.
-    - hint: use if statement with `cin.good()`.  
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [If Statement in C++](https://github.com/SAFCSP-Team/if-statement-in-cpp) | - | 

@@ -205,13 +205,6 @@ Enter your second number: 1
 ```
 ## Projects
 
-- Develop a program that display a student grade based on his score using **switch statement**. 
-
-|  Score  |  Grade  |
-|:-------:|:-------:|
-| 100-90  |    A    |
-| 89-80   |    B    |
-| 79-70   |    C    |
-| 69-60   |    D    |
-| less than 60 |   F   |
-
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [Switch Statement in C++](https://github.com/SAFCSP-Team/switch-statement-in-cpp) | - | 

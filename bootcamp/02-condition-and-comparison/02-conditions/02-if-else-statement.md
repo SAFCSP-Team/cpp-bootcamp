@@ -62,4 +62,7 @@ Your number is positive.
 ```
 
 ## Projects
-- Develop a program that takes an input `number` from the user and print if that number is even or odd.
+
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [If-Else in C++](https://github.com/SAFCSP-Team/if-else-in-cpp) | - | 
