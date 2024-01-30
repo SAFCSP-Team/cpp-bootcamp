@@ -4,7 +4,9 @@ Exception is an error that occurs during the execution of a program. When an exc
 To let the program continue execution after an exception occurs, we can use exception handling.
 
 before we start with exception let's see type of errors in C++:
--  Compile-time errors: Errors found by the compiler. syntax errors. Example: missing semicolon or the variable is not declared.
+-  Compile-time errors: Errors found by the compiler. syntax errors. 
+
+Example: missing semicolon or the variable is not declared.
 
 ```cpp
 
@@ -12,7 +14,9 @@ cout << "Hello World!" << endl // compile time error due to missing semicolon
 
 ```
 
--  Run-time errors: Errors found by checks in a running program. Also called exceptions. Example: dvivde by zero, excpetion occur at run time.
+-  Run-time errors: Errors found by checks in a running program. 
+
+Example: dvivde by zero, excpetion occur at run time.
 
 ```cpp
 
@@ -20,8 +24,10 @@ cout << 5/0 << endl; // run time error
 
 ```
 
-## Exception concept
-In C++ exceptions are handled using three keywords: try, catch, and throw.
+> So we know that if there's an error in the code it throw an exception and the program will stop.
+
+## Concept
+Exception is a way to handle the error in the program, by handling the errors in the program we can make the program continue to run even if there's an error, or we can print a a meaningful message to the user.
 
 **try**: is a block of code that is used to handle the error or exception that might occur in the program. 
 
