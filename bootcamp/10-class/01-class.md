@@ -38,7 +38,7 @@ class Student
     int age;
     double gpa;
     string major;
-}
+};
 ```
 <br/> 
 <br/> 
