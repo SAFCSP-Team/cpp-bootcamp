@@ -227,3 +227,6 @@ int factorial(int n) {
 ```
 
 ## Project 
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [Functions](https://github.com/SAFCSP-Team/functions) | - | 
