@@ -73,4 +73,7 @@ int main() {
 4 3 1 0
 ```
 ## Project 
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [While Loop](https://github.com/SAFCSP-Team/while-loop) | - | 
 
