@@ -53,11 +53,9 @@ int* p = new int;
 
 - `p` value:
 ```c++
-arr[0] = 1;
-arr[1] = 2;
-arr[2] = 3
+*p = 5;
 ```
-In the above code, the `p` value is defined at run time and it's 3.
+In the above code, the `p` value is defined at run time and it's 5.
 
 <br/>
 <br/>
