@@ -39,7 +39,7 @@ ClassName(parameters) {
 
 3. Copy Constructors
  ```c++
-ClassName(const ClassName &NameofObject ) {
+ClassName(const ClassName& NameofObject ) {
        // Constructor body
    }
 ```
@@ -47,12 +47,12 @@ ClassName(const ClassName &NameofObject ) {
 - The copy constructor is a special constructor that creates a new object as a copy of an existing object.
 - If a class does not provide a copy constructor explicitly, the compiler generates a default copy constructor
 - Pass object by Reference: By using a reference variable as a parameter in a constructor, you can pass arguments by reference. This means that any changes made to the parameter within the constructor will affect the original argument passed to the constructor.
-- The const Keyword is optional with Reference Variables to show that the reference is immutable and should not be modified within the constructor.
+- The `const` Keyword is optional with Reference Variables to show that the reference is immutable and should not be modified within the constructor.
 
 
 ### Initialization List:
 
-The initialization list allows you to initialize member variables directly, before the body of the constructor is executed. 
+The initialization list allows you to initialize variables directly, before the body of the constructor is executed. 
    - Both default constructors and parameterized constructors can use initialization lists.
    - Initialization lists are specified after the colon (`:`) following the constructor's parameter list.
 
@@ -63,7 +63,126 @@ ClassName(parameters) : variable1 (value1), variable2 (value2), ..., variableN(v
     // Constructor body 
 }
 ```
+- `parameters` represents the list of parameters that the constructor accepts, if any.
+- `variable1`, `variable2`, ..., `variableN` are the names of the variables of the class that you want to initialize.
+- `value1`, `value2`, ..., `valueN` are the values that you want to assign to the corresponding variables.
 
-## Examples
+## Example
+```c++
+#include <iostream>
+
+class Triangle {
+private:
+    double side1;
+    double side2;
+    double side3;
+
+public:
+// Constructor declaration (prototype) to implement outside the class 
+Triangle(double s1, double s2);
+
+    // Default constructor
+    Triangle() {
+        side1 = 0.0;
+        side2 = 0.0;
+        side3 = 0.0;
+    }
+
+    // Parameterized constructor
+    Triangle(double s1, double s2, double s3) {
+        side1 = s1;
+        side2 = s2;
+        side3 = s3;
+    }
+    
+    // Parameterized constructor using the an initialization list
+    Triangle(double s1) : side1(s1), side2(7.7), side3(6.2) {}
+
+
+    // Copy constructor
+    Triangle(const Triangle& object) {
+        side1 = object.side1;
+        side2 = object.side2;
+        side3 = object.side3;
+    }
+
+
+
+    // function to print the sides of the triangle
+    void printSides() {
+        std::cout << "Side 1: " << side1 << std::endl;
+        std::cout << "Side 2: " << side2 << std::endl;
+        std::cout << "Side 3: " << side3 << std::endl;
+    }
+};
+
+    // Parameterized constructor definition (implementation) outside the class 
+    Triangle::Triangle(double s1, double s2) {
+        side1 = s1;
+        side2 = s2;
+        side3 = 5.5;
+    }
+
+
+int main() {
+    // Using default constructor
+    Triangle triangle1;
+    std::cout << "Triangle 1 (default constructor):" << std::endl;
+    triangle1.printSides();
+
+    // Using parameterized constructor
+    Triangle triangle2(3.0, 4.0, 5.0);
+    std::cout << "Triangle 2 (parameterized constructor):" << std::endl;
+    triangle2.printSides();
+  
+    // Using Parameterized constructor that using an initialization list
+    Triangle triangle3(3.0);
+    std::cout << "Tringle 2 (parameterized constructor):" << std::endl;
+    triangle3.printSides();
+
+    // Using parameterized constructor that outside the class
+    Triangle triangle4(3.0, 2.0);
+    std::cout << "Tringle 2 (parameterized constructor):" << std::endl;
+    triangle4.printSides();
+
+    // Using copy constructor
+    Triangle triangle5(triangle2);
+    std::cout << "Triangle 5 (copy constructor - copied from Triangle 2):" << std::endl;
+    triangle5.printSides();
+
+    // Using copy constructor
+    Triangle triangle6 = triangle3;
+    std::cout << "Triangle 6 (copy constructor - copied from Triangle 3):" << std::endl;
+    triangle6.printSides();
+    
+    return 0;
+}
+```
+```
+Triangle 1 (default constructor):
+Side 1: 0
+Side 2: 0
+Side 3: 0
+Triangle 2 (parameterized constructor):
+Side 1: 3
+Side 2: 4
+Side 3: 5
+Tringle 2 (parameterized constructor):
+Side 1: 3
+Side 2: 7.7
+Side 3: 6.2
+Tringle 2 (parameterized constructor):
+Side 1: 3
+Side 2: 2
+Side 3: 5.5
+Triangle 5 (copy constructor - copied from Triangle 2):
+Side 1: 3
+Side 2: 4
+Side 3: 5
+Triangle 6 (copy constructor - copied from Triangle 3):
+Side 1: 3
+Side 2: 7.7
+Side 3: 6.2
+```
 ## Project
 
