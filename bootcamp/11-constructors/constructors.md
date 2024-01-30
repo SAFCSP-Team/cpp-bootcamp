@@ -52,7 +52,7 @@ ClassName(const ClassName& NameofObject ) {
 
 ### Initialization List:
 
-The initialization list allows you to initialize variables directly, before the body of the constructor is executed. 
+The initialization list allows you to initialize variables directly before the constructor's body is executed. 
    - Both default constructors and parameterized constructors can use initialization lists.
    - Initialization lists are specified after the colon (`:`) following the constructor's parameter list.
 
@@ -63,8 +63,8 @@ ClassName(parameters) : variable1 (value1), variable2 (value2), ..., variableN(v
     // Constructor body 
 }
 ```
-- `parameters` represents the list of parameters that the constructor accepts, if any.
-- `variable1`, `variable2`, ..., `variableN` are the names of the variables of the class that you want to initialize.
+- `parameters` represents the list of parameters the constructor accepts, if any.
+- `variable1`, `variable2`, ..., `variableN` are the names of the class variables you want to initialize.
 - `value1`, `value2`, ..., `valueN` are the values that you want to assign to the corresponding variables.
 
 ## Example
@@ -95,7 +95,7 @@ Triangle(double s1, double s2);
         side3 = s3;
     }
     
-    // Parameterized constructor using the an initialization list
+    // Parameterized constructor using the initialization list
     Triangle(double s1) : side1(s1), side2(7.7), side3(6.2) {}
 
 
@@ -135,12 +135,12 @@ int main() {
     std::cout << "Triangle 2 (parameterized constructor):" << std::endl;
     triangle2.printSides();
   
-    // Using Parameterized constructor that using an initialization list
+    // Using a Parameterized constructor that using an initialization list
     Triangle triangle3(3.0);
     std::cout << "Tringle 2 (parameterized constructor):" << std::endl;
     triangle3.printSides();
 
-    // Using parameterized constructor that outside the class
+    // Using a parameterized constructor that is outside the class
     Triangle triangle4(3.0, 2.0);
     std::cout << "Tringle 2 (parameterized constructor):" << std::endl;
     triangle4.printSides();
