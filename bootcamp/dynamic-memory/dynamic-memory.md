@@ -41,6 +41,8 @@ arr size is allocated at compile time and it's fixed.
 
 Using dynamic memory allocation:
 
+<br/>
+
 Integer example:
 ```c++
 int main(){
