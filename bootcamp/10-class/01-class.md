@@ -93,9 +93,10 @@ cout << student1.id << endl;
   
 ```c++
 student1.printInfo();  
-```
-  
-  
+``` 
+<br/> 
+<br/> 
+   
 
 ## Example
 Student class:  
