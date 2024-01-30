@@ -7,7 +7,7 @@ Functions and properties can have different access modifiers, which control thei
 ### Access modifiers types  
 
 1. Public:  
-The class functions and properties are accessible with no issues.
+The class functions and properties are accessible anywhere (in the class it-self, main function, ...).  
 They can be accessed by objects of the class or by functions outside the class.
 
 ```c++
