@@ -34,7 +34,7 @@ Output
 <br/>
 <br/>
 
-3. Private:    
+2. Private:    
 The class functions and properties are only accessible within the class itself.
 They cannot be accessed directly by objects of the class or by functions outside the class.
    
