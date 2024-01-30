@@ -185,6 +185,8 @@ num2 address: 0x7ffed50c6558
 
 ## Projects
 
-- Create a pointer to reference a variable address and then print the value of that variable using the pointer.
+| Project Title | Deadline |
+|:-----------|:-------------:|
+| [Print Pointer Value](https://github.com/SAFCSP-Team/print-pointer-value) | - | 
+| [Double Number Value Using Pointers](https://github.com/SAFCSP-Team/double-num-by-pointers)| - |
 
-- Develop a function `doubleNum`, that accepts an integer and doubles it, then print the value from the main method.

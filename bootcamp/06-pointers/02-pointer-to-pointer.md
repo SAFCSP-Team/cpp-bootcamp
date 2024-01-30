@@ -95,22 +95,7 @@ Value of num *after* updating: 30
 
 ## Projects
 
-- Create two pointer to a pointer variables `ptr2` that reference `ptr1` and `ptr3` that reference `ptr2` and use both of them to update the value of `num`.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int num = 10;
-    int* ptr1 = &num;
-    
-    cout << "Value of num *before* updating: " << num << endl;
-    
-    /* Your code here */
-    
-    cout << "Value of num *after* updating: " << num << endl;
-    return 0;
-}
-```
+| Project Title | Deadline |
+|:-----------|:-------------:|
+| [Pointer to Pointer Project](https://github.com/SAFCSP-Team/pointer-to-pointer-project) | - |
 
