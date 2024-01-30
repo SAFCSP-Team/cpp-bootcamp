@@ -1,33 +1,31 @@
 # Dynamic memory
-It's the concept/process of storing/manipulatin data at compile time.
+It's the concept/process of storing/manipulating data at compile time.
 
 
 ## Concept
 
-In C++ the momory can be allocated either at compile time or at the run time.
+In C++ the memory can be allocated either at compile time (Static memory allocation) or at the run time (Dynamic memory allocation). 
+  
+  
+1. Static memory allocation.
 
-- Static memory allocation.
-
-Is the memory allocated during compile time.
-
-The memory allocated is fixed and cannot be increade or decreased at run time.
-
-The memory is sored in stack.
-
-Let's say we have an array with fixed size:
+- It's the memory allocation during compile time.
+- The memory allocated is fixed and cannot be increased or decreased at run time.
+- The memory is stored in the stack.
+  
+Let's say we have an array with a fixed size:
 arr [5] = {1,2,3,4,5}
 arr size is allocated at compile time and it's fixed.
+<br/>
+<br/>
+  
+2. Dynamic memory allocation
 
+- Is the process of allocating the memory at the run time (time of execution).
+- The memory is stored in the heap.
+- Allocated memory can only be accessed through pointers.
 
-- Dynamic memory allocation
-
-Is the process of allocating the memory at the run time (time of execution).
-
-The memory is sored in heap.
-
-Allocated memory can only be accessed through pointers.
-
-It's using two operators:
+- It uses two operators:
 1. new
 The `new` operator is used to allocate memory for a single object dynamically
  
@@ -45,9 +43,9 @@ int main(){
 int* p = new int;
 };
 ```
-- In the above code, we created a pointer `p` using dynamic memory allocation operator (new).
+- In the above code, we created a pointer `p` using the dynamic memory allocation operator (new).
 - Stack is storing the address of `p`.
-- Heap is storing the value of `p` .
+- Heap is storing the value of `p` which will be defined based on the programmer input.
 
 - `p` value:
 ```c++
@@ -64,9 +62,9 @@ int SIZE;
 int* arr = new int[SIZE];
 };
 ```
-- In the above code we created a arr with the size `SIZE` using dynamic memory allocation operator (new).
+- In the above code we created an array with the size `SIZE` using the dynamic memory allocation operator (new).
 - Stack is storing the address of `SIZE`.
-- Heap is storing the value of `SIZE` witch will be defined based on the user's input.
+- Heap stores the value of `SIZE` which will be defined based on the programmer input.
 
 - `SIZE` value:
 ```c++
