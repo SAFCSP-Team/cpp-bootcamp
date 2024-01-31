@@ -100,7 +100,7 @@ delete[] arr;
 
 Project Title | Deadline |
 |:-----------:|:-------------|
-[Tree with non-primitive data types](https://github.com/SAFCSP-Team/dynamic-memory-project) | -
+[Dynamic memory project](https://github.com/SAFCSP-Team/dynamic-memory-project) | -
 
 
 
