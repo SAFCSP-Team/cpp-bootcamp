@@ -56,8 +56,85 @@ int main () {
   return 0;
 }
 ```
-## Examples
 
+* one derived class `Square` can inherit publicly from more than one base class `Rectangle` and `Polygon`.
+```cpp
+class Square: public Rectangle{
+public:
+    int area() {
+        return width * width;
+    }
+};
+
+int main() {
+    Square square;
+
+    square.setvalues(4,4);
+    cout << "Area of square: " << square.area() << '\n';
+
+    square.setvalues(4,5);
+    cout << "Area of rectangle: " << square.Rectangle::area() << '\n';
+
+    return 0;
+}
+```
+By inheriting from Rectangle, the Square class automatically inherits the properties and methods of both Rectangle and Polygon
+
+* Derived class `ManagerAssistant` inherits publicly from `Employee` and `Manager`
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// Base class: Employee
+class Employee {
+protected:
+    string name;
+    int id;
+
+public:
+    Employee(string n, int i) : name(n), id(i) {}
+
+    void displayInfo() {
+        cout << "Name: " << name << endl;
+        cout << "ID: " << id << endl;
+    }
+};
+
+// Base class: Manager
+class Manager {
+protected:
+    string department;
+
+public:
+    Manager(string dep) : department(dep) {}
+
+    void displayDepartment() {
+        cout << "Department: " << department << endl;
+    }
+};
+
+// Derived class: ManagerAssistant
+class ManagerAssistant : public Employee, public Manager {
+public:
+    ManagerAssistant(string n, int i, string dep) : Employee(n, i), Manager(dep) {}
+
+    void displayDetails() {
+        displayInfo();          // Accessing member of Employee
+        displayDepartment();    // Accessing member of Manager
+    }
+};
+
+int main() {
+    ManagerAssistant assistant("John Doe", 12345, "Sales");
+
+    assistant.displayDetails();
+
+    return 0;
+}
+```
+
+## Examples
 
 * Animal class is the base class it's have all attributes for Animal
 ```cpp
