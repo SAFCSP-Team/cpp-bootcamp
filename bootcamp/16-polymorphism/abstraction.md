@@ -101,5 +101,13 @@ int main() {
 }
 
 ```
+
+The output is
+```
+Rectangle: Length = 5, Width = 3
+Area: 15, Perimeter: 16
+Circle: Radius = 2.5
+Area: 19.6349, Circumference: 15.7079
+```
   
 ## Projects
