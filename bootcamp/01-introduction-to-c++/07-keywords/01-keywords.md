@@ -27,4 +27,3 @@ int main() {
 ```
 `using`, `namespace`, `const`, `int` and `return` are all keywords in C++.
 
-## Projects
