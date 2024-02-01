@@ -71,6 +71,4 @@ int main() {
 
 | Project Title | Deadline |
 |:-----------:|:-------------:|
-| [Circular linked list]() | - | 
-
-- Develop a program that display addition, subtraction, multiplication, and division operations on two integer numbers.
+| [Variables in C++ ](https://github.com/SAFCSP-Team/variables-in-cpp) | - | 
