@@ -162,4 +162,10 @@ int main() {
 }
 ```
   
-## Projects
+
+## Project 
+| Project Title | Deadline |
+|:-----------:|:-------------:|
+| [Template](https://github.com/SAFCSP-Team/template) | - | 
+
+
