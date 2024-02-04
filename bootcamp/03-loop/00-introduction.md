@@ -18,7 +18,7 @@ We have to write cout statement manually 5 times. Now imagine you have to write 
 ## Concept
 `Loops` are **control structures** that allow you to **execute a block of code repeatedly** until a certain condition is met.
 
-### The key components of the loop in C++ :
+### The key components of the loop in C++
 1. Initialization:
 
 Before entering the loop, you need to **initialize a counter variable** to a specific value. This is typically done before the loop starts.
@@ -40,7 +40,7 @@ You can use both `prefix` and `postfix` increment/decrement operators within a l
 
 It defines the **actions or operations** that need to be performed during each iteration.
 
-### Break and continue:
+### Break and continue
 Both the `break` and `continue` statements are useful for controlling the flow of a loop based on certain conditions. 
 
 1. `break` statement: When encountered within a loop, the `break` statement causes an immediate exit from the loop. It is typically used to terminate the loop prematurely based on a certain condition.
@@ -77,7 +77,7 @@ int main() {
 1 2 4 5 
 ```
 
-## Types of loops:
+## Types of loops
 
 ##### For loop:
  
