@@ -27,13 +27,13 @@ int main() {
 ```
 In this example:
 
-- Initialization: **int i = 0** initializes the loop control variable `i` to 0.
-- Loop body: **std::cout << i << " ";**  prints the value of i followed by a space.
-- Update: **i++** increments the value of `i` by 1.
-- Condition: **i > 0** is checked after the first iteration. If the condition is true, the loop body is executed again, and the process repeats. If the condition is false, the loop terminates.
+- Initialization: `int i = 0` initializes the loop control variable `i` to 0.
+- Loop body: `std::cout << i << " ";`  prints the value of i followed by a space.
+- Update: `i++` increments the value of `i` by 1.
+- Condition: `i > 0` is checked after the first iteration. If the condition is true, the loop body is executed again, and the process repeats. If the condition is false, the loop terminates.
 
 > Note that the `do-while` loop guarantees at least one execution of the loop body, regardless of the initial condition. 
-<br> **The code prints 0 before the check condition.**
+<br> **The code prints 0 before checking the condition.**
 
 ## Examples  
 
