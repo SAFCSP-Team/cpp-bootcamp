@@ -5,13 +5,13 @@ Imagine you're working on a retail store software application that needs to hand
 
 ## Concept
 
-In C++, `templates` , also known as generics, provide a way to create `function` and `class` that can work with different data types without having to write separate implementations for each type. 
+In C++, `template`, also known as generic, provide a way to create `function` and `class` that can work with different data types without having to write separate implementations for each type. 
 
-Templates enable you to write code that is reusable and generic, allowing you to create algorithms and data structures that are independent of specific data types.
+`Template` enable you to write code that is reusable and generic, allowing you to create algorithms and data structures that are independent of specific data types.
 
 ### Function template
 
-* Here is a simple template function adds two numbers:
+* Here is a simple template function that adds two numbers:
 
 ```cpp
 template <typename T>
