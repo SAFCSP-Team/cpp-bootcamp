@@ -44,7 +44,8 @@ int main() {
 ```
 
 ### Class template
-Templates can also be used with classes, allowing you to create generic data structures. Here's a simple example of a template class for a stack:
+
+Template can also be used with classes, allowing you to create generic data structures.
 
 * Here is a simple template to define the template class `Number` with a single type parameter T :
 
@@ -161,7 +162,12 @@ int main() {
     return 0;
 }
 ```
-  
+
+The output
+```
+First: 10, Second: 3.14
+First: Hello, Second: A
+```
 
 ## Project 
 | Project Title | Deadline |
