@@ -29,10 +29,10 @@ int main() {
 
 In this example:
 
-- Initialization: **int i = 0;** initializes the loop control variable `i` to 0.
-- Condition: **i < 5** specifies the condition that must be true for the loop to continue executing. **The loop will continue as long as `i` is less than 5.**
-- Loop body: **std::cout << i << " ";** prints the value of `i` followed by a space.
-- Update: **i++;** increments the value of `i` by 1 in each iteration of the loop.
+- Initialization: `int i = 0;`initializes the loop control variable `i` to 0.
+- Condition: `i < 5` specifies the condition that must be true for the loop to continue executing. **The loop will continue as long as `i` is less than 5.**
+- Loop body: `std::cout << i << " ";` prints the value of `i` followed by a space.
+- Update: `i++;` increments the value of `i` by 1 in each iteration of the loop.
 
 ## Examples 
 Example 1: Using postfix increment and break statement:
