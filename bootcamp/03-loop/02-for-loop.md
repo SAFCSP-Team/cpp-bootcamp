@@ -31,10 +31,10 @@ Iteration: 4
 ```
 
 In this example:
-- The initialization statement **int i = 0** initializes the loop control variable `i` to 0.
-- The condition **i < 5** is evaluated before each iteration.
-- The update statement **i++** increments the loop control variable `i` by 1 at the end of each iteration.
-- The loop body **std::cout << "Iteration: " << i << std::endl;** prints the current iteration number.
+- The initialization statement `int i = 0` initializes the loop control variable `i` to 0.
+- The condition `i < 5` is evaluated before each iteration.
+- The update statement `i++` increments the loop control variable `i` by 1 at the end of each iteration.
+- The loop body `std::cout << "Iteration: " << i << std::endl;` prints the current iteration number.
 
 The `for` loop executes five times, printing the iteration number from 0 to 4. Once the condition becomes false (`i < 5` is no longer true), the loop terminates.
 
