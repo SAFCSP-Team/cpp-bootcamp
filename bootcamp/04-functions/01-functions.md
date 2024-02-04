@@ -82,7 +82,7 @@ In this example:
   - parameterName:  a, b.
 
 Function body:
- - abb two numbers and return the result.
+ - add two numbers and return the result.
   
 
 The **order in which functions are defined**, whether before or after the `main` function, **does not affect the program's functionality**. But when a function is defined after the main function, you must provide a function declaration (prototype) before the main function to inform the compiler about the function's existence.
