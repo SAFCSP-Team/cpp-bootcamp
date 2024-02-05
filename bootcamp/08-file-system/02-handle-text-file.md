@@ -82,7 +82,6 @@ fstream rFile("names.txt", ios::in); // open a file on read mode
 ```
 
 
-
 ## Projects
 | Project Title | Deadline |
 |:-----------|:-------------:|

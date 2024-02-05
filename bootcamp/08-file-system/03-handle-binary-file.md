@@ -71,3 +71,7 @@ fstream rFile("names.bin", ios::in | ios::binary);
 
 ```
 
+## Projects
+| Project Title | Deadline |
+|:-----------|:-------------:|
+| [Handle Binary File](https://github.com/SAFCSP-Team/binary-file-project) | - | 
