@@ -6,7 +6,9 @@ The Polygon class would contain members that are common for both types of polygo
 
 ## Concept
 
-Creating new classes which retain characteristics of the `base class`. This process, known as `inheritance`, involves a `base class` and a `derived class`: The **derived class** `inherits` the members of the **base class**, on top of which it can add its own members.
+Creating new classes which retain characteristics of the `base class`.
+
+`Inheritance` involves a `base class` and a `derived class`: The **derived class** `inherits` the members of the **base class**, on top of which it can add its own members.
 
 The inheritance relationship of two classes is declared in the `derived class`. Derived classes definitions use the following syntax:
 
@@ -78,7 +80,7 @@ int main() {
     return 0;
 }
 ```
-By inheriting from Rectangle, the Square class automatically inherits the properties and methods of both Rectangle and Polygon
+By inheriting from Rectangle, the Square class automatically inherits the properties and methods of both Rectangle and Polygon.
 
 * Derived class `ManagerAssistant` inherits publicly from `Employee` and `Manager`
 
