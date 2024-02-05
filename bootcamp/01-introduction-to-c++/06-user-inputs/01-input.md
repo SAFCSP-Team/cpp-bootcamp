@@ -71,18 +71,27 @@ using namespace std;
 int main() {
   string firstName;
   int age;
-  cout << "what is your first name? ";
+  double weight;
+  cout << "What is your first name? ";
   cin >> firstName;
-  cout << "how old are you? ";
+  cout << "How old are you? ";
   cin >> age;
+  cout << "What is your weight (kg)? ";
+  cin >> weight;
   cout << "Hello " << firstName << endl;
+  cout << "You are " << age << " years old" << endl;
+  cout << "Your weight is " << weight << " kg" << endl;
+  
   return 0;
 }
 ```
 ```
-what is your first name? turkey
-how old are you? 3
+What is your first name? turkey
+How old are you? 3
+What is your weight (kg)? 14.5
 Hello turkey
+You are 3 years old
+Your weight is 14.5 kg
 ```
 
 ## Projects
