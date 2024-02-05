@@ -137,12 +137,12 @@ int main() {
   
     // Using a Parameterized constructor that using an initialization list
     Triangle triangle3(3.0);
-    std::cout << "Tringle 2 (parameterized constructor):" << std::endl;
+    std::cout << "Tringle 3 (parameterized constructor):" << std::endl;
     triangle3.printSides();
 
     // Using a parameterized constructor that is outside the class
     Triangle triangle4(3.0, 2.0);
-    std::cout << "Tringle 2 (parameterized constructor):" << std::endl;
+    std::cout << "Tringle 4 (parameterized constructor):" << std::endl;
     triangle4.printSides();
 
     // Using copy constructor
@@ -167,11 +167,11 @@ Triangle 2 (parameterized constructor):
 Side 1: 3
 Side 2: 4
 Side 3: 5
-Tringle 2 (parameterized constructor):
+Tringle 3 (parameterized constructor):
 Side 1: 3
 Side 2: 7.7
 Side 3: 6.2
-Tringle 2 (parameterized constructor):
+Tringle 4 (parameterized constructor):
 Side 1: 3
 Side 2: 2
 Side 3: 5.5
