@@ -1,5 +1,5 @@
 # Operator Functions
-We know that the operators such as `+`, `-`, `*`, `/`, `%`, `++`, `--`, `<<`, `>>`, `==`, `!=`, `>`, `<`, `>=`, `<=`, `&&`, `||`, `!`, `&`, `|`, `^`, `~`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`, `&=`, `|=`, `^=`, `[]`, `()`, `->`, `->*` are used to perform operations on the variables and values.
+We know that the operators such as `+`, `-`, `*`, etc. are used to perform operations on the variables and values.
 
 What if we want to perform different operations on the variables and values? For example, we want `<<` operator to perform print variable of type list. We can do this by **overloading** the operator `<<` to perform print operation on the variable of type list.
 
