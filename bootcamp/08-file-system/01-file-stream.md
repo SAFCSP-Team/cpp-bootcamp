@@ -1,14 +1,7 @@
 # File System
-We can use C++ to create, read, write, and delete files and directories.
-
-In Computer there are two types of files:
-* Text files are files that contain sequences of characters. 
-* Binary files are files that contain sequences of bytes.
-
-C++ handles both types text file and binary file.
+The way to store data in a computer is by using files. C++ provides the ability to manage files using the `<fstream>` library.
 
 ## Concept 
-In C++ we can manage files using the `<fstream>` library.
 **fstream** is a class that represents file stream. By using fstream, we can create, read, write, and delete files.
 
 > `<fstream>` library is used to include the file stream classes. while `<iostream>` is used to include the standard input/output stream classes. 
@@ -16,12 +9,10 @@ In C++ we can manage files using the `<fstream>` library.
 Like any other class, fstream has a constructor that takes two parameters: file name and mode (optional).
 e.g. 
 ```cpp
-
 fstream file("file_name", mode);
-
 ```
 
-The mode argument is how we want to open the file and interact with the file.
+The **mode** argument is how we want to open the file and interact with it.
 
 |Mode|Description|
 |:-----------|:-------------:|
@@ -32,16 +23,13 @@ The mode argument is how we want to open the file and interact with the file.
 | ios::app | File opened in append mode
 | ios::trunc | File opened in truncate mode
 
-```cpp 
-fstream file ("file_name", mode);
-```
 
 There are two other classes that are derived from fstream:
-**ifstream**
+
+**ifstream**:
 Can be used to read from a file only.
 
 ```cpp
-
 ifstream file("names.txt");
     for(string line; getline(file2, line);) {
         cout << line << endl;
@@ -49,24 +37,68 @@ ifstream file("names.txt");
     file.close();
 ```
 
-**ofstream**
+**ofstream**:
 Can be used to write to a file only.
 ```cpp 
-
 ofstream file("names.txt");
     file << "Sara" << endl;
     file.close();
 ```
 
 ## Example 
-in this example we will create a file and write to it, finally we will read from it.
+In this example we will demonstrate how to work with fstream.
+
+1. We will create an object from fstream class, passing the file name and the mode as parameters.
 ```cpp
 // ios::out - Create/Write a file
-    fstream file("note.txt", ios::out); // Create a file note.txt
-    file << "Hello, World!" << endl; // Write to the file
-    cout << file << endl; // Print the file
-    file.close(); // Close the file
+fstream file("note.txt", ios::out); // Create a file note.txt
 ```
 
+2. Check if the file is open.
+```cpp
+if(file.is_open()) {
+    // 
+}
+```
+
+> * In the **if statement**, we check if the file stream is open, by using the `is_open()` method which return **true** if the file is open. If the file is open, we can write to it.
+> * We can also use the `fail()` method to check if the file is open or not.
+
+3. Write to the file by using the `<<` operator.
+```cpp
+if(file.is_open()) {
+    file << "Hello, World!" << endl;
+}
+```
+> If we want to write to the file, we can use the `<<` operator to write to the file.
+> We can also use the `write()` method to write to the file.
+
+4. Close the file stream.
+```cpp
+fstream file("note.txt", ios::out);
+if(file.is_open()) {
+    file << "Hello, World!" << endl;
+    file.close(); // close the file stream
+}
+```
+
+> Its important to close the file stream. So it will not interfere with other file streams.
+
+5. Read from the file.
+```cpp
+fstream readFile("note.txt", ios::in);
+if(file.is_open()) {
+    string line;
+    while(getline(readFile, line)) {
+        cout << line << endl;
+    }
+    file.close();
+}
+```
+> Create fstream object with mode `ios::in` to read from the file.
 
 
+## Projects
+| Project Title | Deadline |
+|:-----------|:-------------:|
+| [File Stream](https://github.com/SAFCSP-Team/print-pointer-value) | - | 

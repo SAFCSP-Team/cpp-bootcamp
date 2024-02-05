@@ -96,7 +96,7 @@ Error: Name is too long
 
 try {
 
-    int *array = new int[99999999999]; 
+    int *array = new int[999999999999999]; 
 
 }
 catch(bad_alloc &e) {
