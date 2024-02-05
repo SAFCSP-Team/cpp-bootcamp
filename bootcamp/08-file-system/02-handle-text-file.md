@@ -80,3 +80,10 @@ fstream rFile("names.txt", ios::in); // open a file on read mode
   rFile.close();
 
 ```
+
+
+
+## Projects
+| Project Title | Deadline |
+|:-----------|:-------------:|
+| [Handle Text File](https://github.com/SAFCSP-Team/print-pointer-value) | - | 
