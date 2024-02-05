@@ -1,10 +1,9 @@
 # Binary File Handling
-Binary file is a file that contains a sequence of bytes. For example, a binary file may contain characters, integers, and floats. 
+Binary file is a file that contains a sequence of bytes 0 and 1. It might contatin any type of data, such as images, audio, video, or text.
 
-Binary file is not human readable, the exteions is decide how to seperate the bytes into meaningful data. In this lesson we will use the **.bin** extension to store binary data.
+Binary file is not human readable, the file exteions is decide how to seperate the bytes into meaningful data. In this lesson we will use the **.bin** extension to store binary data.
 
-
-> The extension of a binary file is **.bin**
+> Binary files can have any extension, in this lesson we will use **.bin** extension.
 
 ## Concept 
 In **C++** we can read and write to a binary file using the **<fstream>** library, the same as text file. But we need to open the file in binary mode by adding **ios::binary** flag to the open mode.
