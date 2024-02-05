@@ -26,6 +26,13 @@ int main() {
   return 0;
 }
 ```
+
+output,
+
+```
+14
+```
+
 Above, we initialized a constant, and printed its value multiplied by 2. It worked since we only read the constant value and we did not try to change it. If we try to change a constant value we will get an error.
 
 ```cpp
@@ -39,6 +46,13 @@ int main() {
   
   return 0;
 }
+```
+
+output,
+
+
+```
+7 |   num = 3; //error: assignment of read-only variable "num"
 ```
 
 ## Projects
