@@ -101,4 +101,4 @@ if(file.is_open()) {
 ## Projects
 | Project Title | Deadline |
 |:-----------|:-------------:|
-| [File Stream](https://github.com/SAFCSP-Team/print-pointer-value) | - | 
+| [File Stream](https://github.com/SAFCSP-Team/file-stream-project) | - | 
