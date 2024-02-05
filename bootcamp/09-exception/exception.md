@@ -29,13 +29,11 @@ cout << 5/0 << endl; // run time error
 ## Concept
 Exception is a way to handle the error in the program, by handling the errors in the program we can make the program continue to run even if there's an error, or we can print a a meaningful message to the user.
 
-**try**: is a block of code that is used to handle the error or exception that might occur in the program. 
+**try**: is a warp the code that might throw an exception. 
 
 **catch**: is a block of code that will be executed if there is an exception in the try block. 
 
 **throw**: is a keyword that categorize the error or exception.
-
-> let's say you excpet mathmatical error in try block then you can use throw mathmatical to handl the mathmatical error.
 
 ## Example
 
@@ -90,7 +88,7 @@ Error: Name is too long
 
 
 
-- Handling multiple exception
+- Handling multiple exception. 
 
 ```cpp
 
@@ -116,10 +114,13 @@ catch(...) {
 }
 
 ```
+> * bad_alloc is the one will invoked because we are trying to allocate a huge memory.
+> * If none of the exception is matched the catch(...) will be invoked.
 
-> bad_alloc is the one will invoked if there is no memory to allocate.
 
+## Project
 
-Practices
-- Practice 1: handle mathmatical error using throws mathmatical.
-- Practice 2: handle array out of bound error using throws array out of bound.
+## Projects
+| Project Title | Deadline |
+|:-----------|:-------------:|
+| [Exception](https://github.com/SAFCSP-Team/exception-project-cpp) | - | 
