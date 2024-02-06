@@ -29,11 +29,38 @@ cout << 5/0 << endl; // run time error
 ## Concept
 Exception is a way to handle the error in the program, by handling the errors in the program we can make the program continue to run even if there's an error, or we can print a a meaningful message to the user.
 
-**try**: is a warp the code that might throw an exception. 
+### Exception Keywords
 
+**try**: is a warp the code that might throw an exception.
+
+```cpp
+try{
+    // code that might throw an exception
+}
+```
 **catch**: is a block of code that will be executed if there is an exception in the try block. 
+ 
+```cpp
+try{
+    // code that might throw an exception
+} catch(exception e) {
+    // code to handle the exception
+}
+```
+> The exception e is the object that will hold the error message.
 
 **throw**: is a keyword that categorize the error or exception.
+
+```cpp
+try{
+    // code that might throw an exception
+    throw "Error Message";
+} catch(exception e) {
+    // code to handle the exception
+}
+```
+> The "Error Message" is the message that will be printed if the exception is thrown.
+
 
 ## Example
 
