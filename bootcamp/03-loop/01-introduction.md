@@ -114,7 +114,7 @@ Print “Hello World!” 5 times using types of loop.
 #include <iostream>
 int main() {
     for (int i = 0; i < 5; ++i) {
-         std::cout << "Hello world!" << endl;
+         std::cout << "Hello world!" << std::endl;
     }
     
     return 0;
@@ -128,7 +128,7 @@ int main() {
 int main() {
     int count = 0;
     while (count < 5) {
-        std::cout << "Hello world!" << endl;
+        std::cout << "Hello world!" << std::endl;
         count++;
     }
     return 0;
@@ -143,7 +143,7 @@ int main() {
     int count = 0;
     
     do {
-        std::cout << "Hello world!" << endl;
+        std::cout << "Hello world!" << std::endl;
         count++;
     } while (count < 5);
     
