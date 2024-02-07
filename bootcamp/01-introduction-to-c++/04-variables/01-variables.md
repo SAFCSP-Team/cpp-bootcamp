@@ -25,7 +25,7 @@ An identifier is the name of your variable, and to create a variable you have to
 1. Variable names can contain letters, digits, and underscores
 2. Variable names must start with a letter or an underscore.
 3. Since C++ is case sensitive, variable names are also case sensitive, which means `num` is not the same as `Num`.
-4. Names cannot contain whitespace or special characters like %, #, !, ?, etc.
+4. Variable names can not contain whitespace or special characters like %, #, !, ?, etc.
 5. A variable name can not be a reserved word such as `class` or `namespace`.
 
 ### Data Types
