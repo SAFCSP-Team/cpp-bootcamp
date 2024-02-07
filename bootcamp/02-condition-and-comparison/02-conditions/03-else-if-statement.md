@@ -17,7 +17,7 @@ if(first-condition){
 }
 ```
 
-If the first condition have not been met, the second condition will be tested, if also the second condition have not been met the else block will be executed. 
+If the first condition has not been met, the second condition will be tested, if also the second condition has not been met the `else` block will be executed. 
 
 Let us look at the following example. 
 
@@ -46,7 +46,7 @@ output,
 ```
 10 is greater than zero
 ```
-As you can see, the output is `10 is greater than zero`, this happened because the program first check the first condition, is `number` less than 0? the result of this comparison is false since 10 is not less than 0. Then the second condition is tested, is 10 greater than zero? the result of the second condition is true. Hence, the statements in the second block will be executed.
+As you can see, the output is `10 is greater than zero`, this happened because the program first checks the first condition, is `number` less than 0? the result of this comparison is false since 10 is not less than 0. Then the second condition is tested, is 10 greater than zero? the result of the second condition is true. Hence, the statements in the second block will be executed.
 
 > You can have multiple else-if as needed by your program.
 
