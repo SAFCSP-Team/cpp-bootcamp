@@ -1,17 +1,17 @@
 # Comparison Operators
-In programming languages, we have several type of operators, for example arithmetic operators are +, -, * etc. Comparison or relational operators (>, <, ==, !=, >=, <=), Assignment operator (=) and more.
+In programming languages, we have several types of operators, for example, arithmetic operators are +, -, *, etc. Comparison or relational operators (>, <, ==, !=, >=, <=), Assignment operator (=) and more.
 > For more operators information in c++ read [cplusplus.com](https://cplusplus.com/doc/tutorial/operators/)
 
 
 ## Concept
-Comparison operators are used to compare two expressions or values and return either `true` or `false` which determine if the comparison was correct or not. For example, comparing the value of **20** and **5** by saying "is 20 is greater than 5?" will result to true. so the following code will print 1 which is the value of true.
+Comparison operators are used to compare two expressions or values and return either `true` or `false` which determine if the comparison was correct or not. For example, comparing the value of **20** and **5** by saying "is 20 greater than 5?" will result in true. so the following code will print 1 which is the value of true.
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-  bool result = 20 > 5; // check if 20 is greater than 5 and return true if yes. Otherwise return false.
+  bool result = 20 > 5; // check if 20 is greater than 5 and return true if yes. Otherwise, return false.
   cout << result;
   
   return 0;
