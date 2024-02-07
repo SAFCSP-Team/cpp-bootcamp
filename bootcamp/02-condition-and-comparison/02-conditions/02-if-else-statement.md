@@ -3,7 +3,7 @@
 
 
 ## Concept
-If-else is the same as if statement, the difference is that we can handle other cases if the condition have not been met.
+If-else is the same as if statement, the difference is that we can handle other cases if the condition has not been met.
 
 Syntax,
 
@@ -26,7 +26,7 @@ int main() {
   if(isAdult && isPassed ){
   	cout << "Great, you can have your driving license now!" ;
   }else{
-  	cout << "Sorry, you can not have your driving license yet."
+  	cout << "Sorry, you can not have your driving license yet.";
   }
   
   return 0;
