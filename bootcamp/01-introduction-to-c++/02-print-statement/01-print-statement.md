@@ -1,11 +1,11 @@
 # Print Statement
-When developing a program, we mostly need to represent the output of the program as a text to the users, such as printing the sum of two numbers on the screen, And to do so, we can use print statement.
+When developing a program, we mostly need to represent the output of the program as a text to the users, such as printing the sum of two numbers on the screen, to do so, we can use print statement.
 
 
 ## Concept
-`Print Statement` is a way of printing a text on an output device such as the screen console.
+`Print Statement` is a way of printing text on an output device such as the screen console.
 
-And to print a text in `C++` we can use `cout` object as the following.
+To print a text in `C++` we can use `cout` object as the following.
 
 ```c++
 #include <iostream>
@@ -24,16 +24,16 @@ Let us take the code one line after another to understand `C++` structure and th
 - `<<` is called **stream insertion operator** which means insert a text into the stream.
 - `return 0;` means terminate the program with exit code 0, which means no error occurred.
 
-The output of above code is,
+The output of the above code is,
 
 ```
 hello from c++
 ```
-> Any line starts with # is called preprocessor directive.
+> Any line that starts with # is called a preprocessor directive.
 
 
 ## Examples
-Printing on screen console could be done by printing single line or multiple lines of texts, and here in this section we will cover both. 
+Printing on the screen console could be done by printing a single line or multiple lines of text, and here in this section, we will cover both. 
 
 
 ### Print Single Line
@@ -56,7 +56,7 @@ int main() {
   return 0;
 }
 ```
-> Using multiple insertion operators means insert the first text into the stream and then the second and so on...
+> Using multiple insertion operators means inserting the first text into the stream and then the second and so on...
 
 ```c++
 #include <iostream>
@@ -73,10 +73,10 @@ All examples above will have the same output which is,
 ```
 Hello Team
 ```
-> As you might have noticed, having multiple print statements does not mean we will have multiple lines on text on the screen console.
+> As you might have noticed, having multiple print statements does not mean we will have multiple lines of text on the screen console.
 
 ### Print Multiple Lines
-Some times we might need to print multiple lines of texts. Therefore, we need a way to tell the program to print each line of text individually. To do so we can use escape characters such as `\n` or `std::endl` function as the following.
+Sometimes we might need to print multiple lines of text. Therefore, we need a way to tell the program to print each line of text individually. To do so we can use escape characters such as `\n` or `std::endl` function as the following.
 
 ```c++
 #include <iostream>
