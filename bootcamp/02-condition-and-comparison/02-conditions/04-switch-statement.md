@@ -3,7 +3,7 @@
 
 
 ## Concept
-Switch statement is used to compare a value with different cases, if one case is met the statements block of that case will be executed. 
+Switch statement is used to compare a value with different cases, if a case is met the statements block of that case will be executed. 
 
 Syntax,
 ```
@@ -24,7 +24,7 @@ switch(expression){
     // statements
 }
 ```
-Each case will be compared with the value of the *switch expression*, if one case is met the statements block of that case will be executed. Once a *break* is encountered during the execution of statements the execution will stop and the compiler will exit the switch statement.
+Each case will be compared with the value of the *switch expression*, if a case is met the statements block of that case will be executed. Once a *break* is encountered during the execution of statements the execution will stop and the compiler will exit the switch statement.
 
 If no case matches the switch expression then the *default* block will be executed.
 
@@ -57,9 +57,9 @@ output,
 your number is equal to 10
 ```
 
-Since the number value is equal to 10, the block of case 10 got executed.
+Since the number value is equal to 10, the block of case 10 was executed.
 
-let us now check the break concept, we said that the `break` is used to exit the switch statement. Then what will happen if I added a block of code after the break? 
+let us now check the break concept, we said that the `break` is used to exit the switch statement. Then what would happen if I added a block of code after the break? 
 ```cpp
 #include <iostream>
 using namespace std;
@@ -87,7 +87,7 @@ output,
 your number is equal to 10
 Before break
 ```
-As you can see, only those statements before the break was executed since the compiler read them before exiting the switch statement.
+As you can see, only those statements before the break were executed since the compiler read them before exiting the switch statement.
 Now let us see what happens if we remove the break from the switch. 
 
 ```cpp
@@ -119,7 +119,7 @@ Before break
 After break
 your number is not equal to 1 or 10
 ```
-All statements after matching a case got executed until the end of the switch statement since we did not tell the compiler when to exit. We have to be careful when using switch so we don't fall in this type of issues later on. However, we can use it to our advantage as the following.
+All statements after matching a case get executed until the end of the switch statement since we did not tell the compiler when to exit. We have to be careful when using the switch so we don't fall into this type of issue later on. However, we can use it to our advantage as the following.
 
 ```cpp
 #include <iostream>
@@ -158,7 +158,7 @@ your number is in the range from 6 to 10
 
 ## Examples
 
-Take two numbers from the user and apply addition or subtraction based on the user choice.
+Take two numbers from the user and apply addition or subtraction based on the user's choice.
 ```cpp
 #include <iostream>
 using namespace std;
