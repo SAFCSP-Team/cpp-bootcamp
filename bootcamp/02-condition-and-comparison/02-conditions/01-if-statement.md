@@ -1,9 +1,9 @@
 # If Statement
-If statement is used to control the flow of our program by checking if a condition is correct or not.
+If the statement is used to control the flow of our program by checking if a condition is correct or not.
 
 ## Concept
-If statement is used to make a decision of executing a block of code based on a condition.
-The syntax of writing an if statement in C++ is as the following. 
+If the statement is used to make a decision to execute a block of code based on a condition.
+The syntax of writing an if statement in C++ is as follows. 
 ```
 if(condition){
     //code to be executed if the condition is true.
@@ -33,7 +33,7 @@ output,
 number is greater than 10 
 ```
 
-*Check if two names are equals or not.*
+*Check if the two names are equal or not.*
 
 ```cpp
 #include <iostream>
@@ -94,7 +94,7 @@ output,
 you are an adult
 ```
 
-- If a user is an adult and  passed his driving test, then he can have a driving license.
+- If a user is an adult and passed his driving test, then he can have a driving license.
 
 ```cpp
 #include <iostream>
