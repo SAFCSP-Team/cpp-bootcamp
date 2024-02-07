@@ -24,17 +24,20 @@ output,
 insert a number: 5
 your number is: 5
 ```
-As you can see from above example, by using `cin` we asked for an `int` value from the user. 
-> The >> symbol is called extraction operator
+As you can see from the above example, by using `cin` we asked for an `int` value from the user. 
+> The >> symbol is called the extraction operator
 
 ### Input Type Check
-One thing to note, is that when an unexpected value is entered it will lead to an unexpected behavior. Let us look at our example above, if we sent a string rather than integer we will get the following output.
+One thing to note is that when an unexpected value is entered it will lead to an unexpected behavior. Let us look at our example above, if we send a string rather than an integer we will get the following output.
 
 ```
 insert a number: hello
 your number is: 0
 ``` 
-Since we requested an integer but got a string instead the value was not predicted correctly and no exception occurred. Therefore, to handle type checking we can use `cin.good()`method which will return a boolean value indicating if an issue occurred or not (if true is returned then no issue occurred, if false then their was an issue in the input).
+Since we requested an integer but got a string instead the value was not predicted correctly and no exception occurred. Therefore, to handle type checking we can use `cin.good()` method which will return a boolean value indicating if an issue occurred or not (if true is returned then no issue occurred, if false then there was an issue in the input).
+
+> The value of the input must match the expected input type.
+
 
 ```cpp
 #include <iostream>
@@ -45,7 +48,7 @@ int main() {
   cout << "insert a number: ";
   cin >> num;
   cout << "your number is: " << num << endl;
-  cout << cin.good() << endl; //if good returns true the value 1 will be printed. If false then value of 0 will be printed.
+  cout << cin.good() << endl; //if good returns true the value 1 will be printed. If false then a value of 0 will be printed.
   return 0;
 }
 ```
