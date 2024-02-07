@@ -13,7 +13,7 @@ For example, a program summing two numbers will follow this pattern of instructi
 
 The above is the list of instructions that a summing program needs, and they get executed one line after another.
 
-We can manipulate the flow that instructions follow by using what's called **control flow** statements that programming language provides to us, such as for loop and if condition statements. 
+We can manipulate the flow that instructions follow by using what's called **control flow** statements that programming language provides to us, such as `for` loop and `if` condition statements. 
 
 In `C++`, instructions are executed sequentially one after another unless there is a control flow statement that will jump some instructions or repeat others.
 
