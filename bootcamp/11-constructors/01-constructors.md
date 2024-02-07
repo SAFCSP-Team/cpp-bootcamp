@@ -8,13 +8,16 @@ In programming, constructors work similarly. They are special instructions insid
 ## Concept
 A `Constructor` is a **special function** of a class that shares the **same name as the class** and is **called by the compiler when the object of the class is created**.
 
-Constructors play a crucial role in object initialization and ensure that objects start with valid and meaningful values. By defining and using constructors.
+Constructors play a crucial role in object initialization and ensure that objects start with valid and meaningful values, by defining and using constructors.
 
-### Constructor Characteristics:
+### Constructor Characteristics
    - Constructors have the **same name as the class** and **do not have a return type**, not even "void".
    - Constructors **may have parameters** to assign values during object creation.
    - Constructors **can be overloaded**, just like regular functions, by having different parameter lists.
-### Types of Constructors:
+   - Constructors can be defined both **inside and outside the class declaration**, just like regular functions. 
+
+
+### Types of Constructors
 1. Default Constructors
 ```c++
 ClassName() {
@@ -43,16 +46,15 @@ ClassName(const ClassName& NameofObject ) {
        // Constructor body
    }
 ```
-4. Copy Constructor:
 - The copy constructor is a **special constructor** that **creates a new object as a copy of an existing object**.
 - If a class does not provide a copy constructor explicitly, **the compiler generates a default copy constructor**.
 - Pass object by Reference: By **using a reference variable as a parameter** in a constructor, you can pass arguments by reference. This means that **any changes made to the parameter within the constructor will affect the original argument passed to the constructor.**
 - The `const` Keyword is optional with Reference Variables to show that the **reference is fixed and should not be modified within the constructor**.
 
 
-### Initialization List:
+### Initialization List
 
-The initialization list allows you to **initialize variables directly before the constructor's body is executed**. 
+The initialization list (a.k.a initialized list) allows you to **initialize variables directly before the constructor's body is executed**. 
    - Both default constructors and parameterized constructors can use initialization lists.
    - **Initialization lists are specified after the colon (`:`)** following the constructor's parameter list.
 
@@ -184,6 +186,10 @@ Side 1: 3
 Side 2: 7.7
 Side 3: 6.2
 ```
+- Triangle 5: uses direct initialization syntax, where the copy constructor is explicitly called with parentheses `Triangle triangle5(triangle2);`.
+- Triangle 6: uses copy initialization syntax with the assignment operator and the equals sign `Triangle triangle6 = triangle3;`.
+  
+Both approaches achieve the same result of creating a new object by copying the data from an existing object.
 
 ## Project 
 | Project Title | Deadline |
