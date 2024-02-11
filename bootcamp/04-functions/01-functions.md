@@ -33,7 +33,7 @@ Let's break down the different parts:
 
 - Main function:
   - `int main()` is a special function that **must be present in every C++ program**.
-  - It serves as the s**tarting point of program execution** and can call other functions.
+  - It serves as the **starting point of program execution** and can call other functions.
   
 Here's an examples that demonstrates the usage of a function:
 #### Example 1:
@@ -107,14 +107,14 @@ int main() {
 // Function definition (implementation)
 
 ```
-The **functions define their own scope**, and **variables declared within a function** have local scope o**nly accessible within the function** where they are declared. 
+The **functions define their own scope**, and **variables declared within a function** have local scope **only accessible within the function** where they are declared. 
 
-The `scope of a variable` determines w**here it can be accessed and used within a program**, and there are two main types of variable scope `local` and `global`.
+The `scope of a variable` determines **where it can be accessed and used within a program**, and there are two main types of variable scope `local` and `global`.
 ### Types of variable scope.
 
 1. Local Variables:
    - Local variables are **declared within a specific block**, such as a function or a code block enclosed in curly braces `{}`.
-   - They are only **accessible within the block they are declared in.**
+   - They are only **accessible within the block they are declared in**.
    - Once the execution of the **block is complete, local variables are destroyed**, and their memory is freed.
 
  > Local variables can have the same name as variables in other blocks without causing conflicts because each block has its own scope.
@@ -128,7 +128,7 @@ The `scope of a variable` determines w**here it can be accessed and used within 
 <br>
 
 ### Function overloading
-This means that you can have **multiple functions with the same name**, but **each function has unique parameter** types and/or numbers. 
+This means that you can have **multiple functions with the same name**, but **each function has a unique parameter** (types and/or numbers). 
 
 > The return type of the function does not determine function overloading.
 
