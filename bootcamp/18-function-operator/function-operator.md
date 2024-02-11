@@ -1,7 +1,7 @@
 # Operator Functions
 We know that the operators such as `+`, `-`, `*`, etc. are used to perform operations on the variables and values.
 
-What if we want to perform different operations on the variables and values? For example, we want `<<` operator to perform print variable of type list. We can do this by **overloading** the operator `<<` to perform print operation on the variable of type list.
+What if we want to perform different operations on the variables and values? For example, we want the `<<` operator to perform the print variable of the type list. We can do this by **overloading** the operator `<<` to perform a print operation on the variable of the type list.
 
 # Concept
 In C++ we can overload the operators to perform different operations on the variables and values. The overloaded operators are called **operator functions**. The operator functions are the functions that are declared with the keyword `operator` followed by the operator to be overloaded. The operator functions can be declared as member functions or non-member functions.
@@ -17,7 +17,7 @@ ostream& operator<<(ostream& os, const list<T>& list) {
 
 
 # Example
-In this example we will overload the += operator to perform addition on the list variables.
+In this example, we will overload the += operator to perform addition on the list variables.
 `numList += 10;`.
 
 ```cpp
@@ -54,3 +54,9 @@ int main() {
 20
 30
 ```
+
+# Project
+
+ |Project Title     | Deadline |
+|----------------- | -------- |
+ [Operator Function](https://github.com/SAFCSP-Team/operator-function-project/blob/main/README.md) |          |
