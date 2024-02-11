@@ -2,15 +2,19 @@
 
 Imagine a series of classes to describe two kinds of polygons: rectangles and triangles. These two polygons have certain common properties, such as the values needed to calculate their areas: they both can be described simply with a height and a width (or base).
 
-The Polygon class would contain members that are common for both types of polygon. In our case: width and height. And Rectangle and Triangle would be its derived classes, with specific features that are different from one type of polygon to the other.
+The Polygon class would contain members that are common for both types of polygon. In our case: width and height. Rectangle and Triangle would be its derived classes, with specific features that are different from one type of polygon to the other.
 
 ## Concept
 
-Creating new classes which retain characteristics of the `base class`.
+The capability of a class to derive **properties and characteristics** from another class is called `Inheritance`.
 
 `Inheritance` involves a `base class` and a `derived class`: The **derived class** `inherits` the members of the **base class**, on top of which it can add its own members.
 
 The inheritance relationship of two classes is declared in the `derived class`. Derived classes definitions use the following syntax:
+
+
+
+
 
 ```cpp
 class derived_class_name: public base_class_name
@@ -19,6 +23,8 @@ class derived_class_name: public base_class_name
  };
 
 ```
+> To more information about access modifiers of the base class.  [Access control of base class](https://www.ibm.com/docs/en/i/7.2?topic=only-access-control-base-class-members-c)
+
 ## Implementation
 
 * The code defines a base class called `Polygon` with the protected access specifier. It has two member variables, width and height, and a member function `setvalues()` to set the values of width and height.
@@ -80,7 +86,7 @@ int main() {
     return 0;
 }
 ```
-By inheriting from Rectangle, the Square class automatically inherits the properties and methods of both Rectangle and Polygon.
+By inheriting from `Rectangle`, the `Square` class automatically inherits the properties and methods of both `Rectangle` and `Polygon`.
 
 * Derived class `ManagerAssistant` inherits publicly from `Employee` and `Manager`
 
@@ -138,7 +144,8 @@ int main() {
 
 ## Examples
 
-* Animal class is the base class it's have all attributes for Animal
+* `Animal` class is the base class it has all attributes of the `Animal`.
+  
 ```cpp
 
 #include <iostream>
@@ -157,7 +164,7 @@ class Animal {
     }
 };
 ```
-* `Dog class` is derived from the Animal class. Since Dog is derived from Animal, members of Animal are accessible to Dog.
+* The `Dog` class is derived from the `Animal `class. Since `Dog` is derived from `Animal`, members of `Animal` is accessible to `Dog`.
 
 ```cpp
 /* derived class */
