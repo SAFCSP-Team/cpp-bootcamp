@@ -13,7 +13,7 @@ int main(){
  return 0;
 }
 ```
-We have to write cout statement manually 5 times. Now imagine you have to write it 100 times, it would be hectic to re-write the same statement again and again, and it would surely take more time to write it. So, rather than we can use `loops` to repeat the same statement
+We have to write `cout` statement manually 5 times. Now imagine you have to write it 100 times, it would be hectic to re-write the same statement again and again, and it would surely take more time to write it. So, rather than we can use `loops` to repeat the same statement
 
 ## Concept
 `Loops` are **control structures** that allow you to **execute a block of code repeatedly** until a certain condition is met.
