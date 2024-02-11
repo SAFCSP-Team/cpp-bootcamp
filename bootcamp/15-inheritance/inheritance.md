@@ -6,15 +6,11 @@ The Polygon class would contain members that are common for both types of polygo
 
 ## Concept
 
-The capability of a class to derive **properties and characteristics** from another class is called `Inheritance`.
+`Inheritance` is one of the key features of object-oriented programming in C++, it allows us to create a new class (derived class) from an existing class (base class), and the derived class inherits the features **properties and characteristics** from the base class and can have additional features of its own.
 
 `Inheritance` involves a `base class` and a `derived class`: The **derived class** `inherits` the members of the **base class**, on top of which it can add its own members.
 
 The inheritance relationship of two classes is declared in the `derived class`. Derived classes definitions use the following syntax:
-
-
-
-
 
 ```cpp
 class derived_class_name: public base_class_name
@@ -64,7 +60,11 @@ int main () {
   return 0;
 }
 ```
-
+The output is
+```
+20
+10
+```
 * one derived class `Square` can inherit publicly from more than one base class `Rectangle` and `Polygon`.
 ```cpp
 class Square: public Rectangle{
@@ -85,6 +85,12 @@ int main() {
 
     return 0;
 }
+```
+The output is
+```
+Area of square: 16
+Area of rectangle: 20
+
 ```
 By inheriting from `Rectangle`, the `Square` class automatically inherits the properties and methods of both `Rectangle` and `Polygon`.
 
@@ -134,12 +140,19 @@ public:
 };
 
 int main() {
-    ManagerAssistant assistant("John Doe", 12345, "Sales");
+    ManagerAssistant assistant("Mouhannd", 12345, "Sales");
 
     assistant.displayDetails();
 
     return 0;
 }
+```
+
+The output is
+```
+Name: Mouhannd
+ID: 12345
+Department: Sales
 ```
 
 ## Examples
@@ -189,6 +202,13 @@ int main() {
 
     return 0;
 }
+```
+The output is
+```
+I can eat!
+I can sleep!
+I can bark! Woof woof!!
+
 ```
   
 ## Project 
