@@ -22,9 +22,10 @@ public:
 };
 ```
 
-* Derived Classes with Overridden Functions:
 
- Class Circle and Square, which inherit publicly from the `Shape` base class. Both derived classes override the `draw()` function with their own specific implementations.
+* Derived Classes `Circle` and `Square` with Overridden Functions:
+  
+ Class `Circle` and `Square`, which inherit publicly from the `Shape` base class, are Both derived classes that override the `draw()` function with their own specific implementations.
  
 ```cpp
 class Circle : public Shape {
@@ -42,9 +43,10 @@ public:
 };
 ```
 
-* Polymorphic Usage:
 
- Create two pointers of type Shape* that can point to objects of derived classes. We initialize shape1 to point to a Circle object and shape2 to point to a Square object.
+* Polymorphic Usage
+
+ Create two pointers of type Shape* that can point to objects of derived classes. We initialize shape1 to point to a `Circle` object and shape2 to point to a `Square` object.
 
  When we call the `draw()` function on shape1 and shape2, the appropriate overridden function based on the actual object type is called. This is known as dynamic or runtime binding, where the function to be called is determined at runtime based on the actual object type.
 
