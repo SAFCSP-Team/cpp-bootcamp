@@ -28,7 +28,7 @@ int main() {
 
 - The `length` of an array refers to the **number of elements** contained within the array.
 ```C++
- int size =  sizeof(Prices) / sizeof(Prices[0]) // 5
+ int size =  sizeof(Prices) / sizeof(Prices[0]); // 5
 ```
 > We use the **sizeof operator** to get the total size of the array ***(sizeof(array name))*** depending on the data type and **divide it by the size of a single element** ***(sizeof(array name[0]))***. This gives us the number of elements in the array.
 
@@ -36,11 +36,14 @@ int main() {
 - The `index` of an array refers to the **position or location of an element** within the array. It represents the **unique numeric** identifier assigned to each element in the array.
 - Array indexes start from 0 and increment by 1 for each subsequent element.
 ```C++
-Prices[0] //1.5
+Prices[0]; //1.5
 ```
 - If the size of an array is **n**, the maximum index number is **n-1**.
 ```C++
-Prices[size -1 ] //5.0
+Prices[size -1 ]; //5.0
+```
+To perform any operations on each element of an array, you can use loops. For example, to print all the elements of the **Prices** array.
+```c++
 ```
 
 
