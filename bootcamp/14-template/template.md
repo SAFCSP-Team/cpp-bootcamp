@@ -14,6 +14,9 @@ In C++, `template`, also known as generic, provide a way to create `function` an
 * Here is a simple template function that adds two numbers:
 
 ```cpp
+#include <iostream>
+using namespace std;
+
 template <typename T>
 T add(T num1, T num2) {
    return (num1 + num2);
@@ -42,6 +45,11 @@ int main() {
     return 0;
 } 
 ```
+The output is
+```
+5
+5.5
+```
 
 ### Class template
 
@@ -50,6 +58,9 @@ Template can also be used with classes, allowing you to create generic data stru
 * Here is a simple template to define the template class `Number` with a single type parameter T :
 
 ```cpp
+#include <iostream>
+using namespace std;
+
 /* Class template */
 template <class T>
 class Number {
@@ -67,7 +78,8 @@ class Number {
 
 ```
 
-####  The `Number` class with specific types in the main function:
+ The `Number` class with specific types in the main function:
+
 ```cpp
 int main() {
 
@@ -82,6 +94,13 @@ int main() {
 
     return 0;
 }
+```
+
+
+The output is 
+```
+int Number = 7
+double Number = 7.7
 ```
 ## Examples
 
