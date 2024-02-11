@@ -58,19 +58,26 @@ int main() {
 1 2 4 5 6 7 8 9 10
 ```
 
-Example 2: Iterating through an array (Prefix increment).
+Example 2: Nested for loop to print a triangle of asterisks (Prefix increment).
 ```c++
 #include <iostream>
 int main() {
-    int numbers[] = {1, 2, 3, 4, 5};
-    for (int i = 0; i < 5; ++i) {
-        std::cout << numbers[i] << " ";
-     }
-     return 0;
+    for (int i = 1; i <= 5; ++i) {
+        for (int j = 1; j <= i; ++j) {
+            std::cout << "* ";
+        }
+        std::cout << std::endl;
+    }
+
+    return 0;
 }
 ```
 ```
-1 2 3 4 5
+*
+* *
+* * *
+* * * *
+* * * * *
 ```
 Example 3: Computing the factorial of a number (prefix decrement).
 ```c++
