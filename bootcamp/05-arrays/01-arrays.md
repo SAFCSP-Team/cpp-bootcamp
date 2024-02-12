@@ -13,14 +13,16 @@ In computer programming, in most cases, there is a need to **store a large numbe
 <img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/cpp-bootcamp/blob/main/bootcamp/05-arrays/image/array.png">
 
 ```c++
+#include<iostream>
+using namespace std; 
 int main() {
     float Prices[5];  // Declaration
 
     Prices[0] = 1.5f;  // Initialization
-    Prices[1] = 2.7f;
+    Prices[1] = 2.0f;
     Prices[2] = 3.14f;
     Prices[3] = 4.2f;
-    Prices[4] = 5.0f;
+    Prices[4] = 5.7f;
 
    return 0;
 }
@@ -40,12 +42,20 @@ Prices[0]; //1.5
 ```
 - If the size of an array is **n**, the maximum index number is **n-1**.
 ```C++
-Prices[size -1 ]; //5.0
+Prices[size -1 ]; //5.7
 ```
 To perform any operations on each element of an array, you can use loops. For example, to print all the elements of the **Prices** array.
 ```c++
+cout<<"The elements are: ";
+    for(float i : Prices)
+    {
+    	cout<<i<<" ";
+    }
 ```
-
+```
+The elements are: 1.5 2.7 3.14 4.2 5.7 
+```
+> A for-each loop iterates over the elements of arrays, vectors, or any other data sets. [digitalocean](https://www.digitalocean.com/community/tutorials/foreach-loop-c-plus-plus#introduction)
 
 ## Example 
 - Array of integer: 
