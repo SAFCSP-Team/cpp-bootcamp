@@ -32,7 +32,7 @@ It can have id, name, age, gpa, major.. this information should be the class `pr
 class Student
 {
 // Properties (data members)
-    public:
+    public: // public is a keyword in c++ indicating an access modifier
     int id;
     string name;
     int age;
@@ -40,6 +40,8 @@ class Student
     string major;
 };
 ```
+>> Public in the above code means that all the below is (public) and can be accessed outside the class (in the main function or other classes).
+>> Access modifiers are explained in more details here  
 <br/> 
 <br/> 
   
