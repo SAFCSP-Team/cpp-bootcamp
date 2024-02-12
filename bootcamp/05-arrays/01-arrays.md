@@ -10,7 +10,7 @@ In computer programming, in most cases, there is a need to **store a large numbe
 
 
 - Arrays can store **primitive** data types or **non-primitive** data type.
-<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/cpp-bootcamp/blob/main/bootcamp/05-arrays/image/array.png">
+<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/cpp-bootcamp/blob/main/bootcamp/05-arrays/image/array-in-cpp.png">
 
 ```c++
 #include<iostream>
