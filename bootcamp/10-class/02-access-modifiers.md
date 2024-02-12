@@ -6,7 +6,7 @@ Functions and properties can have different access modifiers, which control thei
 
 ### Access modifiers types  
 
-1. Public:  
+1. `Public`
 The class functions and properties are accessible anywhere (in the class it-self, main function, ...).  
 They can be accessed by objects of the class or by functions outside the class.
 
@@ -30,25 +30,27 @@ int main() {
   
 Output
 ```c++
-01
+1
 ```
 
 <br/>
 <br/>
 
-2. Private:    
+2. `Private`   
 The class functions and properties are only accessible within the class itself.
 They cannot be accessed directly by objects of the class or by functions outside the class.
    
 ```c++
-class Student
-{
+#include <iostream>
+
+using namespace std;
+
+class Student {
 private:
 int id;
 };
 
-int main()
-{
+int main() {
 Student student1;
 student1.id = 01;
 cout << student1.id << endl;
@@ -58,7 +60,38 @@ return 0;
   
 Output
 ```c++
-Error: member "Student::id" (declared at line 10) is inaccessible
+error: 'id' is a private member of 'Student'
+```
+
+<br/>
+<br/>
+
+3. `Protected`   
+The class functions and properties are only accessible within the class itself, as well as in its derived classes.   
+They cannot be accessed directly by objects of the class or by functions outside the class.  
+Members declared as protected can be accessed by the class that defines them and by any derived classes.
+   
+```c++
+#include <iostream>
+
+using namespace std;
+
+class Student {
+protected:
+  int id;
+};
+
+int main() {
+  Student student1;
+  student1.id = 01;
+  cout << student1.id << endl;
+  return 0;
+};
+```
+  
+Output
+```c++
+error: 'id' is a protected member of 'Student'
 ```
 <br/>
 By default, if no access modifier is provided, class properties are considered private. 
@@ -69,17 +102,46 @@ Student class:
 
 ```c++
 
-class Student
-{
-// Properties (data members)
+#include <iostream>
+
+using namespace std;
+
+class Student {
+
+    // Properties (data members)
+
+private:
     int id;
+
+public:
     string name;
     int age;
     double gpa;
     string major;
 
-// Methods (functions)
-void printInfo()
+    /*
+    To access private properties in main function,
+    we can create set(value) and get() functions
+    */
+
+    /*
+    set(value) is for updating and changing the id value
+    */
+    void setId(int value)
+    {
+        id = value;
+    }
+
+    /*
+    get() is for getting and returning id value
+    */
+    int getId()
+    {
+        return id;
+    }
+
+    // Methods (functions)
+    void printInfo()
     {
         cout << "ID: " << id << endl;
         cout << "Name: " << name << endl;
@@ -88,6 +150,35 @@ void printInfo()
         cout << "major: " << major << endl;
     }
 };
+
+int main() {
+
+    Student student;
+
+    // assign a value to the private property (id)
+    student.setId(15);
+
+    // assign a value to the public properties
+    student.name = "Mohammed";
+    student.age = 21;
+    student.major = "Computer Science";
+
+    // print the value to the private property (id)
+    cout << "Student id: " << student.getId() << endl;
+
+    // print all students properties
+    student.printInfo();
+}
+```
+
+
+```c++
+Student id: 15
+ID: 15
+Name: Mohammed
+Age: 21
+gpa: 0
+major: Computer Science
 ```
 
  
