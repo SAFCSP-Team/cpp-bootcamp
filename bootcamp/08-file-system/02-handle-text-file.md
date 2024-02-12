@@ -6,11 +6,11 @@ A text file is a file that contains a sequence of characters. For example, a tex
 ## Concept 
 In **C++** we can read and write to a file using the **<fstream>** library.
 In order to read/write to a file, we need to use a stream.
-Stream is a sequence of data. We need to create an input stream. If we want to write to a file, we need to create an output stream. If we want to do both, we need to create an input/output stream.
+A stream is a sequence of data. We need to create an input stream. If we want to write to a file, we need to create an output stream. If we want to do both, we need to create an input/output stream.
 
 
 ## Example
-The stpes of reading a character sequence from a text file, we’ll need to perform the following steps:
+The steps of reading a character sequence from a text file, we’ll need to perform the following steps:
 
 * Create a stream object. 
 * Connect it to a file on disk. 
