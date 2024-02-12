@@ -14,7 +14,7 @@ Constructors play a crucial role in object initialization and ensure that object
    - Constructors have the **same name as the class** and **do not have a return type**, not even "void".
    - Constructors **may have parameters** to assign values during object creation.
    - Constructors **can be overloaded**, just like regular functions, by having different parameter lists.
-   - Constructors can be defined both **inside and outside the class declaration**, just like regular [functions](https://www.prepbytes.com/blog/cpp-programming/member-function-in-cpp-and-types/). 
+   - Constructors can be defined both **inside and outside the class declaration**, just like [regular functions](https://www.ibm.com/docs/en/i/7.5?topic=only-member-scope-c).
 
 
 ### Types of Constructors
