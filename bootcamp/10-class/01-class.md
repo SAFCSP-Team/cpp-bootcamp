@@ -14,8 +14,8 @@ _Class strtucture_:
 
 ```c++
 class ClassName {
-    - properties (data members)
-    - methods (functions)
+    // properties (data members)
+    // methods (functions)
 };
 ```
 <br/> 
