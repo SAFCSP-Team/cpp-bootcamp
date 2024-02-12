@@ -32,7 +32,9 @@ int main() {
 ```C++
  int size =  sizeof(Prices) / sizeof(Prices[0]); // 5
 ```
-> We use the **sizeof operator** to get the total size of the array ***(sizeof(array name))*** depending on the data type and **divide it by the size of a single element** ***(sizeof(array name[0]))***. This gives us the number of elements in the array.
+We use the **sizeof operator** to get the total size of the array ***(sizeof(array name))*** depending on the data type and **divide it by the size of a single element** ***(sizeof(array name[0]))***. This gives us the number of elements in the array.
+
+> For An alternative method to calculate the length of an array in c++, kindly visit [digitalocean](https://www.digitalocean.com/community/tutorials/find-array-length-in-c-plus-plus)
 
 
 - The `index` of an array refers to the **position or location of an element** within the array. It represents the **unique numeric** identifier assigned to each element in the array.
@@ -49,7 +51,7 @@ To perform any operations on each element of an array, you can use loops. For ex
 cout<<"The elements are: ";
     for(float i : Prices)
     {
-    	cout<<i<<" ";
+    	cout << i << " ";
     }
 ```
 ```
