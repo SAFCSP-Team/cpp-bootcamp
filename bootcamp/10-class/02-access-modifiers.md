@@ -11,18 +11,20 @@ The class functions and properties are accessible anywhere (in the class it-self
 They can be accessed by objects of the class or by functions outside the class.
 
 ```c++
-class Student
-{
+#include <iostream>
+
+using namespace std;
+
+class Student {
 public:
-int id;
+  int id;
 };
 
-int main()
-{
-Student student1;
-student1.id = 01;
-cout << student1.id << endl;
-return 0;
+int main() {
+  Student student1;
+  student1.id = 01;
+  cout << student1.id << endl;
+  return 0;
 };
 ```
   
