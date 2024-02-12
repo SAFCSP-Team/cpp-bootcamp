@@ -41,7 +41,9 @@ class Student
 };
 ```
 >> Public in the above code means that all the below is (public) and can be accessed outside the class (in the main function or other classes).
->> Access modifiers are explained in more details here  
+Access modifiers are explained in more details here [Access modifiers](https://github.com/SAFCSP-Team/cpp-bootcamp/blob/main/bootcamp/10-class/02-access-modifiers.md)
+
+
 <br/> 
 <br/> 
   
