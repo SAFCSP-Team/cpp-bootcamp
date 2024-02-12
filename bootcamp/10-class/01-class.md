@@ -147,7 +147,16 @@ int main()
 
     return 0;
 }
-``` 
+```
+
+
+```c++
+ID: 1
+Name: Ahmed
+Age: 17
+gpa: 4.6
+major: Computer Science
+```
   
   
 ## Project 
