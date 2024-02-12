@@ -66,7 +66,7 @@ void printInfo() {
 ### Object
 Objects are instances of a class. Objects allow us to work with the data and functions defined in the class. Each object has its own set of `properties` and can independently call the `methods`.  
   
-- Create an object of Student class:  
+- Create an object of Student class
 ```c++
 int main(){
 Student student1; // create Student object with the name "student1"
