@@ -48,13 +48,18 @@ ofstream file("names.txt");
 ## Example 
 In this example we will demonstrate how to work with fstream.
 
-1. We will create an object from fstream class, passing the file name and the mode as parameters.
+1. Import the fstream library.
+```cpp
+#include <fstream>
+```
+
+2. We will create an object from fstream class, passing the file name and the mode as parameters.
 ```cpp
 // ios::out - Create/Write a file
 fstream file("note.txt", ios::out); // Create a file note.txt
 ```
 
-2. Check if the file is open.
+3. Check if the file is open.
 ```cpp
 if(file.is_open()) {
     // 
@@ -64,7 +69,7 @@ if(file.is_open()) {
 > * In the **if statement**, we check if the file stream is open, by using the `is_open()` method which return **true** if the file is open. If the file is open, we can write to it.
 > * We can also use the `fail()` method to check if the file is open or not.
 
-3. Write to the file by using the `<<` operator.
+4. Write to the file by using the `<<` operator.
 ```cpp
 if(file.is_open()) {
     file << "Hello, World!" << endl;
@@ -73,7 +78,7 @@ if(file.is_open()) {
 > If we want to write to the file, we can use the `<<` operator to write to the file.
 > We can also use the `write()` method to write to the file.
 
-4. Close the file stream.
+5. Close the file stream.
 ```cpp
 fstream file("note.txt", ios::out);
 if(file.is_open()) {
@@ -84,19 +89,51 @@ if(file.is_open()) {
 
 > Its important to close the file stream. So it will not interfere with other file streams.
 
-5. Read from the file.
+6. Read from the file.
 ```cpp
-fstream readFile("note.txt", ios::in);
-if(file.is_open()) {
+fstream readFile("note.txt", ios::in);    
+    if(readFile.is_open()) {
+        string line;
+        while(getline(readFile, line)) {
+            cout << line << endl;
+        }
+        readFile.close();
+    }
+```
+> Create fstream object with mode `ios::in` to read from the file.
+
+The full code:
+```cpp
+#include <iostream>
+#include <string>
+#include <fstream>
+
+using namespace std;
+
+int main() {
+
+    fstream file("note.txt", ios::out);
+    if(file.is_open()) {
+    file << "Hello, World!" << endl;
+    file.close(); 
+    }
+
+    fstream readFile("note.txt", ios::in);    
+    if(readFile.is_open()) {
     string line;
     while(getline(readFile, line)) {
         cout << line << endl;
     }
-    file.close();
+    readFile.close();
+    }
+
+    return 0;
 }
 ```
-> Create fstream object with mode `ios::in` to read from the file.
-
+**Output:**
+```
+Hello, World!
+```
 
 ## Projects
 | Project Title | Deadline |
