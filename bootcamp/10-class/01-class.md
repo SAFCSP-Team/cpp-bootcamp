@@ -41,14 +41,14 @@ class Student
 };
 ```
 >> Public in the above code means that all the below is (public) and can be accessed outside the class (in the main function or other classes).
-Access modifiers are explained in more details here [Access modifiers](https://github.com/SAFCSP-Team/cpp-bootcamp/blob/main/bootcamp/10-class/02-access-modifiers.md)
+Access modifiers are explained in more detail here [Access modifiers](https://github.com/SAFCSP-Team/cpp-bootcamp/blob/main/bootcamp/10-class/02-access-modifiers.md)
 
 
 <br/> 
 <br/> 
   
 2. Methods (functions)   
-`Methods` are the **behaviors or actions** that can be performed on a student's class.    
+`Methods` are the **behaviors or actions** that can be performed in a student's class.    
    
 Let's take the student class we used above, what could the student class do?     
 We can write a `method` that prints the student properties.   
