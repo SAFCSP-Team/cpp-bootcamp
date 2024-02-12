@@ -16,7 +16,7 @@ In C++ the memory can be allocated either at **compile time (Static memory alloc
   
 Let's say we have an array with a fixed size:
 ```c++ 
-arr [5] = {1,2,3,4,5}
+int arr [5] = {1,2,3,4,5};
 ```
 arr size is allocated at compile time and it's fixed.
 <br/>
