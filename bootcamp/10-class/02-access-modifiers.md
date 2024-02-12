@@ -98,7 +98,10 @@ By default, if no access modifier is provided, class properties are considered p
 
 
 ## Example
-Student class:  
+
+When we write an access modifier in the code for example `private`, all the properities/functions below the access modifier become `private`, and the same rule applies for `public` and `protected`.   
+   
+Student class
 
 ```c++
 
