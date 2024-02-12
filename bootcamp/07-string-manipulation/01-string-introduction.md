@@ -4,46 +4,47 @@ It is a data type that represents text as a series of characters enclosed in dou
 
 ## Concept 
 In **C++** strings are sequences of characters stored in a char array.
-**C++** does not have a built-in string type. Instead, it relies on the standard library to provide this functionality through a class called `std::string`.
+**C++** does not have a built-in string type. Instead, it relies on the standard library to provide this functionality through a class called `string`.
 
+> Char array is an array of type character 
 
 Strings in **C++** can be stored either using:
 
 * **The std::string class**.
 * **The C-style character arrays**.
 
+> string is more commonly used becuase they can used with standard operations, and more memeory can be allocated at run time. However string is slower than char array.
+
 ## Example
+In the following example, we will demonstrate how to initialize two variables that hold a text value, by using the **string** and the **C-style character arrays**. 
 
-In the following example, we will print the string `Hello From String` using the `std::string` class, and then we will print the `Hello From Char Array` using the C-style character arrays.
-
-* #### The std::string class.
-Using the `std::string` class declare a std::string variable and print it.
+* #### The string class.
+Using the **string class** in.
 
 ```cpp
-
 #include <iostream>
+#include <string> // Include string from standard library
+using namespace std;
+
 
 int main () {
 
-    std::string strVal = "Hello From String";
+    string strVal = "Hello From String";
 
-    std:: cout << strVal << std::endl;
+     cout << strVal << endl;
     
     strVal = "I\'m String";
     
-    std::cout << strVal << std::endl;
+    cout << strVal << endl;
     
     return 0;
 }
-
 ```
 
 **output** 
 
 ```
 Hello From String
-
-I'm String
 ```
 
 <hr>
@@ -53,32 +54,69 @@ Using the C-style character arrays declare a char array variable and print it.
 
 
 ```cpp
-
 #include <iostream>
 #include <cstring> // Include this library for strcpy function
+using namespace std;
 
 int main () {
     char charVal[] = "Hello From Char Array";
 
-    std::cout << charVal << std::endl;
-
-    strcpy(charVal, "I\'m Char Array");
-
-    std::cout << charVal << std::endl;
-
+    cout << charVal << endl;
+    
     return 0;
 }
-
 ```
 
 **output** 
 
 ```
 Hello From Char Array
-
-I'm Char Array
 ```
 
+## String functions
+With the help of string functions we can maniuplate the string.
+
+1. string::length
+The sring function returns the length of the string.
+
+```cpp
+    string strVal = "abc"; // 3
+    cout << strVal.size() << endl;
+```
+
+**OUTPUT:**
+
+```
+3
+```
+
+2. compare 
+The string comparison function compares two strings, and return 0 if its equal, and -1 if not.
+```cpp
+    string strVal = "abc";
+    cout << strVal.compare("abc") << endl;
+```
+
+**OUTPUT:**
+
+```
+0
+```
+
+3. substr
+The string substring function extracts a substring from a string.
+```cpp
+    string str = "Hi C++";
+    str = str.substr(3, 6);  // Replaces the substring "World" with "Universe"
+    cout << str << endl;
+```
+
+**OUTPUT:**
+```
+C++
+```
+
+> To know more about the string functions visit this [article](https://blog.hubspot.com/website/c-string-functions).
 
 ## Projects
 |Title|Deadline|
