@@ -45,8 +45,10 @@ Using dynamic memory allocation:
 
 Integer example:
 ```c++
-int main(){
+int main() {
+
 int* p = new int;
+
 };
 ```
 - In the above code, we created a pointer `p` using the dynamic memory allocation operator (new).
@@ -64,9 +66,11 @@ In the above code, the `p` value is defined at run time and it's 5.
 
 Array example:
 ```c++
-int main(){
+int main() {
+
 int SIZE;
 int* arr = new int[SIZE];
+
 };
 ```
 - In the above code we created an array with the size `SIZE` using the dynamic memory allocation operator (new).
