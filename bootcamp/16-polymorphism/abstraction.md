@@ -6,11 +6,12 @@
 
 ## Implementation
 
-The following is an example of an abstract class:
+The following is an example of an `abstract` class:
 
-* Create an abstract class by declaring at least one pure virtual member function. That's a virtual function declared by using
-  the pure specifier (= 0) 
-  syntax. Classes derived from the abstract class must implement the pure virtual function or they, too, are abstract classes.
+* Create an `abstract` class by declaring at least one pure virtual member function. That's a `virtual function` declared by using
+  the pure specifier `(= 0)` 
+  syntax.
+  Classes derived from the abstract class must implement the pure virtual function or they, too, are abstract classes.
   
 ```CPP
 class Shape {
@@ -23,7 +24,7 @@ If the constructor for an abstract class calls a pure virtual function, either d
 
 
 ## Example
-* In this example, the `Shape` class is an `abstract` base class that defines pure virtual functions for calculating the area, perimeter, and printing details of a shape. It serves as an abstraction for any general shape.
+* In this example, the `Shape` class is an abstract base class that defines pure virtual functions for calculating the area, perimeter, and printing details of a shape. It serves as an abstraction for any general shape.
 * The `Rectangle` and `Circle` classes inherit from `Shape` and provide concrete implementations of these virtual functions.
   
 ```cpp
