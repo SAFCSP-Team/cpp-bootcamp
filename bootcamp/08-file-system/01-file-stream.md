@@ -100,9 +100,17 @@ fstream readFile("note.txt", ios::in);
         readFile.close();
     }
 ```
-> Create fstream object with mode `ios::in` to read from the file.
 
-The full code:
+**Output:**
+```
+Hello, World!
+```
+
+> Above, we have created fstream object with mode `ios::in` to read from the file.
+
+
+
+The full implementation of the example is as follows:
 ```cpp
 #include <iostream>
 #include <string>
