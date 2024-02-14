@@ -5,7 +5,7 @@ For example, a text file may contain letters, numbers, and symbols.
 
 We can read and write into a text file using C++.
 
-> The extension of a text file is **.txt**
+> Its common to use **.txt** extension for storing a text file.
 
 ## Concept 
 In **C++** we can read and write to a file using the **<fstream>** library.
