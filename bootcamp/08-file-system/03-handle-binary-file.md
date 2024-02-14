@@ -10,11 +10,11 @@ Binary file is not human readable, the file exteions is decide how to seperate t
 ## Concept 
 In **C++** we can read and write to a binary file using the **<fstream>** library, the same as text file. But we need to open the file in binary mode by adding **ios::binary** flag to the open mode.
 
-To read binary data from a file, we’ll need to perform the following steps:
-* Create a stream object. 
-* Connect it to a file on disk. 
-* Read the file’s contents into our stream object. 
-* Close the file stream.
+To read binary data from a file, we’ll need to do the following steps:
+* Import fstream library.
+* Create a stream object with pesific mode. 
+* Preform the operation on the file. 
+* Close the file stream using `close()` function.
 
 
 ## Example
@@ -23,15 +23,15 @@ In this example we will write a binary file that contating a string as value and
 
 ##### Write a binary file.
 ```cpp
-
 #include <iostream>
-#include <fstream>
+#include <fstream> // Import fstream library
 #include <string>
 using namespace std;
 
 int main() {
 
-  fstream wFile("names.bin",
+  // create a file stream object with write mode
+  fstream wFile("data.bin",
                 ios::out |
                     ios::binary); // open a file on write mode in binary format
 
@@ -46,10 +46,11 @@ int main() {
 }
 
 ```
+> In the above example we have write a text into a binary file.
 
 ##### Append a binary file.
 ```cpp
-fstream aFile("names.bin", ios::app | ios::binary);
+fstream aFile("data.bin", ios::app | ios::binary);
 
   if(aFile.is_open()) {
     aFile.write(" World", 6);
@@ -60,17 +61,19 @@ fstream aFile("names.bin", ios::app | ios::binary);
 ##### Read a binary file.
 ```cpp
 
-fstream rFile("names.bin", ios::in | ios::binary);
+fstream rFile("data.bin", ios::in | ios::binary);
   if(rFile.is_open()) {
     char buffer[100];
     rFile.read(buffer, 100);
 
     cout << buffer << endl;
-
+    rFile.close();
   }
+```
 
-  rFile.close();
-
+**Output:**
+```
+Hello World
 ```
 
 ## Projects
