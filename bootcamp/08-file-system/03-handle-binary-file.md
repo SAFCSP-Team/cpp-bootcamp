@@ -1,7 +1,9 @@
 # Binary File Handling
-Binary file is a file that contains a sequence of bytes 0 and 1. It might contatin any type of data, such as images, audio, video, or text.
+A binary file is a file that contains data stored in a **sequence of bytes**, which can be represented in various bases such as binary, hexadecimal, decimal, or octal.
 
-Binary file is not human readable, the file exteions is decide how to seperate the bytes into meaningful data. In this lesson we will use the **.bin** extension to store binary data.
+Binary files can contain any type of data, such as images, audio, video, or text.
+
+Binary file is not human readable, the file exteions is decide how to seperate the bytes into meaningful data. In this lesson we will use the **.bin** extension to create a binary file.
 
 > Binary files can have any extension, in this lesson we will use **.bin** extension.
 
@@ -12,7 +14,7 @@ To read binary data from a file, we’ll need to perform the following steps:
 * Create a stream object. 
 * Connect it to a file on disk. 
 * Read the file’s contents into our stream object. 
-* Close the file
+* Close the file stream.
 
 
 ## Example
@@ -45,7 +47,7 @@ int main() {
 
 ```
 
-##### Read a binary file.
+##### Append a binary file.
 ```cpp
 fstream aFile("names.bin", ios::app | ios::binary);
 
