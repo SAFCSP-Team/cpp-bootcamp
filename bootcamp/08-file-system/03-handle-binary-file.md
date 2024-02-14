@@ -18,7 +18,7 @@ To read binary data from a file, we’ll need to do the following steps:
 
 
 ## Example
-In this example we will write a binary file that contating a string as value and read it.
+In this example we will write a binary file that contain a string as value, also we will do the append operation and read the file to get the value.
 
 
 ##### Write a binary file.
