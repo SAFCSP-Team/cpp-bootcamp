@@ -3,7 +3,7 @@ A binary file is a file that contains data stored in a **sequence of bytes**, wh
 
 Binary files can contain any type of data, such as images, audio, video, or text.
 
-Binary file is not human readable, the file exteions is decide how to seperate the bytes into meaningful data. In this lesson we will use the **.bin** extension to create a binary file.
+Binary file is not human readable, the file exteions is decides how to seperate the bytes into meaningful data. In this lesson we will use the **.bin** extension to create a binary file.
 
 > Binary files can have any extension, in this lesson we will use **.bin** extension.
 
