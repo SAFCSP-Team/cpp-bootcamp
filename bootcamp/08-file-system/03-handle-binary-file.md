@@ -18,7 +18,7 @@ To read binary data from a file, we’ll need to do the following steps:
 
 
 ## Example
-In this example we will write a binary file that contain a string as value, also we will do the append operation and read the file to get the value.
+In this example we will write a binary file that contain a hex as value, also we will do the append operation and read the file to get the value.
 
 
 ##### Write a binary file.
@@ -36,8 +36,8 @@ int main() {
                     ios::binary); // open a file on write mode in binary format
 
   if (wFile.is_open()) {
-    // when adding a string we must pass the size of the string
-    wFile.write("Hello", 5);
+    // the write function take two parameters, the data and the size of the data
+    wFile.write("6162", 4);
   }
 
   wFile.close();
@@ -46,14 +46,14 @@ int main() {
 }
 
 ```
-> In the above example we have write a text into a binary file.
+> In the above example we have written a hex digit into a binary file.
 
 ##### Append a binary file.
 ```cpp
 fstream aFile("data.bin", ios::app | ios::binary);
 
   if(aFile.is_open()) {
-    aFile.write(" World", 6);
+    aFile.write("6364", 4);
 
   }
 ```
@@ -73,7 +73,7 @@ fstream rFile("data.bin", ios::in | ios::binary);
 
 **Output:**
 ```
-Hello World
+61626364
 ```
 
 ## Projects
