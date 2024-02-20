@@ -6,19 +6,17 @@ What if we want to perform different operations on the variables and values? For
 # Concept
 In C++ we can overload the operators to perform different operations on the variables and values. The overloaded operators are called **operator functions**. The operator functions are the functions that are declared with the keyword `operator` followed by the operator to be overloaded. The operator functions can be declared as member functions or non-member functions.
 
+### Syntax
 ```cpp
-ostream& operator<<(ostream& os, const list<T>& list) {
-    for (auto& i : list) {
-        os << i << " ";
-    }
-    return os;
+
+<class> operator<operator>(<parameters>) {
+    // code 
+    return <return_value>;
 }
 ```
 
-
 # Example
 In this example, we will overload the += operator to perform addition on the list variables.
-`numList += 10;`.
 
 ```cpp
 #include <iostream>
