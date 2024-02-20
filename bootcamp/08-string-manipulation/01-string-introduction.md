@@ -116,6 +116,19 @@ The string substring function extracts a substring from a string.
 C++
 ```
 
+3. empty
+The string empty function returns 1 if the string is empty, and 0 if not.
+```cpp
+  string name = "";
+
+  cout << name.empty() << endl;
+```
+
+**OUTPUT:**
+```
+1
+```
+
 > To know more about the string functions visit this [article](https://blog.hubspot.com/website/c-string-functions).
 
 ## Projects

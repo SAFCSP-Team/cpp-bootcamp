@@ -16,7 +16,7 @@ cout << "Hello World!" << endl // compile time error due to missing semicolon
 
 -  Run-time errors: Errors found by checks in a running program. 
 
-Example: dvivde by zero, excpetion occur at run time.
+Example: dvivde by zero, an exception occurs at run time.
 
 ```cpp
 
@@ -31,7 +31,7 @@ Exception is a way to handle the error in the program, by handling the errors in
 
 ### Exception Keywords
 
-**try**: is a warp the code that might throw an exception.
+**try**: is use to warp the code that might throw an exception.
 
 ```cpp
 try{
@@ -49,7 +49,7 @@ try{
 ```
 > The exception e is the object that will hold the error message.
 
-**throw**: is a keyword that categorize the error or exception.
+**throws**: is a keyword that used to specify the error type that might be thrown.
 
 ```cpp
 try{
@@ -144,8 +144,6 @@ catch(...) {
 > * bad_alloc is the one will invoked because we are trying to allocate a huge memory.
 > * If none of the exception is matched the catch(...) will be invoked.
 
-
-## Project
 
 ## Projects
 | Project Title | Deadline |
