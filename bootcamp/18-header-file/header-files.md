@@ -60,6 +60,28 @@ int main() {
     std::cout << second.multiply(1.5, 2.5) << std::endl;
 }
 ```
+4. In the terminal, run the following commands:
+```bash
+g++ -c second.cpp
+```
+> The `-c` flag is used to compile the file into an object file.
+
+5. To link the object file with the main file and create an executable file called main, run the following command:
+```bash
+g++ -o main main.cpp second.o
+```
+> The `-o` flag is used to specify the name of the output file.
+
+6. Finally, run the following command to execute the program:
+```bash
+./main
+```
+```
+**OUTPUT:**
+```
+3
+3.75
+```
 
 ## Projects
 - [Header Files](https://github.com/SAFCSP-Team/header-file-project)
