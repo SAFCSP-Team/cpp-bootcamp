@@ -1,4 +1,4 @@
-# Operator Functions
+# Operator Function
 We know that the operators such as `+`, `-`, `*`, etc. are used to perform operations on the variables and values.
 
 What if we want to perform different operations on the variables and values? For example, we want the `<<` operator to perform the print variable of the type list. We can do this by **overloading** the operator `<<` to perform a print operation on the variable of the type list.
