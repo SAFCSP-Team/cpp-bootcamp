@@ -2,9 +2,11 @@
 To organize code, we can split the program into multiple files, to achive that we neeed to use **header files**. 
 
 ## Concept
-In order to use function or class from another file, we need to use header files.
+To use exterinal code in C++, we do several steps, the exterinal c++ file that we want to use in main file should have a file called **header file**. 
 
-When using a function or class from other files, the file which we want to use the function or class from, needs to have a declaration of what the file contains. This is declaration file is called **header file**. 
+A header file is used to declare the functions and classes that we want to use in the main file. 
+
+The header file has the extension `.h` and contains the declaration of the functions and classes. The main file includes the header file using the `#include` directive.
 
 **Build process**
 1. Preprocessor: 
