@@ -78,7 +78,8 @@ g++ -o main main.cpp second.o
 ```bash
 ./main
 ```
-```
+
+
 **OUTPUT:**
 ```
 3
@@ -86,4 +87,7 @@ g++ -o main main.cpp second.o
 ```
 
 ## Projects
-- [Header Files](https://github.com/SAFCSP-Team/header-file-project)
+
+ |Project Title     | Deadline |
+|----------------- | -------- |
+ [Header Files](https://github.com/SAFCSP-Team/header-file-project)|          |
