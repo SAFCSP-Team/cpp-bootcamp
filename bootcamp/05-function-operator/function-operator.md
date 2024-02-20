@@ -7,12 +7,16 @@ What if we want to perform different operations on the variables and values? For
 In C++ we can overload the operators to perform different operations on the variables and values. The overloaded operators are called **operator functions**. The operator functions are the functions that are declared with the keyword `operator` followed by the operator to be overloaded. The operator functions can be declared as member functions or non-member functions.
 
 ### Syntax
-```cpp
-
-<class> operator<operator>(<parameters>) {
-    // code 
-    return <return_value>;
-}
+```
+class className {
+    
+    public
+       <returnType> operator<symbol-operator>(<arguments>) {
+           ... .. ...
+           return <value>;
+       } 
+};
+    
 ```
 
 # Example
