@@ -6,12 +6,12 @@ Abstract class is a class that is designed to be specifically used as a **base c
 
 ## Implementation
 
-The following is an example of an `abstract` class:
+The following is an example of an **abstract** class:
 
-* Create an `abstract` class by declaring at least one pure virtual member function. That's a `virtual function` declared by using
+* Create an **abstract** class by declaring at least one pure virtual member function. That's a **virtual function** declared by using
   the pure specifier `(= 0)` 
   syntax.
-  Classes derived from the abstract class must implement the pure virtual function or they, too, are abstract classes.
+  Classes derived from the abstract class must implement the pure virtual function, or they too are abstract classes.
   
 ```CPP
 class Shape {
