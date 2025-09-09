@@ -2,7 +2,7 @@
 
 
 ## Concept
-Else-if statement enable us to test different scenarios or cases using a chain of conditions.
+Else-if statement enables us to test different scenarios or cases using a chain of conditions.
 
 Syntax,
 ```
@@ -41,7 +41,7 @@ int main() {
 }
 ```
 
-output,
+Output
 
 ```
 10 is greater than zero
@@ -80,14 +80,12 @@ int main() {
 }
 ```
 
-output, 
+Output 
 ```
 You have to be an adult and to pass the test to get your license.
 ```
 Copy the example above and test it with different values.
 
 ## Projects
+- [Else-If in C++](https://github.com/SAFCSP-Team/else-if-in-cpp)
 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Else-If in C++](https://github.com/SAFCSP-Team/else-if-in-cpp) | - | 
