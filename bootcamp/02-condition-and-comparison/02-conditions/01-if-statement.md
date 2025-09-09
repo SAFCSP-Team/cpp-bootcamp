@@ -12,7 +12,7 @@ if(condition){
 The condition eventually should return a boolean value. You can use `bool` data type in the condition or an expression that will return a `true` or `false` value.
 To demonstrate the idea, look at the examples below.
 
-*Display a message to indicate if a `number` is greater than 10.*
+- Display a message to indicate if a `number` is greater than 10.
 ```cpp
 #include <iostream>
 using namespace std;
@@ -27,13 +27,13 @@ int main() {
 }
 ```
 
-output,
+Output
 
 ```
 number is greater than 10 
 ```
 
-*Check if the two names are equal or not.*
+- Check if the two names are equal or not.
 
 ```cpp
 #include <iostream>
@@ -49,13 +49,13 @@ int main() {
 }
 ```
 
-output,
+Output
 
 ```
 ahmed is not equal to sara
 ```
 
-*If a boolean variable `isTrue` is true, execute a print statement*
+- If a boolean variable `isTrue` is true, execute a print statement.
 
 ```cpp
 #include <iostream>
@@ -70,7 +70,7 @@ int main() {
   return 0;
 }
 ```
-No output will be printed since the boolean value is false. Therefore, the condition is always false and the statements inside the if block will never be executed.
+No output will be printed since the boolean value is false. Therefore, the condition is always false, and the statements inside the if block will never be executed.
 
 ## Examples
 
