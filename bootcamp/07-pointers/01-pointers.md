@@ -185,8 +185,6 @@ num2 address: 0x7ffed50c6558
 
 ## Projects
 
-| Project Title | Deadline |
-|:-----------|:-------------:|
-| [Print Pointer Value](https://github.com/SAFCSP-Team/print-pointer-value) | - | 
-| [Double Number Value Using Pointers](https://github.com/SAFCSP-Team/double-num-by-pointers)| - |
+- [Print Pointer Value](https://github.com/SAFCSP-Team/print-pointer-value)    
+- [Double Number Value Using Pointers](https://github.com/SAFCSP-Team/double-num-by-pointers)
 
