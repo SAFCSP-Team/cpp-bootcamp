@@ -33,7 +33,7 @@ int main() {
 }
 ```
 
-output, 
+Output 
 
 ```
 Sorry, you can not have your driving license yet.
@@ -55,14 +55,12 @@ int main() {
 }
 ```
 
-output,
+Output
 
 ```
 Your number is positive.
 ```
 
 ## Projects
+- [If-Else in C++](https://github.com/SAFCSP-Team/if-else-in-cpp) 
 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [If-Else in C++](https://github.com/SAFCSP-Team/if-else-in-cpp) | - | 
