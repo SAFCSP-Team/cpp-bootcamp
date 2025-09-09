@@ -4,20 +4,20 @@ In programming languages, we have several types of operators, for example, arith
 
 
 ## Concept
-Comparison operators are used to compare two expressions or values and return either `true` or `false` which determine if the comparison was correct or not. For example, comparing the value of **20** and **5** by saying "is 20 greater than 5?" will result in true. so the following code will print 1 which is the value of true.
+Comparison operators are used to compare two expressions or values and return either `true` or `false`, which determines if the comparison was correct or not. For example, comparing the value of **20** and **5** by saying "is 20 greater than 5?" will result in true. So the following code will print 1, which is the value of true.
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-  bool result = 20 > 5; // check if 20 is greater than 5 and return true if yes. Otherwise, return false.
+  bool result = 20 > 5; // check if 20 is greater than 5 and return true (1) if yes. Otherwise, return false (0).
   cout << result;
   
   return 0;
 }
 ```
-output,
+Output
 ```
 1
 ```
