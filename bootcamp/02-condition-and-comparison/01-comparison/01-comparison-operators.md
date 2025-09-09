@@ -94,7 +94,5 @@ int main() {
 
 
 ## Projects
+- [Comparison in C++](https://github.com/SAFCSP-Team/comparison-in-cpp)
 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Comparison in C++](https://github.com/SAFCSP-Team/comparison-in-cpp) | - | 
