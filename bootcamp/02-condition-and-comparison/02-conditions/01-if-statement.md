@@ -118,7 +118,4 @@ Great, you can have your driving license now!
 ```
 > The `&&` here is the AND logical operator, which will return true if both operands are true.
 ## Projects
-
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [If Statement in C++](https://github.com/SAFCSP-Team/if-statement-in-cpp) | - | 
+- [If Statement in C++](https://github.com/SAFCSP-Team/if-statement-in-cpp) 
