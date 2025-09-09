@@ -26,7 +26,7 @@ switch(expression){
 ```
 Each case will be compared with the value of the *switch expression*, if a case is met the statements block of that case will be executed. Once a *break* is encountered during the execution of statements the execution will stop and the compiler will exit the switch statement.
 
-If no case matches the switch expression then the *default* block will be executed.
+If no case matches the switch expression, then the *default* block will be executed.
 
 Let us look at the following example. 
 
@@ -51,7 +51,7 @@ int main() {
 }
 ```
 
-output, 
+Output 
 
 ```
 your number is equal to 10
@@ -82,7 +82,7 @@ int main() {
   return 0;
 }
 ```
-output,
+Output
 ```
 your number is equal to 10
 Before break
@@ -112,7 +112,7 @@ int main() {
 }
 ```
 
-output,
+Output
 ```
 your number is equal to 10
 Before break
@@ -150,7 +150,7 @@ int main() {
 }
 ```
 
-output, 
+Output 
 ```
 your number is in the range from 6 to 10
 ```
@@ -192,7 +192,7 @@ int main() {
 }
 ```
 
-output,
+Output
 
 ```
 Enter an operator 
@@ -204,7 +204,5 @@ Enter your second number: 1
 2 + 1 = 3
 ```
 ## Projects
+- [Switch Statement in C++](https://github.com/SAFCSP-Team/switch-statement-in-cpp)
 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Switch Statement in C++](https://github.com/SAFCSP-Team/switch-statement-in-cpp) | - | 
