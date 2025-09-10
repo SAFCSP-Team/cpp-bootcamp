@@ -2,14 +2,14 @@
 
 ##  Concept
 
-### OOP and Classes:
+### OOP and Classes
 The object-oriented programming **(OOP)** is based on a complex data type known as the **“class”**.
 
 
 ### Class
 It's a user-defined source of information. A class is a collection of data and information related to a specific area. The class consists of **properties** (data) and **methods** (functions).
 
-_Class strtucture_:
+_Class strtucture_
 
 ```c++
 class ClassName {
@@ -90,7 +90,7 @@ student1.printInfo();
 ``` 
 
 ## Example
-Student class:  
+Student class  
 
 ```c++
 #include <iostream>
@@ -120,7 +120,7 @@ class Student
 
 ```
 
-Use student class in `main`:  
+Use student class in `main`  
 
 
 ```c++
