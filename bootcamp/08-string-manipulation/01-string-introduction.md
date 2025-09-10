@@ -6,21 +6,20 @@ It is a data type that represents text as a series of characters enclosed in dou
 In **C++** strings are sequences of characters stored in a char array.
 **C++** does not have a built-in string type. Instead, it relies on the standard library to provide this functionality through a class called `string`.
 
-> Char array is an array of type character 
+> A char array is an array of type char that stores a sequence of characters.
 
 Strings in **C++** can be stored either using:
 
-* **The std::string class**.
-* **The C-style character arrays**.
+* The std::string class (from the C++ Standard Library).
+* C-style character arrays (an array of char).
 
-> string is more commonly used becuase they can used with standard operations, and more memeory can be allocated at run time. However string is slower than char array.
+> string is more commonly used becuase they can be used with standard operations, and more memeory can be allocated at run time. std::string is slower compared to C-style character arrays.
 
 ## Example
 In the following example, we will demonstrate how to initialize two variables that hold a text value, by using the **string** and the **C-style character arrays**. 
 
 * #### The string class.
-Using the **string class** in.
-
+  
 ```cpp
 #include <iostream>
 #include <string> // Include string from standard library
@@ -41,17 +40,16 @@ int main () {
 }
 ```
 
-**output** 
+**Output** 
 
 ```
 Hello From String
+I'm String
 ```
 
 <hr>
 
 * #### The C-style character arrays.
-Using the C-style character arrays declare a char array variable and print it.
-
 
 ```cpp
 #include <iostream>
@@ -67,71 +65,103 @@ int main () {
 }
 ```
 
-**output** 
+**Output** 
 
 ```
 Hello From Char Array
 ```
 
 ## String functions
-With the help of string functions we can maniuplate the string.
+With the help of string functions, we can manipulate the string.
 
-1. string::length
-The sring function returns the length of the string.
+1. `string::length`
+   
+- The string function returns the length of the string.
 
 ```cpp
-    string strVal = "abc"; // 3
-    cout << strVal.size() << endl;
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string strVal = "abc"; // Length = 3
+    cout << strVal.length() << endl;
+
+    return 0;
+}
 ```
 
-**OUTPUT:**
+**Output**
 
 ```
 3
 ```
 
-2. compare 
-The string comparison function compares two strings, and return 0 if its equal, and -1 if not.
+2. `string::compare`
+- Compares two strings, and returns 0 if they're equal, and -1 if not.
 ```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
     string strVal = "abc";
     cout << strVal.compare("abc") << endl;
+
+    return 0;
+}
 ```
 
-**OUTPUT:**
+**Output**
 
 ```
 0
 ```
 
-3. substr
-The string substring function extracts a substring from a string.
+3. `string::substr`
+- The string substring function extracts a substring from a string.
 ```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
     string str = "Hi C++";
-    str = str.substr(3, 6);  // Replaces the substring "World" with "Universe"
+    str = str.substr(3, 3); // Extract substring starting at index 3 with length 3
     cout << str << endl;
+
+    return 0;
+}
 ```
 
-**OUTPUT:**
+**Output**
 ```
 C++
 ```
 
-3. empty
+3. `string::empty`
 The string empty function returns 1 if the string is empty, and 0 if not.
 ```cpp
-  string name = "";
+#include <iostream>
+#include <string>
+using namespace std;
 
-  cout << name.empty() << endl;
+int main() {
+    string name = ""; // Empty string
+
+    cout << name.empty() << endl;
+
+    return 0;
+}
 ```
 
-**OUTPUT:**
+**Output**
 ```
 1
 ```
 
-> To know more about the string functions visit this [article](https://blog.hubspot.com/website/c-string-functions).
+> To know more about the string functions, visit this [article](https://blog.hubspot.com/website/c-string-functions).
 
 ## Projects
-|Title|Deadline|
-|:--|:--|
-|[String Project](https://github.com/SAFCSP-Team/cpp-string-project)|
+
+- [String Project](https://github.com/SAFCSP-Team/cpp-string-project)
