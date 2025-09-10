@@ -5,9 +5,7 @@ Imagine you're working on a retail store software application that needs to hand
 
 ## Concept
 
-In C++, `template`, also known as generic, provide a way to create `function` and `class` that can work with different data types without having to write separate implementations for each type. 
-
-`Template` enable you to write code that is reusable and generic, allowing you to create algorithms and data structures that are independent of specific data types.
+In C++, `template`, also known as generic, provides a way to create `function` and `class` that can work with different data types without having to write separate implementations for each type. 
 
 ### Function template
 
@@ -45,7 +43,7 @@ int main() {
     return 0;
 } 
 ```
-The output is
+Output 
 ```
 5
 5.5
@@ -97,7 +95,7 @@ int main() {
 ```
 
 
-The output is 
+Output  
 ```
 int Number = 7
 double Number = 7.7
@@ -132,7 +130,7 @@ int main() {
 
 ```
 
-The output is 
+Output
 
 ```
 Maximum of 10 and 20 is: 20
@@ -182,15 +180,13 @@ int main() {
 }
 ```
 
-The output
+Output
 ```
 First: 10, Second: 3.14
 First: Hello, Second: A
 ```
 
 ## Project 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Template](https://github.com/SAFCSP-Team/template) | - | 
 
+- [Template](https://github.com/SAFCSP-Team/template)
 
