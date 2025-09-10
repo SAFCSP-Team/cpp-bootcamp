@@ -1,14 +1,14 @@
 # Constructors
-Imagine you have a special toy called "Toy Builder." When you want to **create a new toy, you use this toy builder**. The toy builder has a magic button called a `constructor`.
+Imagine you have a special toy called "Toy Builder." When you want to **create a new toy, you use this toy builder**. The toy builder has a magic button called a **constructor**.
 
 Now, this **constructor is like a set of instructions that tells the toy builder how to create the new toy**. It knows what the toy should look like and what features it should have.
 
 In programming, constructors work similarly. They are special instructions inside a program that tell the computer how to create objects, just like the toy builder creates new toys. When you use a constructor in your program, it automatically sets the initial values of the object's properties, like the color and size of the toy.
 
 ## Concept
-A `Constructor` is a **special function** of a class that shares the **same name as the class** and is **called by the compiler when the object of the class is created**.
+A Constructor is a **special function** of a class that shares the **same name as the class** and is **called by the compiler when the object of the class is created**.
 
-Constructors play a crucial role in object initialization and ensure that objects start with valid and meaningful values, by defining and using constructors.
+Constructors play a crucial role in object initialization and ensure that objects start with valid and meaningful values by defining and using constructors.
 
 ### Constructor Characteristics
    - Constructors have the **same name as the class** and **do not have a return type**, not even "void".
@@ -137,7 +137,7 @@ int main() {
     std::cout << "Triangle 2 (parameterized constructor):" << std::endl;
     triangle2.printSides();
   
-    // Using a Parameterized constructor that using an initialization list
+    // Using a Parameterized constructor that uses an initialization list
     Triangle triangle3(3.0);
     std::cout << "Tringle 3 (parameterized constructor):" << std::endl;
     triangle3.printSides();
@@ -192,8 +192,7 @@ Side 3: 6.2
 Both approaches achieve the same result of creating a new object by copying the data from an existing object.
 
 ## Project 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Constructors](https://github.com/SAFCSP-Team/constructors) | - | 
+
+- [Constructors](https://github.com/SAFCSP-Team/constructors) 
 
 
