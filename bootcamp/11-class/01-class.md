@@ -152,8 +152,7 @@ major: Computer Science
   
 ## Project 
 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Class project](https://github.com/SAFCSP-Team/cpp-class-project/blob/main/README.md) | - | 
+
+- [Class project](https://github.com/SAFCSP-Team/cpp-class-project)
 
 
