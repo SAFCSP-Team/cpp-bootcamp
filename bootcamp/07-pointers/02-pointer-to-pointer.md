@@ -1,10 +1,10 @@
 # Pointer to Pointer
-Earlier we learned about pointers, and we now know that pointers are a special kind of variables that store a reference to a memory address of a variable. Here, we will cover a new concept, which is a pointer that reference to another pointer.
+Earlier, we learned about pointers, and we now know that pointers are a special kind of variables that store a reference to a memory address of a variable. Here, we will cover a new concept, which is a pointer that references another pointer.
 
 ## Concept
-Pointer to a pointer is a type of pointers that is used to reference to another pointer, it is like forming a chain of pointers referencing each others.
+Pointer to a pointer is a type of pointers that is used to reference another pointer, it is like forming a chain of pointers referencing each other.
 
-And to create a pointer to a pointer we will use an extra `*` character as the following.
+And to create a pointer to a pointer, we will use an extra `*` character as follows.
 
 ```cpp
 #include <iostream>
@@ -91,11 +91,8 @@ Value of num *before* updating: 10
 Value of num *after* updating: 30
 ```
 
-> With each extra pointer we add another `*` character.
+> With each extra pointer, we add another `*` character.
 
 ## Projects
 
-| Project Title | Deadline |
-|:-----------|:-------------:|
-| [Pointer to Pointer Project](https://github.com/SAFCSP-Team/pointer-to-pointer-project) | - |
-
+- [Pointer to Pointer Project](https://github.com/SAFCSP-Team/pointer-to-pointer-project)
