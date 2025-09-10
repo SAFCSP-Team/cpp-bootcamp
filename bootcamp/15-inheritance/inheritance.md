@@ -2,7 +2,7 @@
 
 Imagine a series of classes to describe two kinds of polygons: rectangles and triangles. These two polygons have certain common properties, such as the values needed to calculate their areas: they both can be described simply with a height and a width (or base).
 
-The Polygon class would contain members that are common for both types of polygon. In our case: width and height. Rectangle and Triangle would be its derived classes, with specific features that are different from one type of polygon to the other.
+The Polygon class would contain members that are common to both types of polygon. In our case: width and height. Rectangle and Triangle would be its derived classes, with specific features that are different from one type of polygon to the other.
 
 ## Concept
 
@@ -10,7 +10,8 @@ The Polygon class would contain members that are common for both types of polygo
 
 `Inheritance` involves a `base class` and a `derived class`: The **derived class** `inherits` the members of the **base class**, on top of which it can add its own members.
 
-The inheritance relationship of two classes is declared in the `derived class`. Derived classes definitions use the following syntax:
+The inheritance relationship of two classes is declared in the `derived class`. 
+- Derived classes definitions use the following syntax:
 
 ```cpp
 class derived_class_name: public base_class_name
@@ -19,7 +20,7 @@ class derived_class_name: public base_class_name
  };
 
 ```
-> To more information about access modifiers of the base class.  [Access control of base class](https://www.ibm.com/docs/en/i/7.2?topic=only-access-control-base-class-members-c)
+> For more information about access modifiers of the base class.  [Access control of base class](https://www.ibm.com/docs/en/i/7.2?topic=only-access-control-base-class-members-c)
 
 ## Implementation
 
@@ -36,7 +37,7 @@ class Polygon {
       { width=a; height=b;}
  };
 ```
-* Two derived classes are defined: `Rectangle` and `Triangle`. Both derived classes inherit publicly from the `Polygon` base class.
+* Two derived classes are defined `Rectangle` and `Triangle`, both derived classes inherit publicly from the `Polygon` base class.
 ```cpp
 class Rectangle: public Polygon {
   public:
@@ -60,12 +61,12 @@ int main () {
   return 0;
 }
 ```
-The output is
+Output 
 ```
 20
 10
 ```
-* one derived class `Square` can inherit publicly from more than one base class `Rectangle` and `Polygon`.
+* One derived class `Square` can inherit publicly from more than one base class `Rectangle` and `Polygon`.
 ```cpp
 class Square: public Rectangle{
 public:
@@ -86,7 +87,7 @@ int main() {
     return 0;
 }
 ```
-The output is
+Output
 ```
 Area of square: 16
 Area of rectangle: 20
@@ -148,7 +149,7 @@ int main() {
 }
 ```
 
-The output is
+Output
 ```
 Name: Mouhannd
 ID: 12345
@@ -157,7 +158,7 @@ Department: Sales
 
 ## Examples
 
-* `Animal` class is the base class it has all attributes of the `Animal`.
+* `Animal` class is the base class, it has all attributes of the `Animal`.
   
 ```cpp
 
@@ -177,7 +178,7 @@ class Animal {
     }
 };
 ```
-* The `Dog` class is derived from the `Animal `class. Since `Dog` is derived from `Animal`, members of `Animal` is accessible to `Dog`.
+* The `Dog` class is derived from the `Animal `class. Since `Dog` is derived from `Animal`, members of `Animal` are accessible to `Dog`.
 
 ```cpp
 /* derived class */
@@ -203,7 +204,7 @@ int main() {
     return 0;
 }
 ```
-The output is
+Output
 ```
 I can eat!
 I can sleep!
@@ -212,8 +213,7 @@ I can bark! Woof woof!!
 ```
   
 ## Project 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Inheritance](https://github.com/SAFCSP-Team/inheritance-cpp) | - | 
+
+- [Inheritance](https://github.com/SAFCSP-Team/inheritance-cpp) 
 
 
