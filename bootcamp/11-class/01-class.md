@@ -1,5 +1,4 @@
 # Class
-User-defined source of information.
 
 ##  Concept
 
@@ -8,7 +7,7 @@ The object-oriented programming **(OOP)** is based on a complex data type known 
 
 
 ### Class
-It's a user-defined source of information. Class is a collection of data and information on specific areas. The class consists of `properties` (data members) and `methods` (functions).
+It's a user-defined source of information. A class is a collection of data and information related to a specific area. The class consists of **properties** (data) and **methods** (functions).
 
 _Class strtucture_:
 
@@ -18,20 +17,17 @@ class ClassName {
     // methods (functions)
 };
 ```
-<br/> 
-<br/> 
- 
-1. Properties (data members)   
-`Properties` are the **information/data** that a specific area/class could have/has.  
+
+### Properties (data)   
+Properties are the **information/data** that a specific area/class could have/has.  
   
-Let's take the student as a class and break it down, let's ask ourselves what information a student class has.     
-It can have id, name, age, gpa, major.. this information should be the class `properties` (data members).    
+Let's take the student as a class and break it down. What information can a student's class have?     
+It can have id, name, age, gpa, major... this information should be the class properties (data).    
   
 ```c++
-
 class Student
 {
-// Properties (data members)
+// Properties (data)
     public: // public is a keyword in c++ indicating an access modifier
     int id;
     string name;
@@ -40,18 +36,14 @@ class Student
     string major;
 };
 ```
->> Public in the above code means that all the below is (public) and can be accessed outside the class (in the main function or other classes).
+> `public` in the above code means that all the properties below it are `public` and can be accessed outside the class (in the main function or other classes).
 Access modifiers are explained in more detail here [Access modifiers](https://github.com/SAFCSP-Team/cpp-bootcamp/blob/main/bootcamp/10-class/02-access-modifiers.md)
 
-
-<br/> 
-<br/> 
-  
-2. Methods (functions)   
-`Methods` are the **behaviors or actions** that can be performed in a student's class.    
+### Methods (functions)   
+Methods are the **behaviors or actions** that can be performed by the student class.    
    
-Let's take the student class we used above, what could the student class do?     
-We can write a `method` that prints the student properties.   
+Let's take the student class we used above. What could the student class do?     
+We can write a method that prints the student properties.   
   
 ```c++
 // Methods (functions)
@@ -64,13 +56,11 @@ void printInfo() {
     }
 
 ```
-<br/> 
-<br/> 
   
 ### Object
-Objects are instances of a class. Objects allow us to work with the data and functions defined in the class. Each object has its own set of `properties` and can independently call the `methods`.  
+While a class is a blueprint, the objects are instances of a class. A class can have multiple objects (instances), and objects allow us to work with the data and functions defined in the class. Each object has its own set of properties and can independently call its methods.  
   
-- Create an object of Student class
+- Create an object of the Student class
 ```c++
 int main(){
 Student student1; // create Student object with the name "student1"
@@ -98,9 +88,6 @@ cout << student1.id << endl;
 ```c++
 student1.printInfo();  
 ``` 
-<br/> 
-<br/> 
-   
 
 ## Example
 Student class:  
