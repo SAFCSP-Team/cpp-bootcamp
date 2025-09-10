@@ -47,7 +47,6 @@ Hello From String
 I'm String
 ```
 
-<hr>
 
 * #### The C-style character arrays.
 
