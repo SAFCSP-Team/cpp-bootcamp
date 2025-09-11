@@ -35,7 +35,7 @@ Let's break down the different parts:
   - `int main()` is a special function that **must be present in every C++ program**.
   - It serves as the **starting point of program execution** and can call other functions.
   
-Here's an examples that demonstrates the usage of a function:
+Here are examples that demonstrate the usage of a function:
 #### Example 1:
 ```c++
 #include <iostream>
@@ -47,21 +47,21 @@ int main() {
     print(); // Function call
     return 0;
 }
-
 ```
 In this example:
 
  Function declaration:
-   - returnType: void, which means it doesn't return any value. 
-   - functionName:  print().
-   - parameterType: The function does not have parameters. 
-   - parameterName: The function does not have parameters. 
+   - **returnType**: `void`, which means it doesn't return any value. 
+   - **functionName**:  `print()`.
+   - **parameterType**: The function does not have parameters. 
+   - **parameterName**: The function does not have parameters. 
 
 Function body: 
-   - print **Hello World** statement.
+   - print "Hello World!" statement.
 
 #### Example 2:
 ```c++
+#include <iostream>
 int addNumbers(int a, int b) {
     return a + b;
 }
@@ -71,21 +71,20 @@ int main() {
     std::cout << "The result is: " << result << std::endl;
     return 0;
 }
-
 ```
 In this example:
 
  Function declaration:
-  - returnType: int, which means the function returns an integer value.
-  - functionName:  addNumbers().
-  - parameterType: two integer values.
-  - parameterName:  a, b.
+  - **returnType**: `int`, which means the function returns an integer value.
+  - **functionName**:  `addNumbers()`.
+  - **parameterType**: two integer values.
+  - **parameterName**:  `a`, `b`.
 
 Function body:
  - add two numbers and return the result.
   
-
-The **order in which functions are defined**, whether before or after the `main` function, **does not affect the program's functionality**. But when a function is defined after the main function, you must provide a function declaration (prototype) before the main function to inform the compiler about the function's existence.
+### Functions order
+The **order in which functions are defined**, whether before or after the `main` function, **does not affect the program's functionality**. But when a function is defined after the main function, you must **provide a function declaration (prototype) before the main function** to inform the compiler about the function's existence.
 
 ```c++
 // Function declaration and definition
@@ -109,8 +108,8 @@ int main() {
 ```
 The **functions define their own scope**, and **variables declared within a function** have local scope **only accessible within the function** where they are declared. 
 
-The `scope of a variable` determines **where it can be accessed and used within a program**, and there are two main types of variable scope `local` and `global`.
-### Types of variable scope.
+### Types of variable scope
+The `scope of a variable` determines **where it can be accessed and used within a program**, and there are two main types of variable scope
 
 1. Local Variables:
    - Local variables are **declared within a specific block**, such as a function or a code block enclosed in curly braces `{}`.
@@ -123,9 +122,7 @@ The `scope of a variable` determines **where it can be accessed and used within 
    - Global variables are **declared outside of any specific block**, typically at the beginning of a program.
    - They are **accessible and modified from any program part**, including all functions and code blocks.
 
-> It's important to note that local variables take precedence over global variables if they share the same name within a particular scope.
-
-<br>
+> It's important to note that local variables take priority over global variables if they share the same name within a particular scope.
 
 ### Function overloading
 This means that you can have **multiple functions with the same name**, but **each function has a unique parameter** (types and/or numbers). 
@@ -169,12 +166,12 @@ int main() {
     printNumber(10);            // Calls the function printNumber(int)
     printNumber(3.14);          // Calls the function printNumber(double)
     printNumber(4, 5);          // Calls the function printNumber(int, int)
-    std::cout << " Multiply of two numbers: " << printNumber(4.0, 5.0) << std::endl; // Calls the function printNumber(double, double)
+    std::cout << "Multiply of two numbers: " << printNumber(4.0, 5.0) << std::endl; // Calls the function printNumber(double, double)
 
     return 0;
 }
 ```
-As you can see, each function is called based on the argument types that match the function's parameter. Notice that the return types of all these functions are not the same. Overloaded functions may or may not have different return types but they must have different arguments. 
+As you can see, each function is called based on the argument types that match the function's parameter. Notice that the return types of all these functions are not the same. Overloaded functions may or may not have different return types, but they must have different arguments. 
 
 ## Example
 
@@ -197,8 +194,7 @@ int main() {
 }
 ```
 
-- `factorial` The function takes an integer as a parameter and returns an integer value to the main function. 
-
+- `factorial` function takes an integer as a parameter, calculates the factorial of that integer, and returns the result to the main function. 
 ```c++
 #include <iostream>
 
@@ -227,6 +223,4 @@ int factorial(int n) {
 ```
 
 ## Project 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Functions](https://github.com/SAFCSP-Team/functions) | - | 
+- [Functions](https://github.com/SAFCSP-Team/functions)
