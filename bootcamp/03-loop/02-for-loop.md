@@ -1,7 +1,7 @@
 # For loop
 
 ## Concept
-Is commonly used when you know the **number of iterations in advance** or when iterating over a range. It consists of three parts: **initialization, condition, and increment/decrement**. 
+It is commonly used when you know the **number of iterations in advance** or when **iterating over a range**. It consists of three parts: **initialization, condition, and increment/decrement**. 
 
 ```c++
 for (initialization; condition; increment/decrement) {
@@ -9,7 +9,7 @@ for (initialization; condition; increment/decrement) {
 }
 ```
 
-Here's an example that demonstrates the usage of a `for` loop:
+Here's an example that demonstrates the usage of a `for` loop
 
 ```c++
 #include <iostream>
@@ -40,7 +40,7 @@ The `for` loop executes five times, printing the iteration number from 0 to 4. O
 
 ## Examples  
 
-Example 1: Printing numbers from 1 to 10 without number 3 (Postfix increment).
+- Printing numbers from 1 to 10 without number 3 (Postfix increment).
 
 ```c++
 #include <iostream>
@@ -58,7 +58,7 @@ int main() {
 1 2 4 5 6 7 8 9 10
 ```
 
-Example 2: Nested for loop to print a triangle of asterisks (Prefix increment).
+- Nested for loop to print a triangle of asterisks (Prefix increment).
 ```c++
 #include <iostream>
 int main() {
@@ -79,7 +79,7 @@ int main() {
 * * * *
 * * * * *
 ```
-Example 3: Computing the factorial of a number (prefix decrement).
+- Computing the factorial of a number (prefix decrement).
 ```c++
 #include <iostream>
 
@@ -99,9 +99,8 @@ int main() {
 Factorial of 5 is: 120
 ```
 
-Example 4: Printing numbers in reverse order (postfix decrement).
+- Printing numbers in reverse order (postfix decrement).
 ```c++
-
 #include <iostream>
 int main() {
     for (int i = 5; i > 0; i--) {
@@ -115,7 +114,4 @@ int main() {
 ```
 
 ## Project 
-
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [For Loop](https://github.com/SAFCSP-Team/for-loop) | - | 
+- [For Loop](https://github.com/SAFCSP-Team/for-loop) 
