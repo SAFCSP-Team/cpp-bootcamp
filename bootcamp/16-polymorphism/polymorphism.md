@@ -107,7 +107,7 @@ public:
     }
 };
 ```
-In the main method create pointers of type Animal* that can point to objects of derived classes. We initialize animal1 to point to a Dog object, animal2 to point to a Cat object, and animal3 to point to a Bird object and call the `makeSound()` function on each object.
+In the `main` method, create pointers of type Animal* that can point to objects of derived classes. We initialize animal1 to point to a `Dog` object, animal2 to point to a `Cat` object, and animal3 to point to a `Bird `object, and call the `makeSound()` function on each object.
 ```cpp
 int main() {
     Animal* animal1 = new Dog();
@@ -126,7 +126,7 @@ int main() {
 }
 ```
 
-The output is
+Output
 
 ```
 Dog barks.
@@ -135,9 +135,7 @@ Bird chirps.
 ```
   
 ## Project 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Polymorphism](https://github.com/SAFCSP-Team/polymorphism-cpp) | - | 
+- [Polymorphism](https://github.com/SAFCSP-Team/polymorphism-cpp) 
 
 
 
