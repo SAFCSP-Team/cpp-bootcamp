@@ -1,6 +1,7 @@
 # Do-while loop
 ## Concept
-Do-while is similar to the `while` loop, but it guarantees that the **code block is executed at least once**. The code block is executed first, and then the condition is checked. If the condition is true, the loop continues; otherwise, it exits.
+Do-while is similar to the `while` loop, but it guarantees that the **code block is executed at least once**. The code block is executed first, and then the condition is checked. If the condition is true, the loop continues. Otherwise, it exists.
+
 ```c++
 initialization;
 do {
@@ -9,7 +10,7 @@ do {
 } while (condition);
 ```
 
-Here's an example that demonstrates the structure of a `do-while` loop:
+Here's an example that demonstrates the structure of a `do-while` loop
 
 ```c++
 #include <iostream>
@@ -28,7 +29,7 @@ int main() {
 In this example:
 
 - Initialization: `int i = 0` initializes the loop control variable `i` to 0.
-- Loop body: `std::cout << i << " ";`  prints the value of i followed by a space.
+- Loop body: `std::cout << i << " ";`  prints the value of `i` followed by a space.
 - Update: `i++` increments the value of `i` by 1.
 - Condition: `i < 0` is checked after the first iteration. If the condition is true, the loop body is executed again, and the process repeats. If the condition is false, the loop terminates.
 
@@ -36,9 +37,7 @@ In this example:
 <br> **The code prints 0 before checking the condition.**
 
 ## Examples  
-
-Example 1: Postfix decrement with break statement:
-
+- Do-while loop with postfix decrement and break statement.
 ```c++
 #include <iostream>
 int main() {
@@ -57,7 +56,7 @@ int main() {
 ```
 5 4 3
 ```
-Example 2: Prefix increment with continue statement:
+- Do-while loop with prefix increment and continue statement.
 
 ```c++
 
@@ -79,6 +78,4 @@ int main() {
 1 3 4 5
 ```
 ## Project 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Do While Loop](https://github.com/SAFCSP-Team/do-while-loop) | - | 
+- [Do-while loop](https://github.com/SAFCSP-Team/do-while-loop)
