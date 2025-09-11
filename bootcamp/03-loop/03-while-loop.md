@@ -35,7 +35,7 @@ In this example:
 - Update: `i++;` increments the value of `i` by 1 in each iteration of the loop.
 
 ## Examples 
-- While Loop with postfix increment and break statement.
+- While loop with postfix increment and break statement.
 ```c++
 #include <iostream>
 int main() {
@@ -54,7 +54,7 @@ int main() {
 0 1
 ```
 
-- While Loop with prefix decrement and continue statement.
+- While loop with prefix decrement and continue statement.
 ```c++
 #include <iostream>
 int main() {
