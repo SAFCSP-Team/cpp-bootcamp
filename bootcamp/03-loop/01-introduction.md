@@ -13,22 +13,22 @@ int main(){
  return 0;
 }
 ```
-We have to write `cout` statement manually 5 times. Now imagine you have to write it 100 times, it would be hectic to re-write the same statement again and again, and it would surely take more time to write it. So, rather than we can use `loops` to repeat the same statement
+We have to write the `cout` statement manually 5 times. Now imagine you have to write it 100 times, it would be hectic to re-write the same statement again and again, and it would surely take more time to write it. So, rather than we can use `loops` to repeat the same statement.
 
 ## Concept
 `Loops` are **control structures** that allow you to **execute a block of code repeatedly** until a certain condition is met.
 
 ### The key components of the loop in C++
-1. Initialization:
+1. Initialization
 
 Before entering the loop, you need to **initialize a counter variable** to a specific value. This is typically done before the loop starts.
 
-2. Condition:
+2. Condition
 
 - The loop continues executing as long as a specific condition remains true.
 - The condition is **checked in each iteration** to determine if the loop should continue or terminate.
 
-3. increment/decrement statement:
+3. increment/decrement statement
 
 After each iteration of the loop, **the counter variable is incremented or decremented** to ensure progress towards the termination of the loop. 
 
@@ -36,14 +36,15 @@ You can use both `prefix` and `postfix` increment/decrement operators within a l
 > 1. Prefix Increment/Decrement: The value of the variable is incremented or decremented **before it is used** in the expression.
 > 2. Postfix Increment/Decrement: The value of the variable is incremented or decremented **after it is used** in the expression.
 
-4. Loop Body:
+4. Loop Body
 
 It defines the **actions or operations** that need to be performed during each iteration.
 
 ### Break and continue
 Both the `break` and `continue` statements are useful for controlling the flow of a loop based on certain conditions. 
 
-1. `break` statement: When encountered within a loop, the `break` statement causes an immediate exit from the loop. It is typically used to terminate the loop prematurely based on a certain condition.
+#### `break` statement
+When encountered within a loop, the `break` statement causes an immediate exit from the loop. It is typically used to terminate the loop prematurely based on a certain condition.
 ```c++
 #include <iostream>
 int main() {
@@ -60,7 +61,8 @@ int main() {
 1 2 
 ```
 
-2. `continue` statement: It is used to skip the rest of the current iteration and proceed to the next iteration of the loop. 
+#### `continue` statement
+It is used to skip the rest of the current iteration and proceed to the next iteration of the loop. 
  ```c++
 #include <iostream>
 int main() {
@@ -79,7 +81,7 @@ int main() {
 
 ## Types of loops
 
-##### For loop:
+##### For loop
  
 ```c++
 for (initialization; condition; increment/decrement) {
@@ -87,7 +89,7 @@ for (initialization; condition; increment/decrement) {
 }
 ```
 
-##### While loop:
+##### While loop
 
 ```c++
 initialization;
@@ -97,7 +99,7 @@ while (condition) {
 }
 ```
 
-##### Do-while loop:
+##### Do-while loop
 ```c++
 initialization;
 do {
@@ -107,9 +109,9 @@ do {
 ```
 
 ## Examples
-Print “Hello World!” 5 times using types of loop.
+Print “Hello World!” 5 times using each type of loop.
 
-1. For Loop:
+1. For Loop
 ```c++
 #include <iostream>
 int main() {
@@ -121,7 +123,7 @@ int main() {
 }
 ```
 
-2. while Loop:
+2. while Loop
    
 ```c++
 #include <iostream>
@@ -135,7 +137,7 @@ int main() {
 }
 ```
 
-3. Do-While Loop:
+3. Do-While Loop
 
 ```c++
 #include <iostream>
