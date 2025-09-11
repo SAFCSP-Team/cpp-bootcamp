@@ -1,16 +1,12 @@
 # Arrays
-Imagine a scenario where we have two libraries: one is organized, and the other is scattered. In an organized library, the books are systematically arranged and categorized by genre, with each genre having its designated section. On the other hand, in a scattered library, the books are randomly placed without any organization or system. You might find books of different genres randomly mixed together on the shelves.
-
-It is important to note that an organized library significantly improves the ease of dealing with books by providing a structured system for book organization. In contrast, a scattered library lacking such organization creates difficulties and hinders efficient dealing with library resources.
-
+In computer programming, in most cases, there is a need to **store a large number of similar data**. for example, books or weekdays. So, instead of using different variable names to represent each value, it is **better to define an array and store all the elements in it** to enhance the way of dealing with data.
 ## Concept
-In computer programming, in most cases, there is a need to **store a large number of similar data**. for example, books or weekdays. So, instead of using different variable names to represent each value, it is **better to define an array and store all the elements in it** to significantly improve the ease of dealing with data.
-
-`Array`: is a collection of similar data items grouped together.
-
+`Array` : is a collection of similar data items grouped together.
 
 - Arrays can store **primitive** data types or **non-primitive** data type.
-<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/cpp-bootcamp/blob/main/bootcamp/05-arrays/image/array-in-cpp.png">
+
+Suppose you need to store prices for five items. You can simply create an array of five float numbers called `prices` 
+<img width="910" alt="Introduction to Arrays-01" src="https://github.com/SAFCSP-Team/cpp-bootcamp/blob/main/bootcamp/06-arrays/image/array-in-cpp.png">
 
 ```c++
 #include<iostream>
@@ -27,25 +23,35 @@ int main() {
    return 0;
 }
 ```
+Explanation:
+- `float Prices[5]` declares an array named Prices, consisting of five float numbers.
+- `Prices[x] =` access each element of the array and initialize its value.
 
-- The `length` of an array refers to the **number of elements** contained within the array.
-```C++
- int size =  sizeof(Prices) / sizeof(Prices[0]); // 5
-```
-We use the **sizeof operator** to get the total size of the array ***(sizeof(array name))*** depending on the data type and **divide it by the size of a single element** ***(sizeof(array name[0]))***. This gives us the number of elements in the array.
-
-> For an alternative method to calculate the length of an array in c++, kindly visit [digitalocean](https://www.digitalocean.com/community/tutorials/find-array-length-in-c-plus-plus)
-
-
+### Access the array elements
+To access an element in the array, you must use its `index`.
 - The `index` of an array refers to the **position or location of an element** within the array. It represents the **unique numeric** identifier assigned to each element in the array.
-- Array indexes start from 0 and increment by 1 for each subsequent element.
+- Array indices in C++ start from 0, so `Prices[0]` refers to the first element, and `Prices[4]` refers to the last one in this case.
 ```C++
 Prices[0]; //1.5
 ```
 - If the size of an array is **n**, the maximum index number is **n-1**.
 ```C++
-Prices[size -1 ]; //5.7
+Prices[5 -1 ]; //5.7
 ```
+
+### Array size 
+The `size` of an array refers to the **number of elements** contained within the array.
+```C++
+ int size =  sizeof(Prices) / sizeof(Prices[0]); // 5
+```
+
+We use the **sizeof operator** to determine the total size of the array by using `sizeof(array_name)`. To find the number of elements in the array, we divide this total size by the size of a single element, which can be given with `sizeof(array_name[0])`. This calculation gives us the total number of elements in the array.
+
+> For an alternative method to calculate the length of an array in c++, kindly visit [digitalocean](https://www.digitalocean.com/community/tutorials/find-array-length-in-c-plus-plus)
+
+
+### Array operations 
+
 To perform any operations on each element of an array, you can use loops. For example, to print all the elements of the **Prices** array.
 ```c++
 cout<<"The elements are: ";
@@ -60,7 +66,7 @@ The elements are: 1.5 2.7 3.14 4.2 5.7
 > A for-each loop iterates over the elements of arrays, vectors, or any other data sets. [digitalocean](https://www.digitalocean.com/community/tutorials/foreach-loop-c-plus-plus#introduction)
 
 ## Example 
-- Array of integer: 
+- Array of integers
 ```c++
 #include <iostream>
 int main() {
@@ -77,7 +83,7 @@ int main() {
 The count = 5
 The secondElement = 7
 ````
-- Array of string:  
+- Array of strings 
 ```c++
 #include <iostream>
 #include <string>
@@ -100,6 +106,4 @@ The secondName = Amal
 ````
 
 ## Project 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Arrays](https://github.com/SAFCSP-Team/arrays) | - | 
+- [Arrays](https://github.com/SAFCSP-Team/arrays)
