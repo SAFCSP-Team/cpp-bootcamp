@@ -79,7 +79,7 @@ int main() {
 * * * *
 * * * * *
 ```
-- Computing the factorial of a number (prefix decrement).
+- Calculating the factorial of a number (prefix decrement).
 ```c++
 #include <iostream>
 
