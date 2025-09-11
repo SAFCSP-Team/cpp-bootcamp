@@ -9,7 +9,7 @@ for (initialization; condition; increment/decrement) {
 }
 ```
 
-Here's an example that demonstrates the usage of a `for` loop
+Here's an example that demonstrates the usage of a `for` loop.
 
 ```c++
 #include <iostream>
