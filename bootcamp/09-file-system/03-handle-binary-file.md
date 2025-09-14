@@ -8,7 +8,7 @@ Binary file is not human readable, the file exteions is decides how to seperate 
 > Binary files can have any extension, in this lesson we will use **.bin** extension.
 
 ## Concept 
-In **C++** we can read and write to a binary file using the **<fstream>** library, the same as text file. But we need to open the file in binary mode by adding **ios::binary** flag to the open mode.
+In **C++** we can read/write form/to a binary file using the `<fstream>` library, the same as text file. But we need to open the file in binary mode by adding **ios::binary** flag to the open mode.
 
 To read binary data from a file, we’ll need to do the following steps:
 * Import fstream library.
