@@ -3,24 +3,18 @@ It's the concept/process of storing/manipulating data at compile time.
 
 
 ## Concept
-
-In C++ the memory can be allocated either at **compile time (Static memory allocation)** or at **the run time (Dynamic memory allocation)**. 
-<br/>
-<br/>
-  
+In C++, memory can be allocated either at **compile time (Static memory allocation)** or at **the run time (Dynamic memory allocation)**. 
 ### Static memory allocation
 
 - It's the memory allocation during compile time.
 - The allocated memory is fixed and cannot be increased or decreased at run time.
 - The memory is stored in the stack.
   
-Let's say we have an array with a fixed size:
+Let's say we have an array with a fixed size
 ```c++ 
 int arr [5] = {1,2,3,4,5};
 ```
-arr size is allocated at compile time and it's fixed.
-<br/>
-<br/>
+`arr` size is allocated at compile time and it's fixed.
   
 ### Dynamic memory allocation
 
@@ -34,11 +28,9 @@ arr size is allocated at compile time and it's fixed.
 
 ## Example 
 
-Using dynamic memory allocation:
-
-<br/>
-
-Integer example:
+Using dynamic memory allocation    
+    
+**Integer example**
 ```c++
 int main() {
 
@@ -48,18 +40,16 @@ int* p = new int;
 ```
 - In the above code, we created a pointer `p` using the dynamic memory allocation operator (new).
 - Stack is storing the address of `p`.
-- Heap is storing the value of `p` which will be defined based on the programmer input.
+- Heap is storing the value of `p`, which will be defined based on the programmer's input.
 
-- `p` value:
+`p` value
 ```c++
 *p = 5;
 ```
-In the above code, the `p` value is defined at run time and it's 5.
-
+In the above code, the `p` value is defined at runtime and is set to 5.
 <br/>
 <br/>
-
-Array example:
+**Array example**
 ```c++
 int main() {
 
@@ -68,20 +58,17 @@ int* arr = new int[SIZE];
 
 };
 ```
-- In the above code we created an array with the size `SIZE` using the dynamic memory allocation operator (new).
+- In the above code, we created an array with size `SIZE` using the dynamic memory allocation operator (new).
 - Stack is storing the address of `SIZE`.
-- Heap stores the value of `SIZE` which will be defined based on the programmer input.
+- Heap stores the value of `SIZE`, which will be defined based on the programmer's input.
 
-- `SIZE` value:
+`SIZE` value
 ```c++
 arr[0] = 1;
 arr[1] = 2;
 arr[2] = 3;
 ```
 In the above code, the `SIZE` value is defined at run time.
-
-<br/>
-<br/>
 
 After running the program, all values in the stack will be deleted, but the values in the heap will not.
 
@@ -95,11 +82,8 @@ delete[] arr;
 
 
 ## Projects
+- [Dynamic memory project](https://github.com/SAFCSP-Team/dynamic-memory-project)
 
-
-Project Title | Deadline |
-|:-----------:|:-------------|
-[Dynamic memory project](https://github.com/SAFCSP-Team/dynamic-memory-project) | -
 
 
 
