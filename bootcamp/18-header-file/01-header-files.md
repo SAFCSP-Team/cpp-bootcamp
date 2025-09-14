@@ -1,8 +1,8 @@
 # Header Files
-To organize code, we can split the program into multiple files, to achive that we need to use **header files**. 
+To organize code, we can split the program into multiple files. To achieve that, we need to use **header files**. 
 
 ## Concept
-To use exterinal code in C++, we do several steps, the exterinal c++ file that we want to use in main file should have a file called **header file**. 
+To use external code in C++, we do several steps. The external C++ file that we want to use in the main file should have a file called **header file**. 
 
 A header file is used to declare the functions and classes that we want to use in the main file. 
 
@@ -17,7 +17,7 @@ The header file has the extension `.h` and contains the declaration of the funct
     - The linker will link the object files together.
 
 ## Example
-In this example we will demonstrate how to use header files in C++.
+In this example, we will demonstrate how to use header files in C++.
 
 1. Create a file called second.cpp and add the following code:
 ```cpp
@@ -34,7 +34,7 @@ double Second::multiply(double a, double b) {
 
 ```
 
-2. Create a header file with the same name as the previous file, but with the extension `.h` and add the following code:
+2. Create a header file with the same name as the previous file, but with the extension `.h`, and add the following code:
 ```cpp
 // second.h
 #ifndef SECOND_H
@@ -50,7 +50,7 @@ class Second {
 #endif
 ```
 
-3. Finally we need to call the functions from the header file in the main file:
+3. Finally, we need to call the functions from the header file in the main file:
 ```cpp
 // main.cpp
 #include <iostream>
