@@ -5,12 +5,12 @@ For example, a text file may contain letters, numbers, and symbols.
 
 We can read and write into a text file using C++.
 
-> Its common to use **.txt** extension for storing a text file.
+> It's common to use **.txt** extension for storing a text file.
 
 ## Concept 
 In **C++** we can read and write to a file using the `<fstream>` library.
 In order to read/write from/to a file, we need to use a stream.
-Stream is a sequence of data. We need to create an input stream for reading from a file. If we want to write to a file, we need to create an output stream. If we want to do both, we need to create an input/output stream.
+A stream is a sequence of data. We need to create an input stream for reading from a file. If we want to write to a file, we need to create an output stream. If we want to do both, we need to create an input/output stream.
 
 
 ## Example
@@ -25,7 +25,7 @@ For reading a character sequence from a text file, we’ll need to perform the f
 ##### Write a text file.
 ```cpp
 
-#include <fstream> // Import fstream to open and intreact with the file
+#include <fstream> // Import fstream to open and interact with the file
 #include <iostream>
 #include <string>
 #include <list>
@@ -43,7 +43,7 @@ int main() {
   
   // check if the file is open
   if(wFile.is_open()) {
-    // if the file is open insert the names list into the file names.txt
+    // if the file is open, insert the names list into the file names.txt
     for(string name : names) {
       wFile << name << endl;
     }
@@ -69,7 +69,7 @@ fstream aFile("names.txt", ios::app); // open a file on append mode
 
   aFile.close(); // always closing the fstream object
 ```
-> Append will add a content in the file.
+> Append will add content to the file.
 
 ##### Read a file and print it to the console.
 ```cpp
@@ -78,7 +78,7 @@ fstream rFile("names.txt", ios::in); // open a file on read mode
 
   if (rFile.is_open()) {
 
-    string line; // Defined a string line that will represent a line in the names.txt
+    string line; // Define a string line that will represent a line in the names.txt file
 
     while (getline(rFile, line)) {
       cout << line << endl;
@@ -86,12 +86,17 @@ fstream rFile("names.txt", ios::in); // open a file on read mode
   }
 
   rFile.close();
-
+```
+Output
+```
+Sara
+Fahad
+Majed
+Ahmed
 ```
 
 
 ## Projects
-| Project Title | Deadline |
-|:-----------|:-------------:|
-| [Handle Text File](https://github.com/SAFCSP-Team/handle-text-file-project) | - | 
+
+- [Handle Text File](https://github.com/SAFCSP-Team/handle-text-file-project)
 
