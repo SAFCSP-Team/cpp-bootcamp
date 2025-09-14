@@ -19,7 +19,7 @@ The header file has the extension `.h` and contains the declaration of the funct
 ## Example
 In this example, we will demonstrate how to use header files in C++.
 
-1. Create a file called second.cpp and add the following code:
+1. Create a file called second.cpp and add the following code
 ```cpp
 // second.cpp
 #include "second.h"
@@ -34,7 +34,7 @@ double Second::multiply(double a, double b) {
 
 ```
 
-2. Create a header file with the same name as the previous file, but with the extension `.h`, and add the following code:
+2. Create a header file with the same name as the previous file, but with the extension `.h`, and add the following code
 ```cpp
 // second.h
 #ifndef SECOND_H
@@ -50,7 +50,7 @@ class Second {
 #endif
 ```
 
-3. Finally, we need to call the functions from the header file in the main file:
+3. Finally, we need to call the functions from the header file in the main file
 ```cpp
 // main.cpp
 #include <iostream>
@@ -68,19 +68,18 @@ g++ -c second.cpp
 ```
 > The `-c` flag is used to compile the file into an object file.
 
-5. To link the object file with the main file and create an executable file called main, run the following command:
+5. To link the object file with the main file and create an executable file called main, run the following command
 ```bash
 g++ -o main main.cpp second.o
 ```
 > The `-o` flag is used to specify the name of the output file.
 
-6. Finally, run the following command to execute the program:
+6. Finally, run the following command to execute the program
 ```bash
 ./main
 ```
 
-
-**OUTPUT:**
+Output
 ```
 3
 3.75
