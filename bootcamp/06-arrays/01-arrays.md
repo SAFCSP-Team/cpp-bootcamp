@@ -61,7 +61,7 @@ cout<<"The elements are: ";
     }
 ```
 ```
-The elements are: 1.5 2.7 3.14 4.2 5.7 
+The elements are: 1.5 2.0 3.14 4.2 5.7 
 ```
 > A for-each loop iterates over the elements of arrays, vectors, or any other data sets. [digitalocean](https://www.digitalocean.com/community/tutorials/foreach-loop-c-plus-plus#introduction)
 
