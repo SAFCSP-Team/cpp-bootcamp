@@ -24,19 +24,19 @@ int main() {
 }
 ```
 Explanation:
-- `float Prices[5]` declares an array named Prices, consisting of five float numbers.
+- `float Prices[5]` declares an array named **Prices**, consisting of **five float numbers**.
 - `Prices[x] =` access each element of the array and initialize its value.
 
 ### Access the array elements
 To access an element in the array, you must use its `index`.
 - The `index` of an array refers to the **position or location of an element** within the array. It represents the **unique numeric** identifier assigned to each element in the array.
-- Array indices in C++ start from 0, so `Prices[0]` refers to the first element, and `Prices[4]` refers to the last one in this case.
+- Array indices start from 0, so `Prices[0]` refers to the first element, and `Prices[4]` refers to the last one in our example.
 ```C++
 Prices[0]; //1.5
 ```
 - If the size of an array is **n**, the maximum index number is **n-1**.
 ```C++
-Prices[5 -1 ]; //5.7
+Prices[5 - 1]; //5.7
 ```
 
 ### Array size 
@@ -44,8 +44,7 @@ The `size` of an array refers to the **number of elements** contained within the
 ```C++
  int size =  sizeof(Prices) / sizeof(Prices[0]); // 5
 ```
-
-We use the **sizeof operator** to determine the total size of the array by using `sizeof(array_name)`. To find the number of elements in the array, we divide this total size by the size of a single element, which can be given with `sizeof(array_name[0])`. This calculation gives us the total number of elements in the array.
+We use the `sizeof` operator to calculate the **total size of the array**. To find the number of elements in the array, we **divide this total size by the size of a single element**.
 
 > For an alternative method to calculate the length of an array in c++, kindly visit [digitalocean](https://www.digitalocean.com/community/tutorials/find-array-length-in-c-plus-plus)
 
