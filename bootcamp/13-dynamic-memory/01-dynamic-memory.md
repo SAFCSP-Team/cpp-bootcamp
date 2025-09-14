@@ -51,12 +51,27 @@ In the above code, the `p` value is defined at runtime and is set to 5.
 <br/>
 **Array example**
 ```c++
+#include <iostream>
+using namespace std;
+
 int main() {
 
-int SIZE;
-int* arr = new int[SIZE];
+    int* SIZE = new int;
+    int* arraySize = new int;
 
-};
+    int* arr = new int[*SIZE];
+
+    // Initialize the array
+    arr[0] = 1;
+    arr[1] = 2;
+    arr[2] = 3;
+
+    cout << arr[0] << endl;
+    cout << arr[1] << endl;
+
+    return 0;
+}
+
 ```
 - In the above code, we created an array with size `SIZE` using the dynamic memory allocation operator (new).
 - Stack is storing the address of `SIZE`.
@@ -76,13 +91,15 @@ Deleting heap values is the programmer's responsibility.
 
 We can use the **delete** operator to delete values stored in the heap.
 ```c++
-delete p;
-delete[] arr;
+// Free the allocated memory
+delete[] arr; 
+delete SIZE;
 ```
 
 
 ## Projects
 - [Dynamic memory project](https://github.com/SAFCSP-Team/dynamic-memory-project)
+
 
 
 
