@@ -85,12 +85,8 @@ g++ -o main main.cpp second.o
 3
 3.75
 ```
-<!--
-## Projects
 
- |Project Title     | Deadline |
-|----------------- | -------- |
- [Header Files](https://github.com/SAFCSP-Team/header-file-project)|          |
- --> 
+## Projects
+- [Header Files](https://github.com/SAFCSP-Team/header-file-project)
 
  
