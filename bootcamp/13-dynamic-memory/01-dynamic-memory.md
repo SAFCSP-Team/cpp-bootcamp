@@ -8,10 +8,10 @@ In C++ the memory can be allocated either at **compile time (Static memory alloc
 <br/>
 <br/>
   
-1. Static memory allocation
+### Static memory allocation
 
 - It's the memory allocation during compile time.
-- The memory allocated is fixed and cannot be increased or decreased at run time.
+- The allocated memory is fixed and cannot be increased or decreased at run time.
 - The memory is stored in the stack.
   
 Let's say we have an array with a fixed size:
@@ -22,7 +22,7 @@ arr size is allocated at compile time and it's fixed.
 <br/>
 <br/>
   
-2. Dynamic memory allocation
+### Dynamic memory allocation
 
 - Is the process of allocating the memory at the run time (time of execution).
 - The memory is stored in the heap.
@@ -30,12 +30,7 @@ arr size is allocated at compile time and it's fixed.
 
 - It uses two operators:
 1. **new** operator is used to allocate memory for a single object dynamically
- 
 2. **delete** operator is used to deallocate memory that was previously allocated with **new**.
-
-<br/>
-<br/>
-<br/>
 
 ## Example 
 
@@ -105,6 +100,7 @@ delete[] arr;
 Project Title | Deadline |
 |:-----------:|:-------------|
 [Dynamic memory project](https://github.com/SAFCSP-Team/dynamic-memory-project) | -
+
 
 
 
