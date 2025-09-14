@@ -2,7 +2,7 @@
 
 ## Concept
 
-`functions` are **blocks of code** that perform a specific task and can be reused throughout a program.
+`Functions` are **blocks of code** that perform a specific task and can be reused throughout a program.
 
 Here's the basic syntax for defining and using functions:
 
@@ -82,48 +82,57 @@ In this example:
 
 Function body:
  - add two numbers and return the result.
-  
-### Functions order
-The **order in which functions are defined**, whether before or after the `main` function, **does not affect the program's functionality**. But when a function is defined after the main function, you must **provide a function declaration (prototype) before the main function** to inform the compiler about the function's existence.
 
-```c++
-// Function declaration and definition
-
-int main() {
-    // Function call
-    return 0;
-}
-
-```
-```C++
-// Function declaration (prototype)
-
-int main() {
-    // Function call
-    return 0;
-}
-
-// Function definition (implementation)
-
-```
-The **functions define their own scope**, and **variables declared within a function** have local scope **only accessible within the function** where they are declared. 
 
 ### Types of variable scope
-The `scope of a variable` determines **where it can be accessed and used within a program**, and there are two main types of variable scope
+- **Global Variables:**
+     - Declared outside any function.
+     - Can be accessed and modified by all functions in the program.
+   
+- **Local Variables:**
+    - Declared and used only within a specific function.
+    - Not accessible outside the function where they are defined.
 
-1. Local Variables:
-   - Local variables are **declared within a specific block**, such as a function or a code block enclosed in curly braces `{}`.
-   - They are only **accessible within the block they are declared in**.
-   - Once the execution of the **block is complete, local variables are destroyed**, and their memory is freed.
+The functions define their own scope, and variables declared within a function have local scope only accessible within the function where they are declared.
+   
+### Functions order
 
- > Local variables can have the same name as variables in other blocks without causing conflicts because each block has its own scope.
+The order of function definitions does not affect the program functionality. However:
 
-2. Global Variables:
-   - Global variables are **declared outside of any specific block**, typically at the beginning of a program.
-   - They are **accessible and modified from any program part**, including all functions and code blocks.
+If a function is defined after main, a function declaration (prototype) must be provided before main.
 
-> It's important to note that local variables take priority over global variables if they share the same name within a particular scope.
+```c++
 
+#include <iostream>
+
+// Function declaration and definition
+int addNumbers(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result = addNumbers(3, 5); // Function call
+    std::cout << "The result is: " << result << std::endl;
+    return 0;
+}
+```
+```C++
+#include <iostream>
+
+// Function prototype
+int addNumbers(int, int);
+
+int main() {
+    int result = addNumbers(3, 5); // Function call
+    std::cout << "The result is: " << result << std::endl;
+    return 0;
+}
+
+// Function definition
+int addNumbers(int a, int b) {
+    return a + b;
+}
+```
 ### Function overloading
 This means that you can have **multiple functions with the same name**, but **each function has a unique parameter** (types and/or numbers). 
 
