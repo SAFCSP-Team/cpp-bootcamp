@@ -1,12 +1,13 @@
 # Single Line Comment
-In our daily life, we sometimes write a note of what we need to do as a reminder, or write an explanation of a specific text in a book. These notes are also called comments. Same thing we do in programs, to not forget what a function does or to explain it as a documentation for other developers on the project, we use the concept of comments.
+In our daily life, we sometimes write a note of what we need to do as a reminder, or write an explanation of a specific text in a book. These notes are also called **comments**. Same thing we do in programs, to not forget what a function does or to explain it as a documentation for other developers on the project, we use the concept of comments.
 
 ## Concept
-Single line comment is a note provided by the program developer that can fit in a single line.
-> Comments are ignored by the compiler when running a program.
+A `single-line` comment is a note provided by the program developer that can fit in a single line.
+- To write a single-line comment in C++, we use the `//` character.
+- Comments are **ignored by the compiler** when running a program.
 
 ## Example
-To write a single line comment in C++ we use `//` character.
+A single-line comment in C++.
 
 ```cpp
 #include <iostream>
@@ -21,7 +22,7 @@ int main(){
 }
 ```
 
-we can also add the comment at the end of a line.
+We can also add the comment at the end of a line.
 ```cpp
 #include <iostream>
 
@@ -35,7 +36,4 @@ int main(){
 ```
 
 ## Projects
-
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Single-line Comments](https://github.com/SAFCSP-Team/single-line-comments) | - | 
+- [Single-line Comments](https://github.com/SAFCSP-Team/single-line-comments) 
