@@ -99,7 +99,7 @@ By default, if no access modifier is provided, class properties are considered p
 
 ## Example
 
-When we write an access modifier in the code for example `private`, all the properities/functions below the access modifier become `private`, and the same rule applies for `public` and `protected`.   
+When we write an access modifier in the code for example `private`, all the properties/functions below the access modifier become `private`, and the same rule applies for `public` and `protected`.   
    
 Student class
 
@@ -187,9 +187,7 @@ major: Computer Science
  
 ## Project 
 
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Access modifier](https://github.com/SAFCSP-Team/access-modifier) | - |
+- [Access modifier](https://github.com/SAFCSP-Team/access-modifier)
 
 
 
