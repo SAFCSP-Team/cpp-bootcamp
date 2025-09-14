@@ -1,7 +1,7 @@
 # String Input
 
 ## Concept
-Handling a string input is bit different from numbers, let us look at this example.
+Handling a string input is a bit different from numbers, let us look at this example.
 ```cpp
 #include <iostream>
 using namespace std;
@@ -17,8 +17,8 @@ int main() {
 ```
 output,
 ```
-What is your full name? Alex childs
-Your full name is: Alex
+What is your full name? Ahmad Fahad
+Your full name is: Ahmad
 ```
 As you have noticed, in the output only first name was taken and the last name was ignored. This happened because when `cin` read a string input it will store each word in a string variable (words are separated by a whitespace character). To demonstrate the idea let us look at the following example.
 ```cpp
@@ -38,11 +38,11 @@ int main() {
 ```
 output,
 ```
-What is your first and last name? alex childs
-Your full name is: alex childs
+What is your first and last name? Ahmad Fahad
+Your full name is: Ahmad Fahad
 ```
 
-Sometimes, we want to store the entire line that was inserted by the user. To do so we can use `getline()` method as the following. 
+Sometimes, we want to store the entire line that was inserted by the user. To do so, we can use the `getline()` method as follows. 
 
 ```cpp
 #include <iostream>
@@ -59,8 +59,8 @@ int main() {
 ```
 output,
 ```
-What is your full name? alex childs
-Your full name is: alex childs
+What is your full name? Ahmad Fahad
+Your full name is: Ahmad Fahad
 ```
 `getline()` takes two arguments. First argument identify where are we getting the input from `cin`. Second, what variable should we store the input in `fullName`.
 
@@ -82,13 +82,10 @@ int main() {
 }
 ```
 ```
-what is your full name? Alex childs
+what is your full name? Ahmad Fahad
 how old are you? 32
 Hello Alex childs
 ```
 
 ## Projects
-
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [String Inputs in C++](https://github.com/SAFCSP-Team/string-inputs-in-cpp) | - | 
+- [String Inputs in C++](https://github.com/SAFCSP-Team/string-inputs-in-cpp)
