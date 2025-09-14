@@ -25,7 +25,7 @@ insert a number: 5
 your number is: 5
 ```
 As you can see from the above example, by using `cin` we asked for an `int` value from the user. 
-> The >> symbol is called the extraction operator
+> The `>>` symbol is called the extraction operator
 
 ### Input Type Check
 One thing to note is that when an unexpected value is entered it will lead to an unexpected behavior. Let us look at our example above, if we send a string rather than an integer we will get the following output.
@@ -34,7 +34,7 @@ One thing to note is that when an unexpected value is entered it will lead to an
 insert a number: hello
 your number is: 0
 ``` 
-Since we requested an integer but got a string instead the value was not predicted correctly and no exception occurred. Therefore, to handle type checking we can use `cin.good()` method which will return a boolean value indicating if an issue occurred or not (if true is returned then no issue occurred, if false then there was an issue in the input).
+Since we requested an integer but got a string instead, the value was not predicted correctly, and no exception occurred. Therefore, to handle type checking, we can use the `cin.good()` method, which will return a boolean value indicating if an issue occurred or not (if true is returned, then no issue occurred, if false, then there was an issue in the input).
 
 > The value of the input must match the expected input type.
 
@@ -64,7 +64,7 @@ insert a number: hello
 your number is: 0
 0
 ```
-> We can also use `cin.fail()` method to check if an issue occurred while taking a user input
+> We can also use `cin.fail()` method to check if an issue occurred while taking a user input.
 ## Example
 
 ```cpp
@@ -98,7 +98,4 @@ Your weight is 14.5 kg
 ```
 
 ## Projects
-
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [User Inputs in C++](https://github.com/SAFCSP-Team/user-inputs-in-cpp) | - | 
+- [User Inputs in C++](https://github.com/SAFCSP-Team/user-inputs-in-cpp)
