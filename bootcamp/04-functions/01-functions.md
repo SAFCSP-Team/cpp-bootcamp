@@ -83,8 +83,13 @@ In this example:
 Function body:
  - add two numbers and return the result.
 
+### Functions scope
 
-### Types of variable scope
+The functions define their own scope, and variables declared within a function have local scope only accessible within the function where they are declared.
+
+#### Types of variable scope
+The `scope of a variable` determines **where it can be accessed and used within a program**, and there are two main types of variable scope:
+
 - **Global Variables:**
      - Declared outside any function.
      - Can be accessed and modified by all functions in the program.
@@ -92,8 +97,6 @@ Function body:
 - **Local Variables:**
     - Declared and used only within a specific function.
     - Not accessible outside the function where they are defined.
-
-The functions define their own scope, and variables declared within a function have local scope only accessible within the function where they are declared.
    
 ### Functions order
 
