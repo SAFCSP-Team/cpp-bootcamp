@@ -1,5 +1,5 @@
 # Header Files
-To organize code, we can split the program into multiple files, to achive that we neeed to use **header files**. 
+To organize code, we can split the program into multiple files, to achive that we need to use **header files**. 
 
 ## Concept
 To use exterinal code in C++, we do several steps, the exterinal c++ file that we want to use in main file should have a file called **header file**. 
