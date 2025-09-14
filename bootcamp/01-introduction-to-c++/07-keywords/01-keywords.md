@@ -3,7 +3,7 @@ Programming languages in general have some reserved words that have meanings for
 Developers are not allowed to use these keywords for naming purposes.
 
 ## Concept
-Keywords are some reserved words reserved by the language and it has a meaning for the language it self.
+**Keywords** are some reserved words reserved by the language, and it has a meaning for the language itself.
 
 Some C++ keyword examples,
 | Keyword | Meaning |
