@@ -36,7 +36,7 @@ Printing on the screen console could be done by printing a single line or multip
 
 
 ### Print Single Line
-To print a single line of text we can have single or multiple print statements as the following. 
+To print a single line of text, we can have single or multiple print statements as the following. 
 
 ```c++
 #include <iostream>
@@ -55,7 +55,7 @@ int main() {
   return 0;
 }
 ```
-> Using multiple insertion operators means inserting the first text into the stream and then the second and so on...
+> Using multiple insertion operators means inserting the first text into the stream and then the second, and so on...
 
 ```c++
 #include <iostream>
