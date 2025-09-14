@@ -3,22 +3,22 @@ A binary file is a file that contains data stored in a **sequence of bytes**, wh
 
 Binary files can contain any type of data, such as images, audio, video, or text.
 
-Binary file is not human readable, the file exteions is decides how to seperate the bytes into meaningful data. In this lesson we will use the **.bin** extension to create a binary file.
+A binary file is not human-readable, the file extension decides how to separate the bytes into meaningful data. In this lesson, we will use the **.bin** extension to create a binary file.
 
-> Binary files can have any extension, in this lesson we will use **.bin** extension.
+> Binary files can have any extension, in this lesson, we will use **.bin** extension.
 
 ## Concept 
-In **C++** we can read/write form/to a binary file using the `<fstream>` library, the same as text file. But we need to open the file in binary mode by adding **ios::binary** flag to the open mode.
+In **C++** we can read/write form/to a binary file using the `<fstream>` library, the same as a text file. But we need to open the file in binary mode by adding **ios::binary** flag to the open mode.
 
 To read binary data from a file, we’ll need to do the following steps:
 * Import fstream library.
-* Create a stream object with pesific mode. 
-* Preform the operation on the file. 
+* Create a stream object with a specific mode. 
+* Perform the operation on the file. 
 * Close the file stream using `close()` function.
 
 
 ## Example
-In this example we will write a binary file that contain a hex as value, also we will do the append operation and read the file to get the value.
+In this example, we will write a binary file that contains a hex value, and we will do the append operation and read the file to get the value.
 
 
 ##### Write a binary file.
@@ -36,7 +36,7 @@ int main() {
                     ios::binary); // open a file on write mode in binary format
 
   if (wFile.is_open()) {
-    // the write function take two parameters, the data and the size of the data
+    // the write function takes two parameters, the data and the size of the data
     wFile.write("6162", 4);
   }
 
@@ -46,7 +46,7 @@ int main() {
 }
 
 ```
-> In the above example we have written a hex digit into a binary file.
+> In the above example, we have written a hex digit into a binary file.
 
 ##### Append a binary file.
 ```cpp
@@ -77,6 +77,5 @@ fstream rFile("data.bin", ios::in | ios::binary);
 ```
 
 ## Projects
-| Project Title | Deadline |
-|:-----------|:-------------:|
-| [Handle Binary File](https://github.com/SAFCSP-Team/binary-file-project) | - | 
+
+- [Handle Binary File](https://github.com/SAFCSP-Team/binary-file-project)
