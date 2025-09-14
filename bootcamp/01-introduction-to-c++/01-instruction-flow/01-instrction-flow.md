@@ -3,7 +3,7 @@ All programs are consistent, they follow the same pattern. Each program is a set
 
 
 ## Concept 
-A **program** is usually described as a **set of instructions**, these instructions are **executed sequentially to perform a task**. 
+A `program` is usually described as a **set of instructions**, these instructions are **executed sequentially to perform a task**. 
 
 For example, a program summing two numbers will follow this pattern of instruction. 
 
