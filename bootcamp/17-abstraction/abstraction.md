@@ -25,7 +25,7 @@ If the constructor for an abstract class calls a pure virtual function, either d
 
 ## Example
 * In this example, the `Shape` class is an abstract base class that defines pure virtual functions for calculating the area, perimeter, and printing details of a shape. It serves as an abstraction for any general shape.
-* The `Rectangle` and `Circle` classes inherit from `Shape` and provide concrete implementations of these virtual functions.
+* The `Rectangle` and `Circle` classes inherit from `Shape` and provide specific implementations of these virtual functions.
   
 ```cpp
 #include <iostream>
@@ -103,7 +103,7 @@ int main() {
 
 ```
 
-The output is
+Output
 ```
 Rectangle: Length = 5, Width = 3
 Area: 15, Perimeter: 16
@@ -112,8 +112,7 @@ Area: 19.6349, Circumference: 15.7079
 ```
   
 ## Project
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Abstraction](https://github.com/SAFCSP-Team/abstraction-cpp) | - | 
+
+- [Abstraction](https://github.com/SAFCSP-Team/abstraction-cpp) 
 
 
