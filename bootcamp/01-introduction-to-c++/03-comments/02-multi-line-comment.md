@@ -1,11 +1,13 @@
 # Multiline Comment
 
 ## Concept
-Multiline comment is a note provided by the program developer that can be expanded to multiple lines.
+A **multiline comment** is a note provided by the program developer that can be expanded to multiple lines.
+
+To write a multiline comment in C++, we  will wrap the comment in `/*` and `*/` characters.
+
 
 ## Example
-To write a multiline comment in C++ we  will wrap the comment in `/*` and `*/` characters.
-
+Multiline comment in C++.
 ```cpp
 #include <iostream>
 
@@ -35,7 +37,4 @@ int main(){
 ```
 
 ## Projects
-
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Multi-line Comments in C++](https://github.com/SAFCSP-Team/multi-line-comments) | - | 
+- [Multi-line Comments in C++](https://github.com/SAFCSP-Team/multi-line-comments)
