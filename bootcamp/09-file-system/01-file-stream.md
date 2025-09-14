@@ -2,9 +2,9 @@
 The way to store data in a computer is by using files. C++ provides the ability to manage files using the `<fstream>` library.
 
 ## Concept 
-**fstream** is a class that represents file stream. By using fstream, we can create, read, write, and delete files.
+**fstream** is a class that represents a file stream. By using fstream, we can create, read, write, and delete files.
 
-> `<fstream>` library is used to include the file stream classes. while `<iostream>` is used to include the standard input/output stream classes. 
+> `<fstream>` library is used to include the file stream classes. While `<iostream>` is used to include the standard input/output stream classes. 
 
 Like any other class, fstream has a constructor that takes two parameters: file name and mode (optional).
 e.g. 
@@ -46,14 +46,14 @@ ofstream file("names.txt");
 ```
 
 ## Example 
-In this example we will demonstrate how to work with fstream.
+In this example, we will demonstrate how to work with fstream.
 
 1. Import the fstream library.
 ```cpp
 #include <fstream>
 ```
 
-2. We will create an object from fstream class, passing the file name and the mode as parameters.
+2. We will create an object from the fstream class, passing the file name and the mode as parameters.
 ```cpp
 // ios::out - Create/Write a file
 fstream file("note.txt", ios::out); // Create a file note.txt
@@ -66,7 +66,7 @@ if(file.is_open()) {
 }
 ```
 
-> * In the **if statement**, we check if the file stream is open, by using the `is_open()` method which return **true** if the file is open. If the file is open, we can write to it.
+> * In the **if statement**, we check if the file stream is open, by using the `is_open()` method, which returns **true** if the file is open. If the file is open, we can write to it.
 > * We can also use the `fail()` method to check if the file is open or not.
 
 4. Write to the file by using the `<<` operator.
@@ -144,6 +144,5 @@ Hello, World!
 ```
 
 ## Projects
-| Project Title | Deadline |
-|:-----------|:-------------:|
-| [File Stream](https://github.com/SAFCSP-Team/file-stream-project) | - | 
+
+- [File Stream](https://github.com/SAFCSP-Team/file-stream-project) 
