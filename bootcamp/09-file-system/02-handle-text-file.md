@@ -8,13 +8,13 @@ We can read and write into a text file using C++.
 > Its common to use **.txt** extension for storing a text file.
 
 ## Concept 
-In **C++** we can read and write to a file using the **<fstream>** library.
-In order to read/write to a file, we need to use a stream.
-Stream is a sequence of data. We need to create an input stream. If we want to write to a file, we need to create an output stream. If we want to do both, we need to create an input/output stream.
+In **C++** we can read and write to a file using the `<fstream>` library.
+In order to read/write from/to a file, we need to use a stream.
+Stream is a sequence of data. We need to create an input stream for reading from a file. If we want to write to a file, we need to create an output stream. If we want to do both, we need to create an input/output stream.
 
 
 ## Example
-The steps of reading a character sequence from a text file, we’ll need to perform the following steps:
+For reading a character sequence from a text file, we’ll need to perform the following steps:
 
 * Create a stream object. 
 * Connect it to a file on disk. 
@@ -35,15 +35,15 @@ using namespace std;
 int main() {
 
   list<string> names;
-  names.pus_back("Sara");
+  names.push_back("Sara");
   names.push_back("Fahad");
   names.push_back("Majed");
   
   fstream wFile("names.txt", ios::out); // open a file on write mode
   
-  // check if the open is open
+  // check if the file is open
   if(wFile.is_open()) {
-    // if file is open insert the names list into the file names.txt
+    // if the file is open insert the names list into the file names.txt
     for(string name : names) {
       wFile << name << endl;
     }
@@ -54,6 +54,8 @@ int main() {
   return 0;
 }
 ```
+> [!NOTE]
+> For compiling and running range-based for loops `for(string name : names)` execute this command on the terminal `g++ -std=c++11 Main.cpp -o Main`.
 
 ##### Append to a text file.
 ```cpp
