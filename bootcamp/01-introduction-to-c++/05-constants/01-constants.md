@@ -1,7 +1,7 @@
 # Constants
 
 ## Concept
-Constants are same as variables, they hold a value but this value can not be changed once its initialized. They can be declared using the keyword `const`.
+**Constants** are same as variables, they hold a value, but this **value can not be changed** once it's initialized. They can be declared using the keyword `const`.
 > Constants are read-only variables.
 
 ```cpp
@@ -33,7 +33,7 @@ output,
 14
 ```
 
-Above, we initialized a constant, and printed its value multiplied by 2. It worked since we only read the constant value and we did not try to change it. If we try to change a constant value we will get an error.
+Above, we initialized a constant and printed its value multiplied by 2. It worked since we only read the constant value, and we did not try to change it. If we try to change a constant value, we will get an error.
 
 ```cpp
 #include <iostream>
@@ -56,7 +56,4 @@ output,
 ```
 
 ## Projects
-
-| Project Title | Deadline |
-|:-----------:|:-------------:|
-| [Constants in C++](https://github.com/SAFCSP-Team/constants-in-cpp) | - | 
+- [Constants in C++](https://github.com/SAFCSP-Team/constants-in-cpp) 
