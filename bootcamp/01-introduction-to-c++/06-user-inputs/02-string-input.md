@@ -84,7 +84,7 @@ int main() {
 ```
 what is your full name? Ahmad Fahad
 how old are you? 32
-Hello Alex childs
+Hello Ahmad Fahad
 ```
 
 ## Projects
